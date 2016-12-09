@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Instance.php" size="1263" time="2016-08-31T23:56:06+11:00" unixtime="1472648166" sha1="7685e0890a888bb768d1865a54298de368605a09" relative="Instance.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Hive</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Config</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * Router Instance.</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * Allows access to the router object through a instance.</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @package       Hive</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * @subpackage    Config</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie  Peake</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="16">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Instance</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IMPLEMENTS">implements</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Contract</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Instance</token>
+  </line>
+  <line no="17">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$objects</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$options</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$namespaces</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="23">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'\\application\\config\\'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="24">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'\\wax\\config\\'</token>
+  </line>
+  <line no="25">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$environment</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'default'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     * Initialise the instance.</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     * Will create the object if it does not exist.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">init</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_ISSET">isset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$objects</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$namespaces</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$namespace</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="40">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">class_exists</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$class</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$objects</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$class</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$environment</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="45">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="46">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="47">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="48">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">__callStatic</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$args</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'default'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="51">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">init</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="52">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">iterator_to_array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$objects</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="53">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="54"/>
+  <line no="55">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="56"/>
+</source>

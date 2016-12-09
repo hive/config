@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Hive\Config\Contract\Object" namespace="Hive\Config\Contract" name="Object" abstract="false" final="false" start="16" end="21">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Contract/Object.php" size="458" time="2016-08-31T21:06:45+11:00" unixtime="1472638005" sha1="f19b90760a9885a7587252c09291f186b363c196" relative="Contract/Object.php"/>
+  <docblock>
+    <description compact="Object Interface.">Interface for the object class used as a contract.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Config"/>
+    <copyright value="(c) 2016 Jamie Peake"/>
+  </docblock>
+  <extends full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
+  <constructor name="__construct" start="19" end="19" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="environment" byreference="false" type="object">
+      <type full="Hive\Config\Contract\string" namespace="Hive\Config\Contract" name="string"/>
+    </parameter>
+    <parameter name="options" byreference="false" type="array"/>
+  </constructor>
+  <parent full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
+</interface>

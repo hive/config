@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="55">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Instance.php" size="1263" time="2016-08-31T23:56:06+11:00" unixtime="1472648166" sha1="7685e0890a888bb768d1865a54298de368605a09" relative="Instance.php"/>
+  <docblock>
+    <description compact="Router Instance.">Allows access to the router object through a instance.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Config"/>
+    <copyright value="(c) 2016 Jamie  Peake"/>
+  </docblock>
+  <implements full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
+  <member name="objects" visibility="private" static="true" line="18"/>
+  <member name="options" visibility="protected" static="true" line="20"/>
+  <member name="namespaces" type="array" default="" visibility="public" static="true" line="22"/>
+  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="27"/>
+  <method name="init" start="34" end="48" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__callStatic" start="50" end="53" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="array" default=""/>
+  </method>
+  <interface full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
+</class>

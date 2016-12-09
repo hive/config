@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance" abstract="false" final="false" start="16" end="19">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Contract/Instance.php" size="362" time="2016-08-24T10:03:57+11:00" unixtime="1471993437" sha1="4b5f051ae534802a3c8eb2a7a1173bd423ff7e1a" relative="Contract/Instance.php"/>
+  <docblock>
+    <description compact="Instance Interface.">Interface for use with the instances.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Config"/>
+    <copyright value="(c) 2016 Jamie Peake"/>
+  </docblock>
+  <implementors>
+    <class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/>
+  </implementors>
+</interface>

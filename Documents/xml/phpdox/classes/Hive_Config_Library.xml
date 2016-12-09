@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Library" namespace="Hive\Config" name="Library" abstract="false" final="false" start="16" end="59">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source" file="Playing.With.Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Playing.With.Library.php" size="1193" time="2016-08-31T23:11:59+11:00" unixtime="1472645519" sha1="aa12bd07a7c60c93edf5ddea7c5a8ee6ce89e2ce" relative="Playing.With.Library.php"/>
+  <docblock>
+    <description compact="Config Library.">The actual Config library, which does the core operations.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Config"/>
+    <copyright value="(c) 2016 Jamie Peake"/>
+  </docblock>
+  <implements full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
+  <member name="object" visibility="private" static="false" line="18"/>
+  <member name="name" visibility="private" static="false" line="23">
+    <docblock>
+      <description/>
+      <var description="The name of the config to load" type="string"/>
+    </docblock>
+  </member>
+  <member name="namespaces" type="array" default="" visibility="private" static="false" line="28">
+    <docblock>
+      <description/>
+      <var description="an array of namespaces to search" type="array"/>
+    </docblock>
+  </member>
+  <member name="environment" visibility="private" static="false" line="33">
+    <docblock>
+      <description/>
+      <var description="the environment" type="string"/>
+    </docblock>
+  </member>
+  <member name="default" visibility="private" static="false" line="36"/>
+  <constructor name="__construct" start="38" end="45" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="environment" byreference="false" type="{unknown}"/>
+    <parameter name="namespaces" byreference="false" type="{unknown}"/>
+    <parameter name="default" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="parse" start="47" end="58" abstract="false" final="false" static="false" visibility="public"/>
+  <interface full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
+</class>

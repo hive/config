@@ -1,0 +1,59 @@
+
+FILE: /usr/local/zend/var/apps/http/vendor/hive/config/Source/Contract/Object.php
+----------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------------------------
+ 21 | ERROR | [x] The closing brace for the interface must go on the next line after the body
+----------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------------
+
+
+FILE: /usr/local/zend/var/apps/http/vendor/hive/config/Source/Instance.php
+------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+------------------------------------------------------------------------------------------
+ 22 | ERROR | [x] Scope keyword "public" must be followed by a single space
+ 37 | ERROR | [x] Blank line found at start of control structure
+ 50 | ERROR | [x] Opening brace should be on a new line
+ 55 | ERROR | [x] The closing brace for the class must go on the next line after the body
+------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------
+
+
+FILE: /usr/local/zend/var/apps/http/vendor/hive/config/Source/Library.php
+------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 3 LINES
+------------------------------------------------------------------------------------------
+ 14 | ERROR | [x] Opening brace of a class must be on the line after the definition
+ 24 | ERROR | [x] Opening brace should be on a new line
+ 28 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 28 | ERROR | [x] The closing brace for the class must go on the next line after the body
+------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------
+
+
+FILE: /usr/local/zend/var/apps/http/vendor/hive/config/Source/Mixin/Library.php
+-------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------
+ 25 | ERROR | [x] Opening brace should be on a new line
+-------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------
+
+
+FILE: /usr/local/zend/var/apps/http/vendor/hive/config/Source/Playing.With.Library.php
+--------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+--------------------------------------------------------------------------------------
+ 38 | ERROR | [x] Opening brace should be on a new line
+ 47 | ERROR | [x] Opening brace should be on a new line
+ 49 | ERROR | [x] Blank line found at start of control structure
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
