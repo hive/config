@@ -1,0 +1,22 @@
+preset: psr2
+
+risky: true
+
+linting: true
+
+enabled:
+  - no_php4_constructor
+  - align_double_arrow
+  - align_equals
+  - short_array_syntax
+  - ereg_to_preg
+  - standardize_not_equals
+  - ternary_operator_spaces
+  - ordered_imports
+  - print_to_echo
+  - blank_line_before_return
+  - no_blank_lines_before_namespace
+  - phpdoc_align
+  - phpdoc_order
+  - phpdoc_scalar
+  - phpdoc_summary

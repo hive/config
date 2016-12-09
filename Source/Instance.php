@@ -1,0 +1,55 @@
+<?php namespace Hive\Config;
+
+/**
+ * Router Instance.
+ *
+ * Allows access to the router object through a instance.
+ *
+ * @author        Jamie Peake <jamie.peake@gmail.com>
+ * @licence https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)
+ *
+ * @package       Hive
+ * @subpackage    Config
+ *
+ * @copyright (c) 2016 Jamie  Peake
+ */
+class Instance implements Contract\Instance
+{
+    private static $objects;
+
+    protected static $options;
+
+    public  static $namespaces = [
+        '\\application\\config\\',
+        '\\wax\\config\\'
+    ];
+
+    public static $environment = 'default';
+
+    /**
+     * Initialise the instance.
+     *
+     * Will create the object if it does not exist.
+     */
+    private static function init($name)
+    {
+
+        if (!isset(self::$objects[$name])) {
+
+            foreach (self::$namespaces as $namespace) {
+                $class = $namespace . $name;
+
+                if (class_exists($class)) {
+                    self::$objects[$name] = new $class(self::$environment);
+                    return;
+                }
+            }
+        }
+    }
+
+    public static function __callStatic($name, $args = ['default']) {
+        self::init($name);
+        return iterator_to_array(self::$objects[$name]);
+    }
+
+}

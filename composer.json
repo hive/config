@@ -1,0 +1,37 @@
+{
+  "name": "hive/router",
+  "description": "Hive Decoupled Routing Library",
+  "keywords": [
+    "mvc", "router",  "hive", "wax", "library", "helper"
+  ],
+  "homepage": "https://hive.github.io/router/",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Jamie Peake",
+      "email": "jamie.peake@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/hive/router/issues",
+    "wiki": "https://github.com/hive/router/wiki",
+    "source": "https://github.com/hive/router"
+  },
+  "type": "Library",
+  "require": {
+    "php": ">5.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hive\\Benchmark\\": "source"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "suggest": {
+  }
+}
