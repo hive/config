@@ -63,14 +63,24 @@ class Instance implements Contract\Instance
 
 
     /**
+     * Allow direct access to an item in the config, by using arguments
      * @param       $name
      * @param array $args
      *
      * @return array
      */
-    public static function __callStatic($name, $args = ['default']) {
+    public static function __callStatic($name, $args) {
+
         self::init($name);
-        return iterator_to_array(self::$objects[$name]);
+
+        $result = iterator_to_array(self::$objects[$name]);
+
+        foreach ($args as $arg) {
+            $result = $result[$arg];
+        }
+
+        return $result;
+
     }
 
 }
