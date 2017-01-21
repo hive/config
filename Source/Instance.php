@@ -15,21 +15,35 @@
  */
 class Instance implements Contract\Instance
 {
+
+    /**
+     * @var
+     */
     private static $objects;
 
+    /**
+     * @var
+     */
     protected static $options;
 
+    /**
+     * @var array
+     */
     public  static $namespaces = [
         '\\application\\config\\',
         '\\wax\\config\\'
     ];
 
+    /**
+     * @var string
+     */
     public static $environment = 'default';
 
     /**
      * Initialise the instance.
      *
      * Will create the object if it does not exist.
+     * @param $name
      */
     private static function init($name)
     {
@@ -47,6 +61,13 @@ class Instance implements Contract\Instance
         }
     }
 
+
+    /**
+     * @param       $name
+     * @param array $args
+     *
+     * @return array
+     */
     public static function __callStatic($name, $args = ['default']) {
         self::init($name);
         return iterator_to_array(self::$objects[$name]);
