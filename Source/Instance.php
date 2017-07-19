@@ -30,7 +30,7 @@ class Instance implements Contract\Instance
      * @var array
      */
     public  static $namespaces = [
-        '\\application\\config\\',
+        '\\Site\\Config\\',
         '\\wax\\config\\'
     ];
 
@@ -47,13 +47,14 @@ class Instance implements Contract\Instance
      */
     private static function init($name)
     {
-
-        if (!isset(self::$objects[$name])) {
-
-            foreach (self::$namespaces as $namespace) {
+        if (!isset(self::$objects[$name]))
+        {
+            foreach (self::$namespaces as $namespace)
+            {
                 $class = $namespace . $name;
+                if (class_exists($class))
+                {
 
-                if (class_exists($class)) {
                     self::$objects[$name] = new $class(self::$environment);
                     return;
                 }
@@ -69,18 +70,18 @@ class Instance implements Contract\Instance
      *
      * @return array
      */
-    public static function __callStatic($name, $args) {
-
+    public static function __callStatic($name, $args)
+    {
         self::init($name);
 
         $result = iterator_to_array(self::$objects[$name]);
 
-        foreach ($args as $arg) {
+        foreach ($args as $arg)
+        {
             $result = $result[$arg];
         }
 
         return $result;
-
     }
 
 }

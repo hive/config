@@ -15,24 +15,26 @@
  */
 trait Library
 {
-
     /**
-     * Mixin constructor.
+     * Library constructor.
      *
      * @param       $environment
-     * @param array $array
+     * @param array $values
      */
-    public function __construct(string $environment, array $values = []) {
-
-        if (isset(self::$$environment)) {
+    public function construct($environment, array $values = [])
+    {
+        if (isset(self::$$environment))
+        {
             $values = array_merge(self::$$environment, $values);
         }
 
-        if (isset(self::$default)) {
+        if (isset(self::$default))
+        {
             $values = array_merge(self::$default, $values);
         }
 
         parent::__construct($environment, $values);
 
     }
+
 }

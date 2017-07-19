@@ -11,8 +11,8 @@
 
  */
 
-class Library extends \ArrayIterator implements Contract\Library {
-
+class Library extends \ArrayIterator implements Contract\Library
+{
     /**
      * Item constructor.
      *
@@ -21,7 +21,8 @@ class Library extends \ArrayIterator implements Contract\Library {
      * @param       $environment
      * @param array $array
      */
-    public function __construct(string $environment, array $array = []) {
+    public function __construct($environment, array $array = [])
+    {
         parent::__construct($array);
     }
 

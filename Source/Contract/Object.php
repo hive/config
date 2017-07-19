@@ -16,6 +16,6 @@
 interface Object extends Library
 {
 
-    public function __construct(string $environment, array $options);
+    public function __construct($environment, array $options);
 
 }
