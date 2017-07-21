@@ -31,7 +31,8 @@ class Instance implements Contract\Instance
      */
     public  static $namespaces = [
         '\\Site\\Config\\',
-        '\\Shared\\Config\\',
+        '\\',
+        //'\\Shared\\Config\\',
         '\\Wax\\Config\\'
     ];
 
@@ -44,8 +45,9 @@ class Instance implements Contract\Instance
      * Initialise the instance.
      *
      * Will create the object if it does not exist.
-     * @param $name
      *
+     * @param $name
+     * @throws Exception\InstanceDoesNotExist
      * @return bool
      */
     private static function init($name)
@@ -63,15 +65,16 @@ class Instance implements Contract\Instance
             }
         }
 
-        return false;   // We didn't find a matching class.
+        // We didn't find a matching class.
+        throw new Exception\InstanceDoesNotExist();
     }
 
 
     /**
      * Allow direct access to an item in the config, by using arguments
+     *
      * @param       $name
      * @param array $args
-     * @throws Exception\InvalidInstance
      * @return array
      */
     public static function __callStatic($name, $args)
@@ -86,10 +89,6 @@ class Instance implements Contract\Instance
             }
 
             return $result;
-        }
-        else
-        {
-            throw new Exception\InvalidInstance($name);
         }
     }
 

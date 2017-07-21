@@ -1,7 +1,7 @@
 <?php namespace Hive\Config\Exception;
 
 /**
- * Invalid Instance Exception.
+ * Instance Does not Exist Exception.
  *
  * Called when the instance called does not exist, ie. it was unable to find the config class by that name.
  *
@@ -13,7 +13,7 @@
  *
  * @copyright (c) 2017 Jamie Peake
  */
-class InvalidInstance extends \Hive\Config\Exception
+class InstanceDoesNotExist extends \Hive\Config\Exception
 {
     /**
      * Exception code, sequential exception numbers.
