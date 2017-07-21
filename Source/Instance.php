@@ -31,7 +31,8 @@ class Instance implements Contract\Instance
      */
     public  static $namespaces = [
         '\\Site\\Config\\',
-        '\\wax\\config\\'
+        '\\Shared\\Config\\',
+        '\\Wax\\Config\\'
     ];
 
     /**
@@ -44,6 +45,8 @@ class Instance implements Contract\Instance
      *
      * Will create the object if it does not exist.
      * @param $name
+     *
+     * @return bool
      */
     private static function init($name)
     {
@@ -54,12 +57,13 @@ class Instance implements Contract\Instance
                 $class = $namespace . $name;
                 if (class_exists($class))
                 {
-
                     self::$objects[$name] = new $class(self::$environment);
-                    return;
+                    return true;
                 }
             }
         }
+
+        return false;   // We didn't find a matching class.
     }
 
 
@@ -67,21 +71,26 @@ class Instance implements Contract\Instance
      * Allow direct access to an item in the config, by using arguments
      * @param       $name
      * @param array $args
-     *
+     * @throws Exception\InvalidInstance
      * @return array
      */
     public static function __callStatic($name, $args)
     {
-        self::init($name);
-
-        $result = iterator_to_array(self::$objects[$name]);
-
-        foreach ($args as $arg)
+        if (self::init($name))
         {
-            $result = $result[$arg];
-        }
+            $result = iterator_to_array(self::$objects[$name]);
 
-        return $result;
+            foreach ($args as $arg)
+            {
+                $result = $result[$arg];
+            }
+
+            return $result;
+        }
+        else
+        {
+            throw new Exception\InvalidInstance($name);
+        }
     }
 
 }
