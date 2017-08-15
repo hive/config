@@ -31,7 +31,7 @@ class Instance implements Contract\Instance
      */
     public  static $namespaces = [
         '\\Site\\Config\\',
-        '\\',
+        '\\hive\\framework\\config\\',
         //'\\Shared\\Config\\',
         '\\Wax\\Config\\'
     ];
@@ -52,6 +52,7 @@ class Instance implements Contract\Instance
      */
     private static function init($name)
     {
+
         if (!isset(self::$objects[$name]))
         {
             foreach (self::$namespaces as $namespace)
@@ -64,9 +65,8 @@ class Instance implements Contract\Instance
                 }
             }
         }
-
         // We didn't find a matching class.
-        throw new Exception\InstanceDoesNotExist();
+        throw new Exception\InstanceDoesNotExist($name);
     }
 
 

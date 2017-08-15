@@ -25,12 +25,13 @@ trait Library
     {
         if (isset(self::$$environment))
         {
-            $values = array_merge(self::$$environment, $values);
+            $values = array_replace_recursive(self::$$environment, $values);
         }
 
         if (isset(self::$default))
         {
-            $values = array_merge(self::$default, $values);
+
+            $values = array_replace_recursive(self::$default, $values);
         }
 
         parent::__construct($environment, $values);
