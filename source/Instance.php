@@ -1,9 +1,9 @@
 <?php namespace Hive\Config;
 
 /**
- * Router Instance.
+ * Config Instance.
  *
- * Allows access to the router object through a instance.
+ * Allows access to the config object through a instance.
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)
@@ -30,11 +30,14 @@ class Instance implements Contract\Instance
      * @var array
      */
     public  static $namespaces = [
-        '\\Site\\Config\\',
-        '\\hive\\framework\\config\\',
-        //'\\Shared\\Config\\',
-        '\\Wax\\Config\\'
+        'Shared'
     ];
+
+    /**
+     * The name of the file type to load, defaults to config.
+     * @var string
+     */
+    public static $type = 'config';
 
     /**
      * @var string
@@ -57,7 +60,9 @@ class Instance implements Contract\Instance
         {
             foreach (self::$namespaces as $namespace)
             {
-                $class = $namespace . $name;
+                $class = '\\'  . $namespace . '\\' . self::$type . '\\' . $name;
+
+
                 if (class_exists($class))
                 {
                     self::$objects[$name] = new $class(self::$environment);
