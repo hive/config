@@ -61,8 +61,6 @@ class Instance implements Contract\Instance
             foreach (self::$namespaces as $namespace)
             {
                 $class = '\\'  . $namespace . '\\' . self::$type . '\\' . $name;
-
-
                 if (class_exists($class))
                 {
                     self::$objects[$name] = new $class(self::$environment);
