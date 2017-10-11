@@ -23,6 +23,7 @@ trait Library
      */
     public function construct($environment, array $values = [])
     {
+
         if (isset(self::$$environment))
         {
             $values = array_replace_recursive(self::$$environment, $values);

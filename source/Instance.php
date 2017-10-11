@@ -56,11 +56,17 @@ class Instance implements Contract\Instance
     private static function init($name)
     {
 
-        if (!isset(self::$objects[$name]))
+        if (isset(self::$objects[$name]))
+        {
+            return true;
+
+        }
+        else
         {
             foreach (self::$namespaces as $namespace)
             {
                 $class = '\\'  . $namespace . '\\' . self::$type . '\\' . $name;
+
                 if (class_exists($class))
                 {
                     self::$objects[$name] = new $class(self::$environment);
@@ -68,6 +74,7 @@ class Instance implements Contract\Instance
                 }
             }
         }
+
         // We didn't find a matching class.
         throw new Exception\InstanceDoesNotExist($name);
     }
@@ -82,6 +89,7 @@ class Instance implements Contract\Instance
      */
     public static function __callStatic($name, $args)
     {
+
         if (self::init($name))
         {
             $result = iterator_to_array(self::$objects[$name]);
