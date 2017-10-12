@@ -37,7 +37,7 @@ class Instance implements Contract\Instance
      * The name of the file type to load, defaults to config.
      * @var string
      */
-    public static $type = 'config';
+    public static $type = 'Config';
 
     /**
      * @var string
