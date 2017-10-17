@@ -68,3 +68,9 @@ The code is split up into the following classes :
     use hive\Config;
  ```
  
+ 
+ Notes 
+ 
+  - It is possible to inherit a config class, in which case the settings from the parent will also be inherited. 
+  - Items will give preference to themselves over parents, ie. object/$sever > object/$default > parent/$server > parent/$default
+  

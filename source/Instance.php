@@ -44,6 +44,7 @@ class Instance implements Contract\Instance
      */
     public static $environment = 'default';
 
+
     /**
      * Initialise the instance.
      *
@@ -82,7 +83,7 @@ class Instance implements Contract\Instance
 
     /**
      * Allow direct access to an item in the config, by using arguments
-     *
+     * cal
      * @param       $name
      * @param array $args
      * @return array

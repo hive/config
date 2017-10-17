@@ -23,7 +23,6 @@ trait Library
      */
     public function __construct($environment, array $values = [])
     {
-
         if (isset(self::$$environment))
         {
             $values = array_replace_recursive(self::$$environment, $values);
@@ -34,6 +33,7 @@ trait Library
 
             $values = array_replace_recursive(self::$default, $values);
         }
+
 
         parent::__construct($environment, $values);
 

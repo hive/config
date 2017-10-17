@@ -23,6 +23,7 @@ class Library extends \ArrayIterator implements Contract\Library
      */
     public function __construct($environment, array $array = [])
     {
+
         parent::__construct($array);
     }
 
