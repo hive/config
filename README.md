@@ -69,8 +69,9 @@ The code is split up into the following classes :
  ```
  
  
- Notes 
+ ## Notes about Inheriting 
  
   - It is possible to inherit a config class, in which case the settings from the parent will also be inherited. 
   - Items will give preference to themselves over parents, ie. object/$sever > object/$default > parent/$server > parent/$default
+  - At the moment, the child requires to declare the default property if the parent uses it, otherwise it will override. 
   
