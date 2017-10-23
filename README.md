@@ -58,9 +58,7 @@ require 'hive/Config/include.php';
 
 The code is split up into the following classes : 
 
-1. Library.php : The actual benchmarking library, useful for extending functionality.
-2. Object.php : Class for accessing the benchmark object.
-3. Instance.php : Instance of the object class.
+
 
 ## Useage
 -------
