@@ -2,16 +2,16 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Library.php">
     <totals>
-      <lines total="27" comments="18" code="9" executable="2" executed="0" percent="0.00%"/>
+      <lines total="31" comments="22" code="9" executable="3" executed="0" percent="0.00%"/>
       <methods count="1" tested="0" percent="0.00%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Library" start="14" executable="2" executed="0" crap="2">
-      <package full="" name="" sub="" category=""/>
+    <class name="Library" start="17" executable="3" executed="0" crap="2">
+      <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config"/>
-      <method name="__construct" signature="__construct(string $environment, array $array = [])" start="24" end="26" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="__construct" signature="__construct($environment, array $array = [])" start="27" end="30" crap="2" executable="3" executed="0" coverage="0"/>
     </class>
   </file>
 </phpunit>

@@ -1,1 +1,133 @@
-Could not open input file: /usr/local/zend/bin/phpcs
+
+[1mPHP CODE SNIFFER INFORMATION REPORT[0m
+----------------------------------------------------------------------
+CamelCase class name: [4myes[0m [7/7, 100%]
+
+CamelCase method name: [4myes[0m [1/1, 100%]
+
+Class defined in namespace: [4myes[0m [8/8, 100%]
+
+Class opening brace placement: [4mnew line[0m [8/8, 100%]
+
+Constant name case: [4mupper[0m [4/4, 100%]
+
+Control structure defined inline: [4mno[0m [8/8, 100%]
+
+Declarations and side effects mixed: [4mno[0m [8/8, 100%]
+
+EOL char: [4m\n[0m [8/8, 100%]
+
+Function opening brace placement: [4mnew line[0m [6/6, 100%]
+
+Line indent: [4mspaces[0m [147/147, 100%]
+
+Line length: [4m80 or less[0m [273/284, 96.13%]
+	81-120 => 10 (3.52%)
+	121-150 => 1 (0.35%)
+
+Multiple statements on same line: [4mno[0m [34/34, 100%]
+
+Number of newlines at EOF: [4m1[0m [8/8, 100%]
+
+One class per file: [4myes[0m [8/8, 100%]
+
+PHP closing tag at end of PHP-only file: [4mno[0m [8/8, 100%]
+
+PHP constant case: [4mlower[0m [4/4, 100%]
+
+PHP keyword case: [4mlower[0m [74/74, 100%]
+
+PHP short open tag used: [4mno[0m [8/8, 100%]
+
+Spaces after control structure open parenthesis: [4m0[0m [7/7, 100%]
+
+Spaces before control structure close parenthesis: [4m0[0m [7/7, 100%]
+
+----------------------------------------------------------------------
+Time: 181ms; Memory: 5Mb
+
+
+[1mFILE: ...var/apps/http/kontent.dev/vendor/hive/config/source/Instance.php[0m
+----------------------------------------------------------------------
+[1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
+----------------------------------------------------------------------
+ 60 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 63 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 64 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 66 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+    |       |     13
+ 70 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+    |       |     17
+ 93 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 97 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+    |       |     13
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: ...pps/http/kontent.dev/vendor/hive/config/source/Mixin/Library.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 26 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 31 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: .../var/apps/http/kontent.dev/vendor/hive/config/source/Library.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [x] Whitespace found at end of line
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: ...dev/vendor/hive/config/source/Exception/InstanceDoesNotExist.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 26 | [33mWARNING[0m | Line exceeds 120 characters; contains 138 characters
+----------------------------------------------------------------------
+
+Time: 181ms; Memory: 5Mb
+
+
+[1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
+----------------------------------------------------------------------
+[1m    STANDARD  CATEGORY            SNIFF                          COUNT
+[0m----------------------------------------------------------------------
+[x] Squiz     Control structures  Control signature space after  7
+[x] Squiz     White space         Superfluous whitespace end li  1
+[x] Squiz     Control structures  Control signature space after  1
+[x] Squiz     Control structures  Control signature space after  1
+[ ] Generic   Files               Line length too long           1
+----------------------------------------------------------------------
+[1mA TOTAL OF 11 SNIFF VIOLATIONS WERE FOUND IN 5 SOURCES[0m
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (10 VIOLATIONS IN TOTAL)[0m
+----------------------------------------------------------------------
+
+Time: 181ms; Memory: 5Mb
+
+
+[1mPHP CODE SNIFFER REPORT SUMMARY[0m
+----------------------------------------------------------------------
+[1mFILE                                                  ERRORS  WARNINGS[0m
+----------------------------------------------------------------------
+...ontent.dev/vendor/hive/config/source/Instance.php  [31m7[0m       0
+...t.dev/vendor/hive/config/source/Mixin/Library.php  [31m2[0m       0
+...kontent.dev/vendor/hive/config/source/Library.php  [31m1[0m       0
+.../config/source/Exception/InstanceDoesNotExist.php  0       [33m1[0m
+----------------------------------------------------------------------
+[1mA TOTAL OF 10 ERRORS AND 1 WARNING WERE FOUND IN 8 FILES[0m
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX 10 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 182ms; Memory: 5Mb
+

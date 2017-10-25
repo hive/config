@@ -91,4 +91,4 @@
       <return type="void"/>
     </docblock>
   </method>
-<extenders><extender full="Hive\Config\Exception" namespace="Hive\Config" name="Exception"/></extenders></class>
+<extenders><extender full="Hive\Config\Exception" namespace="Hive\Config" name="Exception"/><extender full="Hive\Config\Exception\InstanceDoesNotExist" namespace="Hive\Config\Exception" name="InstanceDoesNotExist"/></extenders></class>

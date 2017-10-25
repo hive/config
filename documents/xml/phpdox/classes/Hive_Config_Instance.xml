@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="55">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Instance.php" size="1263" time="2016-08-31T23:56:06+11:00" unixtime="1472648166" sha1="7685e0890a888bb768d1865a54298de368605a09" relative="Instance.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="105">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Instance.php" size="2136" time="2017-10-25T14:35:52+11:00" unixtime="1508902552" sha1="984ca352d96ef8a814f6c604f39ac0c004217d78" relative="Instance.php"/>
   <docblock>
-    <description compact="Router Instance.">Allows access to the router object through a instance.</description>
+    <description compact="Config Instance.">Allows access to the config object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
     <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
     <package value="Hive"/>
@@ -10,19 +10,61 @@
     <copyright value="(c) 2016 Jamie  Peake"/>
   </docblock>
   <implements full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
-  <member name="objects" visibility="private" static="true" line="18"/>
-  <member name="options" visibility="protected" static="true" line="20"/>
-  <member name="namespaces" type="array" default="" visibility="public" static="true" line="22"/>
-  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="27"/>
-  <method name="init" start="34" end="48" abstract="false" final="false" static="true" visibility="private">
+  <member name="objects" visibility="private" static="true" line="22">
+    <docblock>
+      <description/>
+      <var/>
+    </docblock>
+  </member>
+  <member name="options" visibility="protected" static="true" line="27">
+    <docblock>
+      <description/>
+      <var/>
+    </docblock>
+  </member>
+  <member name="namespaces" type="array" default="" visibility="public" static="true" line="32">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="type" type="string" default="'Config'" visibility="public" static="true" line="40">
+    <docblock>
+      <description compact="The name of the file type to load, defaults to config."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="45">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <method name="init" start="57" end="80" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
+      <param variable="$name"/>
+      <throws type="object">
+        <type full="Hive\Config\Exception\InstanceDoesNotExist" namespace="Hive\Config\Exception" name="InstanceDoesNotExist"/>
+      </throws>
+      <return type="object">
+        <type full="Hive\Config\bool" namespace="Hive\Config" name="bool"/>
+      </return>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="We didn't find a matching class." line="78"/>
+    </inline>
   </method>
-  <method name="__callStatic" start="50" end="53" abstract="false" final="false" static="true" visibility="public">
+  <method name="__callStatic" start="90" end="104" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Allow direct access to an item in the config, by using arguments cal"/>
+      <param variable="$name"/>
+      <param type="array" variable="$args"/>
+      <return type="array"/>
+    </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
-    <parameter name="args" byreference="false" type="array" default=""/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
   </method>
   <interface full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
 </class>

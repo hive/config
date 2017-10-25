@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpcs version="2.6.1">
-<file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Contract/Object.php" errors="1" warnings="0" fixable="1">
- <error line="21" column="1" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" severity="5" fixable="1">The closing brace for the interface must go on the next line after the body</error>
-</file>
-<file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Instance.php" errors="4" warnings="0" fixable="4">
- <error line="22" column="5" source="Squiz.WhiteSpace.ScopeKeywordSpacing.Incorrect" severity="5" fixable="1">Scope keyword &quot;public&quot; must be followed by a single space</error>
- <error line="37" column="44" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen" severity="5" fixable="1">Blank line found at start of control structure</error>
- <error line="50" column="69" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
- <error line="55" column="1" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" severity="5" fixable="1">The closing brace for the class must go on the next line after the body</error>
-</file>
-<file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Library.php" errors="4" warnings="0" fixable="4">
- <error line="14" column="66" source="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" severity="5" fixable="1">Opening brace of a class must be on the line after the definition</error>
- <error line="24" column="73" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
- <error line="28" column="1" source="PSR2.Files.EndFileNewline.NoneFound" severity="5" fixable="1">Expected 1 newline at end of file; 0 found</error>
- <error line="28" column="1" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" severity="5" fixable="1">The closing brace for the class must go on the next line after the body</error>
-</file>
-<file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Mixin/Library.php" errors="1" warnings="0" fixable="1">
- <error line="25" column="74" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
-</file>
-<file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Playing.With.Library.php" errors="3" warnings="0" fixable="3">
- <error line="38" column="77" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
- <error line="47" column="29" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
- <error line="49" column="51" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen" severity="5" fixable="1">Blank line found at start of control structure</error>
+<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Library.php" errors="1" warnings="0" fixable="1">
+ <error line="8" column="3" source="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine" severity="5" fixable="1">Whitespace found at end of line</error>
 </file>
 </phpcs>
 

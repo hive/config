@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Library.php" size="658" time="2016-08-31T23:45:04+11:00" unixtime="1472647504" sha1="0d265ff25eb2cda7f400720fca5cd98e9a4c7cac" relative="Library.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Library.php" size="800" time="2017-10-25T14:40:07+11:00" unixtime="1508902807" sha1="bba505c04382ef50cfe4f6032f61767b5d96900e" relative="Library.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -15,32 +15,45 @@
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="4">
-    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * Config Library,</token>
   </line>
   <line no="5">
-    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT"> *</token>
+    <token name="T_DOC_COMMENT"> * Will give access to its ArrayIterator, at which stage anything to do with the environment</token>
   </line>
   <line no="7">
-    <token name="T_DOC_COMMENT"> * @package       Hive</token>
+    <token name="T_DOC_COMMENT"> * is ready to be discarded.</token>
   </line>
   <line no="8">
-    <token name="T_DOC_COMMENT"> * @subpackage    Config</token>
+    <token name="T_DOC_COMMENT"> * </token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT"> *</token>
+    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="10">
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * @package       Hive</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @subpackage    Config</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="15">
     <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie  Peake</token>
   </line>
-  <line no="11"/>
-  <line no="12">
+  <line no="16">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="13"/>
-  <line no="14">
+  <line no="17">
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">Library</token>
@@ -55,36 +68,36 @@
     <token name="T_STRING">Contract</token>
     <token name="T_NS_SEPARATOR">\</token>
     <token name="T_STRING">Library</token>
-    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="18">
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="15"/>
-  <line no="16">
+  <line no="19">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="17">
+  <line no="20">
     <token name="T_DOC_COMMENT">     * Item constructor.</token>
   </line>
-  <line no="18">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
-  <line no="19">
-    <token name="T_DOC_COMMENT">     * Takes a Config Contract that throws away the environment for use as an array iterator.</token>
-  </line>
-  <line no="20">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
   <line no="21">
-    <token name="T_DOC_COMMENT">     * @param       $environment</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="22">
-    <token name="T_DOC_COMMENT">     * @param array $array</token>
+    <token name="T_DOC_COMMENT">     * Takes a Config Contract that throws away the environment for use as an array iterator.</token>
   </line>
   <line no="23">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="24">
+    <token name="T_DOC_COMMENT">     * @param       $environment</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     * @param array $array</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="27">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -92,8 +105,6 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">string</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$environment</token>
     <token name="T_PHPDOX_COMMA">,</token>
     <token name="T_WHITESPACE"> </token>
@@ -106,10 +117,12 @@
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="25">
+  <line no="29">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -119,12 +132,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="26">
+  <line no="30">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="27"/>
-  <line no="28">
+  <line no="31">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="32"/>
 </source>

@@ -62,61 +62,58 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="#tests">Tests</a>
-          </li>
-          <li>
-            <a href="../../source/Playing.With.Library.php.xhtml#line38">Source</a>
+            <a href="../../source/Library.php.xhtml#line27">Source</a>
           </li>
         </ul>
       </nav>
       <section>
         <h1><small>Hive\Config\Library::</small>__construct</h1>
-        <h4/>
-        <p/>
+        <h4>Item constructor.</h4>
+        <p>Takes a Config Contract that throws away the environment for use as an array iterator.</p>
+        <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
           <code>public function __construct(
-        $name,
-            
         $environment,
-            
-        $namespaces,
-            
-        $default )
+            [array
+        $array = ] )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$name</code>
-                —
-                </dt>
-          <dd/>
           <dt><code>$environment</code>
                 —
                 </dt>
           <dd/>
-          <dt><code>$namespaces</code>
+          <dt><code>$array</code>
                 —
-                </dt>
-          <dd/>
-          <dt><code>$default</code>
-                —
-                </dt>
+                array</dt>
           <dd/>
         </dl>
-        <h2 id="tests">Test Coverage</h2>
+        <h2 id="violations">Violations</h2>
         <div class="styled">
-          <h3>Information</h3>
-          <ul class="styled">
-            <li>Coverage: 0/5 Lines (0%)</li>
-            <li>Tests: 0</li>
-            <li>Passed: 0 (0%)</li>
-          </ul>
+          <h3>PHPMessDetector</h3>
+          <table class="styled">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Rule</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="line">27</td>
+              <td>
+                <a href="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" target="_blank" title="Unused Code Rules">UnusedFormalParameter</a>
+              </td>
+              <td>Avoid unused parameters such as '$environment'.</td>
+            </tr>
+          </table>
         </div>
       </section>
     </div>
     <footer>
-      <span>Generated using phpDox 0.8.1.1-26-g131d5d2-dirty - Copyright (C) 2010 - 2016 by Arne Blankerts</span>
+      <span>Generated using phpDox 0.8.1.1-26-g131d5d2-dirty - Copyright (C) 2010 - 2017 by Arne Blankerts</span>
     </footer>
   </body>
 </html>

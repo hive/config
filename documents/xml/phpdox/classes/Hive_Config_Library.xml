@@ -1,41 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Library" namespace="Hive\Config" name="Library" abstract="false" final="false" start="16" end="59">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source" file="Playing.With.Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Playing.With.Library.php" size="1193" time="2016-08-31T23:11:59+11:00" unixtime="1472645519" sha1="aa12bd07a7c60c93edf5ddea7c5a8ee6ce89e2ce" relative="Playing.With.Library.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Library" namespace="Hive\Config" name="Library" abstract="false" final="false" start="17" end="31">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Library.php" size="800" time="2017-10-25T14:40:07+11:00" unixtime="1508902807" sha1="bba505c04382ef50cfe4f6032f61767b5d96900e" relative="Library.php"/>
   <docblock>
-    <description compact="Config Library.">The actual Config library, which does the core operations.</description>
+    <description compact="Config Library,">Will give access to its ArrayIterator, at which stage anything to do with the environment
+is ready to be discarded.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
     <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
     <package value="Hive"/>
     <subpackage value="Config"/>
-    <copyright value="(c) 2016 Jamie Peake"/>
+    <copyright value="(c) 2016 Jamie  Peake"/>
   </docblock>
+  <extends full="ArrayIterator" namespace="" name="ArrayIterator"/>
   <implements full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
-  <member name="object" visibility="private" static="false" line="18"/>
-  <member name="name" visibility="private" static="false" line="23">
+  <constructor name="__construct" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
     <docblock>
-      <description/>
-      <var description="The name of the config to load" type="string"/>
+      <description compact="Item constructor.">Takes a Config Contract that throws away the environment for use as an array iterator.</description>
+      <param variable="$environment"/>
+      <param type="array" variable="$array"/>
     </docblock>
-  </member>
-  <member name="namespaces" type="array" default="" visibility="private" static="false" line="28">
-    <docblock>
-      <description/>
-      <var description="an array of namespaces to search" type="array"/>
-    </docblock>
-  </member>
-  <member name="environment" visibility="private" static="false" line="33">
-    <docblock>
-      <description/>
-      <var description="the environment" type="string"/>
-    </docblock>
-  </member>
-  <member name="default" visibility="private" static="false" line="36"/>
-  <constructor name="__construct" start="38" end="45" abstract="false" final="false" static="false" visibility="public">
-    <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="environment" byreference="false" type="{unknown}"/>
-    <parameter name="namespaces" byreference="false" type="{unknown}"/>
-    <parameter name="default" byreference="false" type="{unknown}"/>
+    <parameter name="array" byreference="false" type="array" default=""/>
   </constructor>
-  <method name="parse" start="47" end="58" abstract="false" final="false" static="false" visibility="public"/>
+  <parent full="ArrayIterator" namespace="" name="ArrayIterator">
+    <implements full="ArrayAccess" namespace="" name="ArrayAccess"/>
+    <method name="append" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Append an element"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="value" optional="false" byreference="false" type="object" class="mixed"/>
+  </method>
+    <method name="asort" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Sort array by values"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <constructor name="__construct" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Construct an ArrayIterator"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="array" optional="true" byreference="false" type="object" class="mixed"/>
+    <parameter name="flags" optional="true" byreference="false" type="int"/>
+  </constructor>
+    <method name="count" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Count elements"/>
+      <return type="int"/>
+    </docblock>
+  </method>
+    <method name="current" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Return current array entry"/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+    <method name="getArrayCopy" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Get array copy"/>
+      <return type="array"/>
+    </docblock>
+  </method>
+    <method name="getFlags" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Get flags"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <method name="key" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Return current array key"/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+    <method name="ksort" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Sort array by keys"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <method name="natcasesort" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Sort an array naturally, case insensitive"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <method name="natsort" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Sort an array naturally"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <method name="next" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Move to next entry"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <method name="offsetExists" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Check if offset exists"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="index" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="offsetGet" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Get value for an offset"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="index" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="offsetSet" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Set value for an offset"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="index" optional="false" byreference="false" type="string"/>
+    <parameter name="newval" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="offsetUnset" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Unset value for an offset"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="index" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="rewind" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Rewind array back to the start"/>
+      <return type="void"/>
+    </docblock>
+  </method>
+    <method name="seek" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Seek to position"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="position" optional="false" byreference="false" type="int"/>
+  </method>
+    <method name="serialize" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Serialize"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+    <method name="setFlags" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Set behaviour flags"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="flags" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="uasort" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="User defined sort"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="cmp_function" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="uksort" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="User defined sort"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="cmp_function" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="unserialize" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Unserialize"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="serialized" optional="false" byreference="false" type="string"/>
+  </method>
+    <method name="valid" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Check whether array contains more entries"/>
+      <return type="bool"/>
+    </docblock>
+  </method>
+  </parent>
+  <interface full="ArrayAccess" namespace="" name="ArrayAccess">
+    <method name="offsetExists" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Whether a offset exists">Whether or not an offset exists.</description>
+      <return type="boolean"/>
+    </docblock>
+    <parameter name="offset" optional="false" byreference="false" type="object" class="mixed"/>
+  </method>
+    <method name="offsetGet" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Offset to retrieve">Returns the value at specified offset.</description>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="offset" optional="false" byreference="false" type="object" class="mixed"/>
+  </method>
+    <method name="offsetSet" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Offset to set"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="offset" optional="false" byreference="false" type="object" class="mixed"/>
+    <parameter name="value" optional="false" byreference="false" type="object" class="mixed"/>
+  </method>
+    <method name="offsetUnset" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Offset to unset">Unsets an offset.</description>
+      <return type="void"/>
+    </docblock>
+    <parameter name="offset" optional="false" byreference="false" type="object" class="mixed"/>
+  </method>
+  </interface>
   <interface full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
 </class>

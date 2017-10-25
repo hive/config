@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="@project.version@" timestamp="2016-12-09T15:50:26+11:00">
-  <file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Library.php">
-    <violation beginline="24" endline="24" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+<pmd version="@project.version@" timestamp="2017-10-25T14:40:12+11:00">
+  <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Library.php">
+    <violation beginline="27" endline="27" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
       Avoid unused parameters such as '$environment'.
-    </violation>
-  </file>
-  <file name="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Playing.With.Library.php">
-    <violation beginline="18" endline="18" rule="UnusedPrivateField" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedprivatefield" priority="3">
-      Avoid unused private fields such as '$object'.
     </violation>
   </file>
 </pmd>

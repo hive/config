@@ -77,8 +77,8 @@
       </nav>
       <section>
         <h1 id="introduction"><small>Hive\Config\</small>Instance</h1>
-        <h4>Router Instance.</h4>
-        <p>Allows access to the router object through a instance.</p>
+        <h4>Config Instance.</h4>
+        <p>Allows access to the config object through a instance.</p>
         <ul>
           <li>Author: Jamie Peake &lt;jamie.peake@gmail.com&gt;</li>
           <li>Copyright: (c) 2016 Jamie  Peake</li>
@@ -91,10 +91,12 @@
                     </li><li>protected static  <a href="#members">$options</a>;
                     </li><li>public static array <a href="#members">$namespaces</a> =
                         ;
+                    </li><li>public static string <a href="#members">$type</a> =
+                        'Config';
                     </li><li>public static string <a href="#members">$environment</a> =
                         'default';
-                    </li></ul><ul class="none"><li>// methods</li><li>private static void <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/init.xhtml">init</a>()
-                    </li><li>public static void <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/__callStatic.xhtml">__callStatic</a>()
+                    </li></ul><ul class="none"><li>// methods</li><li>private static bool <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/init.xhtml">init</a>()
+                    </li><li>public static array <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/__callStatic.xhtml">__callStatic</a>()
                     </li></ul>
 
             }<br/></div>
@@ -124,24 +126,27 @@
         <div class="styled members">
           <h4>private</h4>
           <ul class="members">
-            <li id="objects">
-              <strong>$objects</strong>
-            </li>
+            <li id="objects"><strong>$objects</strong>
+                —
+                </li>
           </ul>
           <h4>protected</h4>
           <ul class="members">
-            <li id="options">
-              <strong>$options</strong>
-            </li>
+            <li id="options"><strong>$options</strong>
+                —
+                </li>
           </ul>
           <h4>public</h4>
           <ul class="members">
-            <li id="environment">
-              <strong>$environment</strong>
-            </li>
-            <li id="namespaces">
-              <strong>$namespaces</strong>
-            </li>
+            <li id="environment"><strong>$environment</strong>
+                —
+                string</li>
+            <li id="namespaces"><strong>$namespaces</strong>
+                —
+                array</li>
+            <li id="type"><strong>$type</strong>
+                —
+                string<br/><span class="indent">The name of the file type to load, defaults to config.</span></li>
           </ul>
         </div>
         <h2 id="methods">Methods</h2>
@@ -153,13 +158,132 @@
           </ul>
           <h4>public</h4>
           <ul>
-            <li id="__callStatic">
-              <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/__callStatic.xhtml">__callStatic()</a>
-            </li>
+            <li id="__callStatic"><a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/__callStatic.xhtml">__callStatic()</a>
+                — Allow direct access to an item in the config, by using arguments cal</li>
           </ul>
         </div>
         <h2 id="history">History</h2>
         <ul class="styled history">
+          <li>
+            <h3>2017-10-17T17:15:46+11:00 (commit #<span title="9ea8b0ac144c0d9043df1110b3fd945355069c51">9ea8b0a</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">added notes about inherit</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-12T12:41:55+11:00 (commit #<span title="6473be524829f5957764952bd856a52492a661e4">6473be5</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">Fix config case</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-11T19:45:03+11:00 (commit #<span title="caa6409b55c704332901618510c4f76f1620f571">caa6409</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">fixes bug where config has already been defined</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-09T14:50:19+11:00 (commit #<span title="8e5184d428076aa2848c88c25ebf512198ab725b">8e5184d</span>)</h3>
+            <div>
+              <p>
+                        Author: Your Name (you@example.com) /
+                        Commiter: Your Name (you@example.com)
+                    </p>
+              <pre class="wrapped">fix case issue on CentoS</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-09T14:17:25+11:00 (commit #<span title="bd75544cb5c4dac59bfacae8a05e9fb372eb12fe">bd75544</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">update</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-08-15T19:00:55+11:00 (commit #<span title="f0922c2bbcfdec10af260dd9088bfb6c2f6edfb5">f0922c2</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">change config merge to be recusrive</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-07-21T17:04:46+11:00 (commit #<span title="c98679b4463fc25bb7e5477a0adac0d489be9827">c98679b</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">rename exception</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-07-21T14:44:10+11:00 (commit #<span title="dfe0d0fd775c2966b63fcaa24d43fea648f6981d">dfe0d0f</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">set folder structure to lower case</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-07-21T14:41:22+11:00 (commit #<span title="caa3426891842ada6b1bf92fe51f896020bfb1e7">caa3426</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">add expcetion if config doesnt exist</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-07-19T15:42:15+11:00 (commit #<span title="c2d95bfdf53f9b17ac1ff094709beb448e5594c9">c2d95bf</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">init php 5 bridge</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-01-21T14:28:56+11:00 (commit #<span title="71d4731e6bd252ff16b98034dceb4188be2cd4ac">71d4731</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">all access to direct results from static instance</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-01-21T12:20:22+11:00 (commit #<span title="683a323a54b4d1f3ff7a91a0b13170c83190cb5f">683a323</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">composer file update</pre>
+            </div>
+          </li>
           <li>
             <h3>2016-12-09T15:38:59+11:00 (commit #<span title="9d58b2a945cf3d6e2711142a42253485de6fbc3d">9d58b2a</span>)</h3>
             <div>
@@ -174,7 +298,7 @@
       </section>
     </div>
     <footer>
-      <span>Generated using phpDox 0.8.1.1-26-g131d5d2-dirty - Copyright (C) 2010 - 2016 by Arne Blankerts</span>
+      <span>Generated using phpDox 0.8.1.1-26-g131d5d2-dirty - Copyright (C) 2010 - 2017 by Arne Blankerts</span>
     </footer>
   </body>
 </html>

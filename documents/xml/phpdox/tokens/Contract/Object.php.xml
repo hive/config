@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/config/Build/../Source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/config/Source/Contract/Object.php" size="458" time="2016-08-31T21:06:45+11:00" unixtime="1472638005" sha1="f19b90760a9885a7587252c09291f186b363c196" relative="Contract/Object.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/build/../source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Contract/Object.php" size="449" time="2017-10-25T14:36:13+11:00" unixtime="1508902573" sha1="b2e4efcc2e9342171b494a6e93d06cb581957ed0" relative="Contract/Object.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -64,8 +64,7 @@
   <line no="17">
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="18"/>
-  <line no="19">
+  <line no="18">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -73,8 +72,6 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">string</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$environment</token>
     <token name="T_PHPDOX_COMMA">,</token>
     <token name="T_WHITESPACE"> </token>
@@ -84,9 +81,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="20"/>
-  <line no="21">
+  <line no="19">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="22"/>
+  <line no="20"/>
 </source>

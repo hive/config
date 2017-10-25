@@ -15,7 +15,5 @@
  */
 interface Object extends Library
 {
-
     public function __construct($environment, array $options);
-
 }

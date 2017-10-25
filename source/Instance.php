@@ -29,7 +29,7 @@ class Instance implements Contract\Instance
     /**
      * @var array
      */
-    public  static $namespaces = [
+    public static $namespaces = [
         'Shared'
     ];
 
@@ -60,7 +60,6 @@ class Instance implements Contract\Instance
         if (isset(self::$objects[$name]))
         {
             return true;
-
         }
         else
         {
@@ -103,5 +102,4 @@ class Instance implements Contract\Instance
             return $result;
         }
     }
-
 }
