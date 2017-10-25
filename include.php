@@ -6,12 +6,17 @@
      */
 
     // Include the contracts
-    include 'Source/Contract/Library.php';
-    include 'Source/Contract/Object.php';
-    include 'Source/Contract/Instance.php';
+    include 'source/Contract/Library.php';
+    include 'source/Contract/Object.php';
+    include 'source/Contract/Instance.php';
 
-    include 'Source/Mixin/Library.php';
+    include 'source/Mixin/Library.php';
 
     // Include the source files
-    include 'Source/Library.php';
-    include 'Source/Instance.php';
+    include 'source/Library.php';
+    include 'source/Instance.php';
+
+    // Include the exceptions
+    include 'source/Exception.php';
+    include 'source/Exception/InstanceDoesNotExist.php';
+

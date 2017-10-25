@@ -1,8 +1,8 @@
 # Hive Config
-[![Latest Stable Version](https://poser.pugx.org/hive/Config/v/stable?format=flat-square)](https://packagist.org/packages/hive/Config)
-[![Latest Unstable Version](https://poser.pugx.org/hive/Config/v/unstable?format=flat-square)](https://packagist.org/packages/hive/Config)
-[![License](https://poser.pugx.org/hive/Config/license?format=flat-square)](https://packagist.org/packages/hive/Config)
-[![composer.lock](https://poser.pugx.org/hive/Config/composerlock?format=flat-square)](https://packagist.org/packages/hive/Config)
+[![Latest Stable Version](https://poser.pugx.org/hive/config/v/stable?format=flat-square)](https://packagist.org/packages/hive/config)
+[![Latest Unstable Version](https://poser.pugx.org/hive/config/v/unstable?format=flat-square)](https://packagist.org/packages/hive/config)
+[![License](https://poser.pugx.org/hive/config/license?format=flat-square)](https://packagist.org/packages/hive/config)
+[![composer.lock](https://poser.pugx.org/hive/config/composerlock?format=flat-square)](https://packagist.org/packages/hive/config)
 
 
 Simple decoupled Config, Version 1.0 currently being developed
