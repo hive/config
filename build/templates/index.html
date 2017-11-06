@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Benchmark by hive</title>
+    <title>Config by hive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://hive.github.io/config/stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://hive.github.io/benchmark/stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="https://hive.github.io/config/stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="https://hive.github.io/config/stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://hive.github.io/benchmark/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://hive.github.io/benchmark/stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" media="screen">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -19,8 +19,8 @@
 </head>
 <body>
 <section class="page-header">
-    <h1 class="project-name">Benchmark</h1>
-    <h2 class="project-tagline">Simple decoupled benchmark Library</h2>
+    <h1 class="project-name">Config</h1>
+    <h2 class="project-tagline">Simple decoupled config Library</h2>
     <a href="https://github.com/hive/config" class="btn">View on GitHub</a>
     <a href="https://github.com/hive/config/zipball/master" class="btn">Download .zip</a>
     <a href="https://github.com/hive/config/tarball/master" class="btn">Download .tar.gz</a>
@@ -28,9 +28,26 @@
 
 <section class="main-content">
     <h1>
-        <a id="config" class="anchor" href="#config" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>config</h1>
+        <a id="config" class="anchor" href="#config" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Config</h1>
 
-    <p>config</p>
+    <h3>
+        Overview
+    </h3>
+    <p>The config library allows <strong>easy</strong> access to a configuration array. Furthermore it has the following options</p>
+    <ol>
+        <li>Autoload configuration file and return an array</li>
+        <li>Instance support and easy syntax. ie. Config::Router();</li>
+        <li>Cascading, cascade the configuration options by inheritance.</li>
+        <li>Supports default values</li>
+        <li>Support Grouping, then return different results based upon which group is set. (Great for environment variables)</li>
+        <li>Full Default, Group and Cascade integration.</li>
+        <li>Easy to implement, just include use the trait.</li>
+    </ol>
+    <hr>
+
+    <h3>
+        Breakdown
+    </h3>
 
     <ul>
         <li><a class="anchor" href="html/phpdox/index.xhtml" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">API Documentation</span></a></li>
@@ -46,16 +63,16 @@
         <li><a class="anchor" href="https://github.com/hive/config/tree/master/examples" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Examples</span></a></li>
     </ul>
     <hr>
+
+
+
     <h3>
         Installing
     </h3>
-
     <p> Installing via composer (Recommended)</p>
-    <pre>
-                <code class="bash">
+    <pre><code class="bash">
 composer require Hive/config
-                </code>
-            </pre>
+                </code></pre>
 
     <p> Installing via Git </p>
     <pre>
@@ -80,39 +97,132 @@ require 'hive/config/include.php';
     <p>The code is split up into the following classes</p>
     <ol>
         <li>Library.php : The actual config library, useful for extending functionality.</li>
-        <li>Object.php : Class for accessing the config object.</li>
         <li>Instance.php : Instance of the object class.</li>
+        <li>Mixin\Library.php : The mixin to use with in your config classes..</li>
     </ol>
     <hr>
     <h3>
         Usage
     </h3>
-    <pre>
-<code class="php">
-// With in your php file, include the package loader
-require 'hive/config/include.php';
 
-use Hive\config;
+    <pre><code class="php">
+    // The configuration class
+    class Mail extends \Hive\Config\Library
+    {
+        use \Hive\Config\Mixin\Library;
 
-</code>
-</pre>
+        public static $default = [
+            'subject'   => 'Wax',
+            'from'      => 'wax@hive.com.au',
+        ];
+    }</code></pre>
+
+<pre><code class="php">
+    print_r(\Hive\Config\Instance::Mail());
+
+</code></pre>
     <p>Outputs</p>
     <pre>
 <code class="php">
+Array
+(
+    [subject] => 'Wax'
+    [from] => 'wax@hive.com.au'
+)
+</code>
+</pre>
+<hr>
+    <h3>
+       Grouping with Default Values
+    </h3>
+<pre><code class="php">
+    // The configuration class
+    class Mail extends \Hive\Config\Library
+    {
+        use \Hive\Config\Mixin\Library;
 
+        public static $default = [
+            'subject'   => 'Wax',
+            'from'      => 'wax@hive.com.au',
+        ];
+        public static $development = [
+            'from'      => 'developer@hive.com.au',
+        ];
+    }</code></pre>
+
+<pre><code class="php">
+
+    /**
+     * As the group is being set on the instance, this will remain the 'group' for all
+     * configuration instances, until changed.
+     */
+    $config         = new Config\Instance();
+    $config::$group = 'development';
+    print_r( $config::Mail() );
+
+</code></pre>
+
+    <p>Outputs</p>
+    <pre>
+<code class="php">
+Array
+(
+    [subject] => 'Wax'
+    [from] => 'developer@hive.com.au'
+)
 </code>
 </pre>
 
-
     <hr>
+
+    <p>Limitations with in php5, will cause a colliding constructor definitions with a trait named __constructor. There is an easy solution, you just have to alias the trait</p>
+    <pre><code class="php">
+
+    class Mail extends \Hive\Config\Library
+    {
+        // Use an alias for the constructor
+        use \Hive\Config\Mixin\Library
+        {
+            \Hive\Config\Mixin\Library::__construct as private construct;
+        }
+
+        public static $default = [
+            'subject'   => 'Wax',
+            'from'      => 'wax@hive.com.au',
+        ];
+
+        // Call the alias constructor
+        public function __construct($group, array $values = [])
+        {
+            self::construct($group, $values);
+        }
+
+    }</code></pre>
+    <hr>
+
+
     <h3>
         Advance
     </h3>
     <p>The config library has many many more options and features, to view them please see our <a class="anchor" href="https://github.com/hive/config/tree/master/examples" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Examples</span></a>.</p>
 
+    <h3>
+        Notes about inheriting.
+    </h3>
+    <ol>
+        <li>It is possible to inherit a config class, in which case the settings from the parent will also be inherited.</li>
+        <li>Items will give preference to themselves over parents, ie. object/$sever > object/$default > parent/$server > parent/$default</li>
+        <li>At the moment, the child is required to declare the default property if the parent uses it, otherwise it will override.</li>
+    </ol>
+
+
     <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/hive/config">config</a> is maintained by <a href="https://github.com/hive">Hive</a>.</span>
     </footer>
+
+
+
+
 
 </section>
 </body>
