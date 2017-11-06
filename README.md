@@ -92,7 +92,7 @@ require 'hive/config/include.php';
 **Print the Config**
  
  ```php    
-    print_r(\Hive\Config\Instance::Mail());
+    print_r(Config\Instance::Mail());
 ```
 
 The above example will output 
