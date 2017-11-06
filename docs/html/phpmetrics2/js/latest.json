@@ -6,15 +6,15 @@
         "relativeSystemComplexity": 2.15,
         "relativeDataComplexity": 1.15,
         "relativeStructuralComplexity": 1,
-        "volume": 48.07,
+        "volume": 51.06,
         "commentWeight": 47.48,
-        "intelligentContent": 21.03,
+        "intelligentContent": 22.49,
         "lcom": 1.2,
         "instability": 0.87,
         "afferentCoupling": 0.4,
         "efferentCoupling": 2.4,
-        "difficulty": 2.38,
-        "mi": 112.88
+        "difficulty": 2.05,
+        "mi": 112.71
     },
     "sum": {
         "loc": 221,

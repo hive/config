@@ -71,7 +71,7 @@
     </h3>
     <p> Installing via composer (Recommended)</p>
     <pre><code class="bash">
-composer require Hive/Config
+composer require Hive/config
                 </code></pre>
 
     <p> Installing via Git </p>
@@ -117,7 +117,7 @@ require 'hive/config/include.php';
         ];
     }</code></pre>
 
-    <pre><code class="php">
+<pre><code class="php">
     print_r(\Hive\Config\Instance::Mail());
 
 </code></pre>
@@ -131,11 +131,11 @@ Array
 )
 </code>
 </pre>
-    <hr>
+<hr>
     <h3>
-        Grouping with Default Values
+       Grouping with Default Values
     </h3>
-    <pre><code class="php">
+<pre><code class="php">
     // The configuration class
     class Mail extends \Hive\Config\Library
     {
@@ -150,7 +150,7 @@ Array
         ];
     }</code></pre>
 
-    <pre><code class="php">
+<pre><code class="php">
 
     /**
      * As the group is being set on the instance, this will remain the 'group' for all

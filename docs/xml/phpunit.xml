@@ -1,2 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="All" tests="7" assertions="18" failures="2" errors="1" time="0.055763">
+    <testsuite name="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" tests="7" assertions="18" failures="2" errors="1" time="0.055763">
+      <testcase name="testSanity" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="14" assertions="1" time="0.004652"/>
+      <testcase name="testSimple" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="19" assertions="6" time="0.008814"/>
+      <testcase name="testInherit" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="33" assertions="8" time="0.009913"/>
+      <testcase name="testGlobalNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="49" assertions="0" time="0.007336">
+        <error type="PHPUnit_Framework_ExceptionWrapper">testInstance::testGlobalNamespaceInstance
+Hive\Config\Exception\InstanceDoesNotExist: The config instance (MockTest) does not exist, please ensure that the config file exists and the namespace is defined.
+
+/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php:79
+/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php:93
+/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php:52
+/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php:52
+</error>
+      </testcase>
+      <testcase name="testConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="63" assertions="1" time="0.008838">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">testInstance::testConfigNamespaceInstance
+Failed asserting that false is true.
+
+/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php:67
+</failure>
+      </testcase>
+      <testcase name="testSharedConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="70" assertions="1" time="0.009008">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">testInstance::testSharedConfigNamespaceInstance
+Failed asserting that false is true.
+
+/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php:74
+</failure>
+      </testcase>
+      <testcase name="testInstanceDoesNotExistException" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="79" assertions="1" time="0.007202"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

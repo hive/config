@@ -21,7 +21,7 @@ trait Library
      * @param       $environment
      * @param array $values
      */
-    public function __construct($environment, array $values = [])
+    public function __construct($environment = 'default', array $values = [])
     {
         if (isset(self::$$environment))
         {

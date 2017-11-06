@@ -2,17 +2,55 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Instance.php">
     <totals>
-      <lines total="105" comments="47" code="58" executable="30" executed="0" percent="0.00%"/>
+      <lines total="105" comments="47" code="58" executable="19" executed="9" percent="47.37%"/>
       <methods count="2" tested="0" percent="0.00%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Instance" start="16" executable="30" executed="0" crap="56">
+    <class name="Instance" start="16" executable="19" executed="9" crap="14.14">
       <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config"/>
-      <method name="init" signature="init($name)" start="57" end="80" crap="20" executable="19" executed="0" coverage="0"/>
-      <method name="__callStatic" signature="__callStatic($name, $args)" start="90" end="104" crap="12" executable="11" executed="0" coverage="0"/>
+      <method name="init" signature="init($name)" start="58" end="80" crap="4.32" executable="11" executed="8" coverage="72.727272727273"/>
+      <method name="__callStatic" signature="__callStatic($name, $args)" start="90" end="104" crap="9.03" executable="8" executed="1" coverage="12.5"/>
     </class>
+    <coverage>
+      <line nr="61">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="62">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="67">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="69">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="71">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="72">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="76">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="79">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="93">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+    </coverage>
   </file>
 </phpunit>

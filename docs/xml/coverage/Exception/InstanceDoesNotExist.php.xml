@@ -2,16 +2,34 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="InstanceDoesNotExist.php">
     <totals>
-      <lines total="42" comments="26" code="16" executable="5" executed="0" percent="0.00%"/>
-      <methods count="1" tested="0" percent="0.00%"/>
+      <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+      <methods count="1" tested="1" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="0" percent="0.00%"/>
+      <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="InstanceDoesNotExist" start="16" executable="5" executed="0" crap="2">
+    <class name="InstanceDoesNotExist" start="16" executable="4" executed="4" crap="1">
       <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config\Exception"/>
-      <method name="__construct" signature="__construct($name)" start="35" end="41" crap="2" executable="5" executed="0" coverage="0"/>
+      <method name="__construct" signature="__construct($name)" start="35" end="41" crap="1" executable="4" executed="4" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="37">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="38">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="40">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="41">
+        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+    </coverage>
   </file>
 </phpunit>

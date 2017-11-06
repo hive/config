@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="105">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2136" time="2017-10-27T18:12:42+11:00" unixtime="1509088362" sha1="984ca352d96ef8a814f6c604f39ac0c004217d78" relative="Instance.php"/>
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2147" time="2017-11-06T14:02:12+11:00" unixtime="1509937332" sha1="313ca591386f533d65d27360cc6c5679aa470292" relative="Instance.php"/>
   <docblock>
     <description compact="Config Instance.">Allows access to the config object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -28,19 +28,19 @@
       <var type="array"/>
     </docblock>
   </member>
-  <member name="type" type="string" default="'Config'" visibility="public" static="true" line="40">
+  <member name="type" type="string" default="'Config'" visibility="public" static="true" line="41">
     <docblock>
       <description compact="The name of the file type to load, defaults to config."/>
       <var type="string"/>
     </docblock>
   </member>
-  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="45">
+  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="46">
     <docblock>
       <description/>
       <var type="string"/>
     </docblock>
   </member>
-  <method name="init" start="57" end="80" abstract="false" final="false" static="true" visibility="private">
+  <method name="init" start="58" end="80" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
       <param variable="$name"/>

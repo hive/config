@@ -30,6 +30,7 @@ class Instance implements Contract\Instance
      * @var array
      */
     public static $namespaces = [
+        '',
         'Shared'
     ];
 
@@ -74,7 +75,6 @@ class Instance implements Contract\Instance
                 }
             }
         }
-
         // We didn't find a matching class.
         throw new Exception\InstanceDoesNotExist($name);
     }
