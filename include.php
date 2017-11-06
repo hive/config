@@ -7,7 +7,6 @@
 
     // Include the contracts
     include 'source/Contract/Library.php';
-    include 'source/Contract/Object.php';
     include 'source/Contract/Instance.php';
 
     include 'source/Mixin/Library.php';

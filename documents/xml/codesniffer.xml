@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<phpcs version="2.6.1">
-<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/config/source/Library.php" errors="1" warnings="0" fixable="1">
- <error line="8" column="3" source="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine" severity="5" fixable="1">Whitespace found at end of line</error>
-</file>
-</phpcs>
-
