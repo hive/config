@@ -1,11 +1,11 @@
-<?php
+<?php namespace Config;
 
 /**
  * Class MockException
  *
- * Extend the benchmark object and force an exception
+ * Simulates a config class with in a namespace.
  */
-class MockInherit extends \MockSimple
+class MockNamespace extends \Hive\Config\Library
 {
     use \Hive\Config\Mixin\Library
     {
@@ -13,9 +13,10 @@ class MockInherit extends \MockSimple
     }
 
     public static $default = [
-        'class'     => 'MockInherit',
+        'class'   => 'MockSimple',
         'static'    => 'default',
-        'inherit'   => 'true'
+        'simple'    => 'true',
+        'namespace'    => 'Config',
     ];
 
     // Call the alias constructor

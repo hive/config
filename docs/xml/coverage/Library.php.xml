@@ -15,12 +15,38 @@
     </class>
     <coverage>
       <line nr="29">
-        <covered by="testInstance::testSimple"/>
-        <covered by="testInstance::testInherit"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testObject::testSimple"/>
+        <covered by="testObject::testExistingConfig"/>
+        <covered by="testObject::testInherit"/>
+        <covered by="testObject::testNamespace"/>
+        <covered by="testObject::testDeepNamespace"/>
       </line>
       <line nr="30">
-        <covered by="testInstance::testSimple"/>
-        <covered by="testInstance::testInherit"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testObject::testSimple"/>
+        <covered by="testObject::testExistingConfig"/>
+        <covered by="testObject::testInherit"/>
+        <covered by="testObject::testNamespace"/>
+        <covered by="testObject::testDeepNamespace"/>
       </line>
     </coverage>
   </file>

@@ -3,17 +3,30 @@
   <project name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
     <tests>
       <test name="testInstance::testSanity" size="unknown" result="0" status="PASSED"/>
-      <test name="testInstance::testSimple" size="unknown" result="0" status="PASSED"/>
-      <test name="testInstance::testInherit" size="unknown" result="0" status="PASSED"/>
-      <test name="testInstance::testGlobalNamespaceInstance" size="unknown" result="4" status="ERROR"/>
+      <test name="testInstance::testSimpleInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInheritInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testSharedConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testDualConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testExistingConfig" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testSimpleArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInheritArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInheritSameArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInheritChangedArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInstanceArgumentsDoesNotExistException" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testInstanceDoesNotExistException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testSimple" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testExistingConfig" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testInherit" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testNamespace" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testDeepNamespace" size="unknown" result="0" status="PASSED"/>
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
       <totals>
-        <lines total="299" comments="171" code="128" executable="37" executed="27" percent="72.97%"/>
-        <methods count="6" tested="4" percent="66.67%"/>
+        <lines total="313" comments="184" code="129" executable="40" executed="40" percent="100.00%"/>
+        <methods count="7" tested="7" percent="100.00%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="4" tested="4" percent="100.00%"/>
+        <classes count="4" tested="5" percent="125.00%"/>
         <traits count="1" tested="0" percent="0.00%"/>
       </totals>
       <directory name="Contract">
@@ -99,10 +112,10 @@
       </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="105" comments="47" code="58" executable="19" executed="9" percent="47.37%"/>
-          <methods count="2" tested="0" percent="0.00%"/>
+          <lines total="119" comments="60" code="59" executable="22" executed="22" percent="100.00%"/>
+          <methods count="3" tested="3" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>

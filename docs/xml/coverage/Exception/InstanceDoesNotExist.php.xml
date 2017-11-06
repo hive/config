@@ -15,19 +15,19 @@
     </class>
     <coverage>
       <line nr="37">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="38">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="40">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="41">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
     </coverage>

@@ -30,17 +30,18 @@ class Instance implements Contract\Instance
      * @var array
      */
     public static $namespaces = [
-        '',
-        'Shared'
+        '',         // Check Globally
     ];
 
     /**
      * The name of the file type to load, defaults to config.
      * @var string
+     * @todo This should be removed.
      */
     public static $type = 'Config';
 
     /**
+     * @todo rename to 'group', for a more generic use of it.
      * @var string
      */
     public static $environment = 'default';
@@ -57,16 +58,17 @@ class Instance implements Contract\Instance
      */
     private static function init($name)
     {
-
+        // Does the object already exist
         if (isset(self::$objects[$name]))
         {
             return true;
         }
         else
         {
+            // Loop through all of our namespaces looking for the config.
             foreach (self::$namespaces as $namespace)
             {
-                $class = '\\'  . $namespace . '\\' . self::$type . '\\' . $name;
+                $class =  $namespace .  '\\' . $name;
 
                 if (class_exists($class))
                 {
@@ -75,6 +77,7 @@ class Instance implements Contract\Instance
                 }
             }
         }
+
         // We didn't find a matching class.
         throw new Exception\InstanceDoesNotExist($name);
     }
@@ -89,6 +92,7 @@ class Instance implements Contract\Instance
      */
     public static function __callStatic($name, $args)
     {
+        $result = false;
 
         if (self::init($name))
         {
@@ -98,8 +102,18 @@ class Instance implements Contract\Instance
             {
                 $result = $result[$arg];
             }
-
-            return $result;
         }
+
+        return $result;
+    }
+
+    /**
+     * Allows the destruction of the instance.
+     *
+     * This is used for Unit testing the instance.
+     */
+    public static function destroy()
+    {
+        self::$objects = null;
     }
 }

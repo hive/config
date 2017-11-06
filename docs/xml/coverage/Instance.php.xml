@@ -2,53 +2,276 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Instance.php">
     <totals>
-      <lines total="105" comments="47" code="58" executable="19" executed="9" percent="47.37%"/>
-      <methods count="2" tested="0" percent="0.00%"/>
+      <lines total="119" comments="60" code="59" executable="22" executed="22" percent="100.00%"/>
+      <methods count="3" tested="3" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="0" percent="0.00%"/>
+      <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Instance" start="16" executable="19" executed="9" crap="14.14">
+    <class name="Instance" start="16" executable="22" executed="22" crap="8">
       <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config"/>
-      <method name="init" signature="init($name)" start="58" end="80" crap="4.32" executable="11" executed="8" coverage="72.727272727273"/>
-      <method name="__callStatic" signature="__callStatic($name, $args)" start="90" end="104" crap="9.03" executable="8" executed="1" coverage="12.5"/>
+      <method name="init" signature="init($name)" start="59" end="83" crap="4" executable="11" executed="11" coverage="100"/>
+      <method name="__callStatic" signature="__callStatic($name, $args)" start="93" end="108" crap="3" executable="9" executed="9" coverage="100"/>
+      <method name="destroy" signature="destroy()" start="115" end="118" crap="1" executable="2" executed="2" coverage="100"/>
     </class>
     <coverage>
-      <line nr="61">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
-        <covered by="testInstance::testInstanceDoesNotExistException"/>
-      </line>
       <line nr="62">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="67">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+      <line nr="63">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="64">
+        <covered by="testInstance::testExistingConfig"/>
       </line>
       <line nr="69">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="71">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="72">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+      <line nr="73">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="74">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="75">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
       </line>
       <line nr="76">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="78">
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="79">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+      <line nr="82">
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="93">
-        <covered by="testInstance::testGlobalNamespaceInstance"/>
+      <line nr="95">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="97">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="98">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="99">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="101">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="103">
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="104">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="105">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="107">
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+      </line>
+      <line nr="117">
+        <covered by="testInstance::testSanity"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="118">
+        <covered by="testInstance::testSanity"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
     </coverage>

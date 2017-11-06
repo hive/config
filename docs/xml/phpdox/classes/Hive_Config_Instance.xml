@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="105">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2147" time="2017-11-06T14:02:12+11:00" unixtime="1509937332" sha1="313ca591386f533d65d27360cc6c5679aa470292" relative="Instance.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="119">
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2566" time="2017-11-06T15:49:20+11:00" unixtime="1509943760" sha1="1f05582e1548de02a6853dc57bf3337fc0bf5336" relative="Instance.php"/>
   <docblock>
     <description compact="Config Instance.">Allows access to the config object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -32,15 +32,17 @@
     <docblock>
       <description compact="The name of the file type to load, defaults to config."/>
       <var type="string"/>
+      <todo value="This should be removed."/>
     </docblock>
   </member>
-  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="46">
+  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="47">
     <docblock>
       <description/>
+      <todo value="rename to 'group', for a more generic use of it."/>
       <var type="string"/>
     </docblock>
   </member>
-  <method name="init" start="58" end="80" abstract="false" final="false" static="true" visibility="private">
+  <method name="init" start="59" end="83" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
       <param variable="$name"/>
@@ -53,10 +55,11 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="We didn't find a matching class." line="78"/>
+      <comment value="Does the object already exist" line="61"/>
+      <comment value="We didn't find a matching class." line="81"/>
     </inline>
   </method>
-  <method name="__callStatic" start="90" end="104" abstract="false" final="false" static="true" visibility="public">
+  <method name="__callStatic" start="93" end="108" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Allow direct access to an item in the config, by using arguments cal"/>
       <param variable="$name"/>
@@ -65,6 +68,11 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="destroy" start="115" end="118" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Allows the destruction of the instance.">This is used for Unit testing the instance.</description>
+    </docblock>
   </method>
   <interface full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
 </class>

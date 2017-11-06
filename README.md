@@ -166,12 +166,18 @@ The above example will output
     * It is possible to inherit a config class, in which case the settings from the parent will also be inherited.
     * Items will give preference to themselves over parents, ie. object/$sever > object/$default > parent/$server > parent/$default
     * At the moment, the child is required to declare the default property if the parent uses it, otherwise it will override.
+ * TravisCI is currently showing a pass regardless of whether or not the unit tests fail, however it is actually currently passing. 
     
 #### Outstanding
 
-  * Unit Cases
+  * Unit Cases has met minimum exception testing at 100% code coverage, however outstanding
+    * Group Testing
+    * Inheritance Groups
+    * Deep array, and their use of an instance with the static arguments. 
   * Examples
   * Rename internal environment variable to group    
+  * Submit to packagist
+  * Tag.  
  
 ## Advance 
 
