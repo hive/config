@@ -2,6 +2,7 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <project name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
     <tests>
+      <test name="testDebug::testInheritNested" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testSanity" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testSimpleInstance" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testInheritInstance" size="unknown" result="0" status="PASSED"/>
@@ -14,12 +15,17 @@
       <test name="testInstance::testInheritSameArguments" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testInheritChangedArguments" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testInstanceArgumentsDoesNotExistException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInheritNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testNestedArguments" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testInstanceDoesNotExistException" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testSimple" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testExistingConfig" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testInherit" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testNamespace" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testDeepNamespace" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testInheritNested" size="unknown" result="0" status="PASSED"/>
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
       <totals>

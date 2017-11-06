@@ -200,11 +200,130 @@ class testInstance extends base
 
         $instance = new \hive\Config\Instance();
 
-        $class = $instance::BABABABA('class');
+        $instance::BABABABA('class');
 
 
     }
 
+    /**
+     * @expects
+     * public static $default = [
+     *   'class'     => 'MockNested',
+     *   'static'    => 'default',
+     *   'simple'    => 'false',
+     *   'nest'      => [
+     *      'name'  => 'MockNested',
+     *      'detail' => [
+     *          'type'      => 'nested',
+     *          'parent'    => 'none',
+     *          'ignore'    => 'true',
+     *          'override'  => 'false',
+     *      ]
+     *   ]
+     * ];
+     */
+    public function testNested()
+    {
+        $instance = new \hive\Config\Instance();
+
+        $result = $instance::MockNested();
+
+        $this->assertArrayHasKey('class', $result);
+        $this->assertArrayHasKey('static', $result);
+        $this->assertArrayHasKey('simple', $result);
+        $this->assertArrayHasKey('nest', $result);
+        $this->assertArrayHasKey('name', $result['nest']);
+        $this->assertArrayHasKey('detail', $result['nest']);
+        $this->assertArrayHasKey('type', $result['nest']['detail']);
+        $this->assertArrayHasKey('parent', $result['nest']['detail']);
+        $this->assertArrayHasKey('ignore', $result['nest']['detail']);
+        $this->assertArrayHasKey('override', $result['nest']['detail']);
+
+        $this->assertEquals('MockNested', $result['class']);
+        $this->assertEquals('default', $result['static']);
+        $this->assertEquals('false', $result['simple']);
+        $this->assertEquals('MockNested', $result['nest']['name']);
+        $this->assertEquals('nested', $result['nest']['detail']['type']);
+        $this->assertEquals('none', $result['nest']['detail']['parent']);
+        $this->assertEquals('true', $result['nest']['detail']['ignore']);
+        $this->assertEquals('false', $result['nest']['detail']['override']);
+    }
+
+
+    /**
+     * @expects
+     * public static $default = [
+     *   'class'     => 'MockInheritNested',
+     *   'static'    => 'default',
+     *   'simple'    => 'false',
+     *   'nest'      => [
+     *      'name'  => 'MockInheritNested',
+     *      'detail' => [
+     *          'type'      => 'nested',
+     *          'parent'    => 'MockNested',
+     *          'ignore'    => 'true',
+     *          'override'  => 'true',
+     *      ]
+     *   ]
+     * ];
+     */
+    public function testInheritNested()
+    {
+        $instance = new \hive\Config\Instance();
+
+        $result = $instance::MockInheritNested();
+
+        $this->assertArrayHasKey('class', $result);
+        $this->assertArrayHasKey('static', $result);
+        $this->assertArrayHasKey('simple', $result);
+        $this->assertArrayHasKey('nest', $result);
+        $this->assertArrayHasKey('name', $result['nest']);
+        $this->assertArrayHasKey('detail', $result['nest']);
+        $this->assertArrayHasKey('type', $result['nest']['detail']);
+        $this->assertArrayHasKey('parent', $result['nest']['detail']);
+        $this->assertArrayHasKey('ignore', $result['nest']['detail']);
+        $this->assertArrayHasKey('override', $result['nest']['detail']);
+
+        $this->assertEquals('MockInheritNested', $result['class']);
+        $this->assertEquals('default', $result['static']);
+        $this->assertEquals('false', $result['simple']);
+        $this->assertEquals('MockInheritNested', $result['nest']['name']);
+        $this->assertEquals('nested', $result['nest']['detail']['type']);
+        $this->assertEquals('MockNested', $result['nest']['detail']['parent']);
+        $this->assertEquals('true', $result['nest']['detail']['ignore']);
+        $this->assertEquals('true', $result['nest']['detail']['override']);
+    }
+
+
+    public function testNestedArguments()
+    {
+        $instance = new \hive\Config\Instance();
+
+        $result = $instance::MockNested('class');
+        $this->assertEquals('MockNested', $result);
+
+        $result = $instance::MockNested('nest', 'name');
+        $this->assertEquals('MockNested', $result);
+
+        $result = $instance::MockNested('nest', 'detail');
+        $this->assertArrayHasKey('type', $result);
+        $this->assertArrayHasKey('parent', $result);
+        $this->assertArrayHasKey('ignore', $result);
+        $this->assertArrayHasKey('override', $result);
+
+        $result = $instance::MockNested('nest', 'detail', 'type');
+        $this->assertEquals('nested', $result);
+
+        $result = $instance::MockNested('nest', 'detail', 'parent');
+        $this->assertEquals('none', $result);
+
+        $result = $instance::MockNested('nest', 'detail', 'ignore');
+        $this->assertEquals('true', $result);
+
+        $result = $instance::MockNested('nest', 'detail', 'override');
+        $this->assertEquals('false', $result);
+
+    }
 
 
 

@@ -44,7 +44,7 @@ Spaces after control structure open parenthesis: [4m0[0m [7/7, 100%]
 Spaces before control structure close parenthesis: [4m0[0m [7/7, 100%]
 
 ----------------------------------------------------------------------
-Time: 483ms; Memory: 5Mb
+Time: 118ms; Memory: 5Mb
 
 
 [1mFILE: ...apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php[0m
@@ -87,7 +87,7 @@ Time: 483ms; Memory: 5Mb
  26 | [33mWARNING[0m | Line exceeds 120 characters; contains 138 characters
 ----------------------------------------------------------------------
 
-Time: 495ms; Memory: 5Mb
+Time: 118ms; Memory: 5Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -104,7 +104,7 @@ Time: 495ms; Memory: 5Mb
 [1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (9 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 495ms; Memory: 5Mb
+Time: 118ms; Memory: 5Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
@@ -120,5 +120,5 @@ Time: 495ms; Memory: 5Mb
 [1mPHPCBF CAN FIX 9 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 496ms; Memory: 5Mb
+Time: 119ms; Memory: 5Mb
 

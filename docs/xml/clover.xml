@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1509943771">
-  <project timestamp="1509943771">
+<coverage generated="1509952981">
+  <project timestamp="1509952981">
     <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Contract/Instance.php">
       <metrics loc="19" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -21,40 +21,40 @@
         <class name="Instance" namespace="Hive\Config" fullPackage="Hive.Config" package="Hive" subpackage="Config">
           <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="25" coveredelements="25"/>
         </class>
-        <line num="59" type="method" name="init" crap="4" count="12"/>
-        <line num="62" type="stmt" count="12"/>
-        <line num="63" type="stmt" count="12"/>
-        <line num="64" type="stmt" count="1"/>
-        <line num="69" type="stmt" count="12"/>
-        <line num="71" type="stmt" count="12"/>
-        <line num="73" type="stmt" count="12"/>
-        <line num="74" type="stmt" count="12"/>
-        <line num="75" type="stmt" count="10"/>
-        <line num="76" type="stmt" count="10"/>
+        <line num="59" type="method" name="init" crap="4" count="16"/>
+        <line num="62" type="stmt" count="16"/>
+        <line num="63" type="stmt" count="16"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="16"/>
+        <line num="71" type="stmt" count="16"/>
+        <line num="73" type="stmt" count="16"/>
+        <line num="74" type="stmt" count="16"/>
+        <line num="75" type="stmt" count="14"/>
+        <line num="76" type="stmt" count="14"/>
         <line num="78" type="stmt" count="5"/>
         <line num="82" type="stmt" count="2"/>
-        <line num="93" type="method" name="__callStatic" crap="3" count="12"/>
-        <line num="95" type="stmt" count="12"/>
-        <line num="97" type="stmt" count="12"/>
-        <line num="98" type="stmt" count="10"/>
-        <line num="99" type="stmt" count="10"/>
-        <line num="101" type="stmt" count="10"/>
-        <line num="103" type="stmt" count="4"/>
-        <line num="104" type="stmt" count="10"/>
-        <line num="105" type="stmt" count="10"/>
-        <line num="107" type="stmt" count="10"/>
-        <line num="115" type="method" name="destroy" crap="1" count="13"/>
-        <line num="117" type="stmt" count="13"/>
-        <line num="118" type="stmt" count="13"/>
+        <line num="93" type="method" name="__callStatic" crap="3" count="16"/>
+        <line num="95" type="stmt" count="16"/>
+        <line num="97" type="stmt" count="16"/>
+        <line num="98" type="stmt" count="14"/>
+        <line num="99" type="stmt" count="14"/>
+        <line num="101" type="stmt" count="14"/>
+        <line num="103" type="stmt" count="5"/>
+        <line num="104" type="stmt" count="14"/>
+        <line num="105" type="stmt" count="14"/>
+        <line num="107" type="stmt" count="14"/>
+        <line num="115" type="method" name="destroy" crap="1" count="17"/>
+        <line num="117" type="stmt" count="17"/>
+        <line num="118" type="stmt" count="17"/>
         <metrics loc="119" ncloc="59" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="25" coveredelements="25"/>
       </file>
       <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php">
         <class name="Library" namespace="Hive\Config" fullPackage="Hive.Config" package="Hive" subpackage="Config">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
-        <line num="27" type="method" name="__construct" crap="1" count="15"/>
-        <line num="29" type="stmt" count="15"/>
-        <line num="30" type="stmt" count="15"/>
+        <line num="27" type="method" name="__construct" crap="1" count="21"/>
+        <line num="29" type="stmt" count="21"/>
+        <line num="30" type="stmt" count="21"/>
         <metrics loc="31" ncloc="9" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
     </package>
@@ -76,17 +76,17 @@
         <class name="Library" namespace="Hive\Config\Mixin" fullPackage="Hive.Config" package="Hive" subpackage="Config">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
         </class>
-        <line num="24" type="method" name="__construct" crap="3" count="15"/>
-        <line num="26" type="stmt" count="15"/>
-        <line num="27" type="stmt" count="15"/>
-        <line num="28" type="stmt" count="15"/>
-        <line num="29" type="stmt" count="15"/>
-        <line num="31" type="stmt" count="15"/>
-        <line num="32" type="stmt" count="15"/>
-        <line num="33" type="stmt" count="15"/>
-        <line num="34" type="stmt" count="15"/>
-        <line num="36" type="stmt" count="15"/>
-        <line num="38" type="stmt" count="15"/>
+        <line num="24" type="method" name="__construct" crap="3" count="21"/>
+        <line num="26" type="stmt" count="21"/>
+        <line num="27" type="stmt" count="21"/>
+        <line num="28" type="stmt" count="21"/>
+        <line num="29" type="stmt" count="21"/>
+        <line num="31" type="stmt" count="21"/>
+        <line num="32" type="stmt" count="21"/>
+        <line num="33" type="stmt" count="21"/>
+        <line num="34" type="stmt" count="21"/>
+        <line num="36" type="stmt" count="21"/>
+        <line num="38" type="stmt" count="21"/>
         <metrics loc="39" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
       </file>
     </package>

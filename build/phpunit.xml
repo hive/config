@@ -5,6 +5,9 @@
         <testsuite name="All">
             <directory suffix='.php'>../tests/PHPUnit/</directory>
         </testsuite>
+        <testsuite name="Debug">
+            <file>../tests/PHPUnit/DebugTest.php</file>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist>
