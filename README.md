@@ -1,4 +1,4 @@
-# Hive Benchmark
+# Hive Config
 [![Latest Stable Version](https://poser.pugx.org/hive/config/v/stable?format=flat-square)](https://packagist.org/packages/hive/config)
 [![Latest Unstable Version](https://poser.pugx.org/hive/config/v/unstable?format=flat-square)](https://packagist.org/packages/hive/config)
 [![License](https://poser.pugx.org/hive/config/license?format=flat-square)](https://packagist.org/packages/hive/config)
@@ -89,7 +89,7 @@ require 'hive/config/include.php';
  
  ```
  
-**Get the Config**
+**Print the Config**
  
  ```php    
     print_r(\Hive\Config\Instance::Mail());
@@ -132,7 +132,7 @@ The above example will output
 ```
 
 
-**Get the Config**
+**Print the Config**
 
 ```php
 
@@ -161,7 +161,7 @@ The above example will output
 ## Notes
 
  * PhpMetrics scores are not currently taking into account phpUnit test or code coverage.  
- * Limitations with in php5, will cause a colliding constructor definitions with a trait named __constructor. There is an easy solution, you just have to alias the trait, see out [example](https://github.com/hive/config/tree/master/examples
+ * Limitations with in php5, will cause a colliding constructor definitions with a trait named __constructor. There is an easy solution, you just have to alias the trait, see out [example](https://github.com/hive/config/tree/master/examples)
  * Notes about inheriting.
     * It is possible to inherit a config class, in which case the settings from the parent will also be inherited.
     * Items will give preference to themselves over parents, ie. object/$sever > object/$default > parent/$server > parent/$default
