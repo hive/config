@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="25" assertions="200" failures="0" errors="0" time="0.188499">
-    <testsuite name="All" tests="25" assertions="200" failures="0" errors="0" time="0.188499">
-      <testsuite name="testDebug" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/DebugTest.php" tests="1" assertions="18" failures="0" errors="0" time="0.010738">
-        <testcase name="testInheritNested" class="testDebug" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/DebugTest.php" line="30" assertions="18" time="0.010738"/>
+  <testsuite name="" tests="25" assertions="200" failures="0" errors="0" time="0.187787">
+    <testsuite name="All" tests="25" assertions="200" failures="0" errors="0" time="0.187787">
+      <testsuite name="testDebug" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/DebugTest.php" tests="1" assertions="18" failures="0" errors="0" time="0.009771">
+        <testcase name="testInheritNested" class="testDebug" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/DebugTest.php" line="30" assertions="18" time="0.009771"/>
       </testsuite>
-      <testsuite name="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" tests="16" assertions="103" failures="0" errors="0" time="0.115793">
-        <testcase name="testSanity" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="14" assertions="1" time="0.005254"/>
-        <testcase name="testSimpleInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="19" assertions="6" time="0.007662"/>
-        <testcase name="testInheritInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="33" assertions="8" time="0.008106"/>
-        <testcase name="testConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="51" assertions="8" time="0.007285"/>
-        <testcase name="testSharedConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="75" assertions="8" time="0.007940"/>
-        <testcase name="testDualConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="100" assertions="8" time="0.008639"/>
-        <testcase name="testExistingConfig" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="125" assertions="12" time="0.009383"/>
-        <testcase name="testSimpleArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="153" assertions="1" time="0.005234"/>
-        <testcase name="testInheritArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="164" assertions="1" time="0.006366"/>
-        <testcase name="testInheritSameArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="174" assertions="1" time="0.006549"/>
-        <testcase name="testInheritChangedArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="186" assertions="1" time="0.004445"/>
-        <testcase name="testInstanceArgumentsDoesNotExistException" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="197" assertions="1" time="0.006006"/>
-        <testcase name="testNested" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="225" assertions="18" time="0.010122"/>
-        <testcase name="testInheritNested" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="270" assertions="18" time="0.010111"/>
-        <testcase name="testNestedArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="298" assertions="10" time="0.007308"/>
-        <testcase name="testInstanceDoesNotExistException" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="330" assertions="1" time="0.005383"/>
+      <testsuite name="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" tests="16" assertions="103" failures="0" errors="0" time="0.115366">
+        <testcase name="testSanity" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="14" assertions="1" time="0.005240"/>
+        <testcase name="testSimpleInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="19" assertions="6" time="0.007824"/>
+        <testcase name="testInheritInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="33" assertions="8" time="0.006842"/>
+        <testcase name="testConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="51" assertions="8" time="0.006610"/>
+        <testcase name="testSharedConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="75" assertions="8" time="0.007396"/>
+        <testcase name="testDualConfigNamespaceInstance" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="100" assertions="8" time="0.009652"/>
+        <testcase name="testExistingConfig" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="125" assertions="12" time="0.010177"/>
+        <testcase name="testSimpleArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="153" assertions="1" time="0.005000"/>
+        <testcase name="testInheritArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="164" assertions="1" time="0.005824"/>
+        <testcase name="testInheritSameArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="174" assertions="1" time="0.005771"/>
+        <testcase name="testInheritChangedArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="186" assertions="1" time="0.004593"/>
+        <testcase name="testInstanceArgumentsDoesNotExistException" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="197" assertions="1" time="0.006478"/>
+        <testcase name="testNested" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="225" assertions="18" time="0.010765"/>
+        <testcase name="testInheritNested" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="270" assertions="18" time="0.009354"/>
+        <testcase name="testNestedArguments" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="298" assertions="10" time="0.007317"/>
+        <testcase name="testInstanceDoesNotExistException" class="testInstance" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/InstanceTest.php" line="330" assertions="1" time="0.006523"/>
       </testsuite>
-      <testsuite name="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" tests="8" assertions="79" failures="0" errors="0" time="0.061969">
-        <testcase name="testSanity" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="14" assertions="1" time="0.004191"/>
-        <testcase name="testSimple" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="19" assertions="6" time="0.006748"/>
-        <testcase name="testExistingConfig" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="33" assertions="12" time="0.007482"/>
-        <testcase name="testInherit" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="58" assertions="8" time="0.006831"/>
-        <testcase name="testNamespace" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="74" assertions="8" time="0.007799"/>
-        <testcase name="testDeepNamespace" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="89" assertions="8" time="0.006456"/>
-        <testcase name="testNested" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="120" assertions="18" time="0.010353"/>
-        <testcase name="testInheritNested" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="164" assertions="18" time="0.012109"/>
+      <testsuite name="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" tests="8" assertions="79" failures="0" errors="0" time="0.062649">
+        <testcase name="testSanity" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="14" assertions="1" time="0.005460"/>
+        <testcase name="testSimple" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="19" assertions="6" time="0.005582"/>
+        <testcase name="testExistingConfig" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="33" assertions="12" time="0.007459"/>
+        <testcase name="testInherit" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="58" assertions="8" time="0.008083"/>
+        <testcase name="testNamespace" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="74" assertions="8" time="0.008664"/>
+        <testcase name="testDeepNamespace" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="89" assertions="8" time="0.006218"/>
+        <testcase name="testNested" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="120" assertions="18" time="0.010694"/>
+        <testcase name="testInheritNested" class="testObject" file="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/tests/PHPUnit/ObjectTest.php" line="164" assertions="18" time="0.010490"/>
       </testsuite>
     </testsuite>
   </testsuite>
