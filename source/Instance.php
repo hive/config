@@ -34,11 +34,11 @@ class Instance implements Contract\Instance
     ];
 
     /**
-     * The name of the file type to load, defaults to config.
+     * The name of the file type to load, defaults to empty.
+     * allows for the automatic namespace, ie all configs are with in the Config namespace.
      * @var string
-     * @todo This should be removed.
      */
-    public static $type = 'Config';
+    public static $type = false;
 
     /**
      * @todo rename to 'group', for a more generic use of it.
@@ -68,7 +68,8 @@ class Instance implements Contract\Instance
             // Loop through all of our namespaces looking for the config.
             foreach (self::$namespaces as $namespace)
             {
-                $class =  $namespace .  '\\' . $name;
+                // build the class from the namespaces, type and name.
+                $class =  $namespace .  '\\' . ((self::$type) ?  (self::$type . '\\' ) : '') . $name;
 
                 if (class_exists($class))
                 {
@@ -92,6 +93,7 @@ class Instance implements Contract\Instance
      */
     public static function __callStatic($name, $args)
     {
+
         $result = false;
 
         if (self::init($name))
