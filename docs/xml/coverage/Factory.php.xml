@@ -2,18 +2,284 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Factory.php">
     <totals>
-      <lines total="103" comments="65" code="38" executable="22" executed="0" percent="0.00%"/>
-      <methods count="3" tested="0" percent="0.00%"/>
+      <lines total="101" comments="65" code="36" executable="14" executed="14" percent="100.00%"/>
+      <methods count="3" tested="3" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="0" percent="0.00%"/>
+      <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Factory" start="18" executable="22" executed="0" crap="56">
+    <class name="Factory" start="18" executable="14" executed="14" crap="7">
       <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config"/>
-      <method name="__construct" signature="__construct(array $config = [])" start="48" end="56" crap="2" executable="3" executed="0" coverage="0"/>
-      <method name="load" signature="load($name)" start="67" end="81" crap="20" executable="11" executed="0" coverage="0"/>
-      <method name="__call" signature="__call($name, $args)" start="93" end="102" crap="6" executable="8" executed="0" coverage="0"/>
+      <method name="__construct" signature="__construct(array $config = [])" start="48" end="54" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="load" signature="load($name)" start="65" end="79" crap="4" executable="7" executed="7" coverage="100"/>
+      <method name="__call" signature="__call($name, $args)" start="91" end="100" crap="2" executable="5" executed="5" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="53">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="54">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="68">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="71">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="72">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="73">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="74">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+      </line>
+      <line nr="76">
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="78">
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="93">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+      </line>
+      <line nr="95">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+      </line>
+      <line nr="97">
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+      </line>
+      <line nr="98">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+      </line>
+      <line nr="99">
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+      </line>
+    </coverage>
   </file>
 </phpunit>

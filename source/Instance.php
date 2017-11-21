@@ -56,12 +56,12 @@ class Instance implements Contract\Instance
      * @throws Exception\InstanceDoesNotExist
      * @return bool
      */
-    private static function init($name)
+    public static function load($name)
     {
         // Does the object already exist
         if (isset(self::$objects[$name]))
         {
-            return true;
+            return self::$objects[$name];
         }
         else
         {
@@ -74,7 +74,7 @@ class Instance implements Contract\Instance
                 if (class_exists($class))
                 {
                     self::$objects[$name] = new $class(self::$environment);
-                    return true;
+                    return self::$objects[$name];
                 }
             }
         }
@@ -96,7 +96,7 @@ class Instance implements Contract\Instance
 
         $result = false;
 
-        if (self::init($name))
+        if (self::load($name))
         {
             $result = iterator_to_array(self::$objects[$name]);
 

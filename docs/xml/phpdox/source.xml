@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
-    <file name="Factory.php" size="3039" time="2017-11-21T17:03:52+11:00" unixtime="1511244232" sha1="f3f7b460833048b37f7e0295371a44f015e6bcd8" xml="tokens/Factory.php.xml"/>
-    <file name="Instance.php" size="2737" time="2017-11-08T14:09:21+11:00" unixtime="1510110561" sha1="1f94d49e7476ccd4bc6d6efc330be77d1046ec32" xml="tokens/Instance.php.xml"/>
+    <file name="Factory.php" size="3037" time="2017-11-21T17:21:50+11:00" unixtime="1511245310" sha1="99ec71f5b8b5582c7ba75e6dd7c3e9b6d6761620" xml="tokens/Factory.php.xml"/>
+    <file name="Instance.php" size="2770" time="2017-11-21T17:26:29+11:00" unixtime="1511245589" sha1="81290f13d73cd5e68c2a7315a1f1011ac23ef600" xml="tokens/Instance.php.xml"/>
     <dir name="Contract">
       <file name="Factory.php" size="532" time="2017-11-21T16:53:53+11:00" unixtime="1511243633" sha1="2d4a4a6e8abba733a855b14b8ae17adcf177424c" xml="tokens/Contract/Factory.php.xml"/>
       <file name="Instance.php" size="362" time="2017-10-27T18:12:42+11:00" unixtime="1509088362" sha1="4b5f051ae534802a3c8eb2a7a1173bd423ff7e1a" xml="tokens/Contract/Instance.php.xml"/>

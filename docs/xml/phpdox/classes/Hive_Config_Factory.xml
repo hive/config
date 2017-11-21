@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Factory" namespace="Hive\Config" name="Factory" abstract="false" final="false" start="18" end="103">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="3039" time="2017-11-21T17:03:52+11:00" unixtime="1511244232" sha1="f3f7b460833048b37f7e0295371a44f015e6bcd8" relative="Factory.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Factory" namespace="Hive\Config" name="Factory" abstract="false" final="false" start="18" end="101">
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="3037" time="2017-11-21T17:21:50+11:00" unixtime="1511245310" sha1="99ec71f5b8b5582c7ba75e6dd7c3e9b6d6761620" relative="Factory.php"/>
   <docblock>
     <description compact="Config Instance.">Allows access to a configuration class through a factory.</description>
     <todo value="1.1.0.0 add the ability to use config drivers, return as object||array."/>
@@ -25,7 +25,7 @@
       <placeholder/>
     </docblock>
   </member>
-  <constructor name="__construct" start="48" end="56" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="48" end="54" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Library constructor."/>
       <param type="array" variable="$config"/>
@@ -35,10 +35,10 @@
     </docblock>
     <parameter name="config" byreference="false" type="array" default=""/>
     <inline>
-      <comment value="Merge the received config with the defaults." line="51"/>
+      <comment value="Merge the received config with the defaults." line="50"/>
     </inline>
   </constructor>
-  <method name="load" start="67" end="81" abstract="false" final="false" static="false" visibility="public">
+  <method name="load" start="65" end="79" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Loads a config class and returns its object."/>
       <param description="the name of which config to load." type="string" variable="$name"/>
@@ -51,11 +51,11 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Loop through all of our namespaces looking for the config." line="69"/>
-      <comment value="We didn't find a matching class." line="79"/>
+      <comment value="Loop through all of our namespaces looking for the config." line="67"/>
+      <comment value="We didn't find a matching class." line="77"/>
     </inline>
   </method>
-  <method name="__call" start="93" end="102" abstract="false" final="false" static="false" visibility="public">
+  <method name="__call" start="91" end="100" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Allow direct access to an item in the config, by using arguments">Will load the factory then filter to the result you want.</description>
       <param description="which config class to load" type="string" variable="$name"/>
@@ -70,12 +70,12 @@
   <interface full="Hive\Config\Contract\Factory" namespace="Hive\Config\Contract" name="Factory">
     <extends full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
     <method name="load" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
-      <docblock>
-        <description compact="Load a config"/>
-        <param description="the config to get." type="string" variable="$name"/>
-        <return type="array"/>
-      </docblock>
-      <parameter name="name" byreference="false" type="{unknown}"/>
-    </method>
+    <docblock>
+      <description compact="Load a config"/>
+      <param description="the config to get." type="string" variable="$name"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
   </interface>
 </class>

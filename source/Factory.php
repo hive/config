@@ -47,12 +47,10 @@ class Factory implements Contract\Factory
      */
     public function __construct(array $config = [])
     {
-
         /**
          * Merge the received config with the defaults.
          */
         $this->config = array_merge($this->config, $config);
-
     }
 
     /**

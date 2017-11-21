@@ -2,7 +2,7 @@
 <phploc>
   <directories>3</directories>
   <files>10</files>
-  <loc>488</loc>
+  <loc>486</loc>
   <lloc>52</lloc>
   <llocClasses>42</llocClasses>
   <llocFunctions>0</llocFunctions>
@@ -19,8 +19,8 @@
   <namedFunctions>0</namedFunctions>
   <anonymousFunctions>0</anonymousFunctions>
   <methods>12</methods>
-  <publicMethods>11</publicMethods>
-  <nonPublicMethods>1</nonPublicMethods>
+  <publicMethods>12</publicMethods>
+  <nonPublicMethods>0</nonPublicMethods>
   <nonStaticMethods>9</nonStaticMethods>
   <staticMethods>3</staticMethods>
   <constants>6</constants>
@@ -33,8 +33,8 @@
   <methodCalls>7</methodCalls>
   <staticMethodCalls>6</staticMethodCalls>
   <instanceMethodCalls>1</instanceMethodCalls>
-  <attributeAccesses>16</attributeAccesses>
-  <staticAttributeAccesses>10</staticAttributeAccesses>
+  <attributeAccesses>18</attributeAccesses>
+  <staticAttributeAccesses>12</staticAttributeAccesses>
   <instanceAttributeAccesses>6</instanceAttributeAccesses>
   <globalAccesses>0</globalAccesses>
   <globalVariableAccesses>0</globalVariableAccesses>
@@ -53,5 +53,5 @@
   <methodLlocAvg>2.5454545454545</methodLlocAvg>
   <methodLlocMax>5</methodLlocMax>
   <namespaces>4</namespaces>
-  <ncloc>201</ncloc>
+  <ncloc>199</ncloc>
 </phploc>

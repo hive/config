@@ -34,7 +34,7 @@ One class per file: yes [10/10, 100%]
 
 PHP closing tag at end of PHP-only file: no [10/10, 100%]
 
-PHP constant case: lower [8/8, 100%]
+PHP constant case: lower [6/6, 100%]
 
 PHP keyword case: lower [105/105, 100%]
 

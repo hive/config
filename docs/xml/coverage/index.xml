@@ -3,6 +3,30 @@
   <project name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
     <tests>
       <test name="testDebug::testInheritNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testSimpleFactory" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testInheritFactory" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testConfigNamespaceFactory" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testSharedConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testDualConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testExistingConfig" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testSimpleArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testInheritArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testInheritSameArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testInheritChangedArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testArgumentsDoesNotExistException" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testInheritNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testNestedArguments" size="unknown" result="0" status="PASSED"/>
+      <test name="testCallFactory::testClassDoesNotExistException" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testSimpleFactory" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testInheritFactory" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testConfigNamespaceFactory" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testSharedConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testDualConfigNamespaceInstance" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testExistingConfig" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testInheritNested" size="unknown" result="0" status="PASSED"/>
+      <test name="testLoadFactory::testInstanceDoesNotExistException" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testSanity" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testSimpleInstance" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testInheritInstance" size="unknown" result="0" status="PASSED"/>
@@ -29,10 +53,10 @@
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
       <totals>
-        <lines total="488" comments="298" code="190" executable="67" executed="40" percent="59.70%"/>
-        <methods count="11" tested="7" percent="63.64%"/>
+        <lines total="486" comments="298" code="188" executable="58" executed="58" percent="100.00%"/>
+        <methods count="11" tested="11" percent="100.00%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="6" tested="5" percent="83.33%"/>
+        <classes count="6" tested="7" percent="116.67%"/>
         <traits count="1" tested="0" percent="0.00%"/>
       </totals>
       <directory name="Contract">
@@ -109,18 +133,18 @@
       </file>
       <directory name="Exception">
         <totals>
-          <lines total="84" comments="52" code="32" executable="9" executed="4" percent="44.44%"/>
-          <methods count="2" tested="1" percent="50.00%"/>
+          <lines total="84" comments="52" code="32" executable="8" executed="8" percent="100.00%"/>
+          <methods count="2" tested="2" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="2" tested="1" percent="50.00%"/>
+          <classes count="2" tested="2" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
         <file name="ClassDoesNotExist.php" href="Exception/ClassDoesNotExist.php.xml">
           <totals>
-            <lines total="42" comments="26" code="16" executable="5" executed="0" percent="0.00%"/>
-            <methods count="1" tested="0" percent="0.00%"/>
+            <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+            <methods count="1" tested="1" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
-            <classes count="1" tested="0" percent="0.00%"/>
+            <classes count="1" tested="1" percent="100.00%"/>
             <traits count="0" tested="0" percent=""/>
           </totals>
         </file>
@@ -136,10 +160,10 @@
       </directory>
       <file name="ClassDoesNotExist.php" href="Exception/ClassDoesNotExist.php.xml">
         <totals>
-          <lines total="42" comments="26" code="16" executable="5" executed="0" percent="0.00%"/>
-          <methods count="1" tested="0" percent="0.00%"/>
+          <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
@@ -154,10 +178,10 @@
       </file>
       <file name="Factory.php" href="Factory.php.xml">
         <totals>
-          <lines total="103" comments="65" code="38" executable="22" executed="0" percent="0.00%"/>
-          <methods count="3" tested="0" percent="0.00%"/>
+          <lines total="101" comments="65" code="36" executable="14" executed="14" percent="100.00%"/>
+          <methods count="3" tested="3" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>

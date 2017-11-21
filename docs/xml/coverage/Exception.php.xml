@@ -15,10 +15,16 @@
     </class>
     <coverage>
       <line nr="42">
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
         <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="43">
+        <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
+        <covered by="testCallFactory::testClassDoesNotExistException"/>
+        <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
         <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>

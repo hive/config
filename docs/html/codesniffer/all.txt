@@ -34,7 +34,7 @@ One class per file: [4myes[0m [10/10, 100%]
 
 PHP closing tag at end of PHP-only file: [4mno[0m [10/10, 100%]
 
-PHP constant case: [4mlower[0m [8/8, 100%]
+PHP constant case: [4mlower[0m [6/6, 100%]
 
 PHP keyword case: [4mlower[0m [105/105, 100%]
 
@@ -45,7 +45,7 @@ Spaces after control structure open parenthesis: [4m0[0m [10/10, 100%]
 Spaces before control structure close parenthesis: [4m0[0m [10/10, 100%]
 
 ----------------------------------------------------------------------
-Time: 176ms; Memory: 5.25Mb
+Time: 160ms; Memory: 5.25Mb
 
 
 [1mFILE: .../apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php[0m
@@ -54,11 +54,11 @@ Time: 176ms; Memory: 5.25Mb
 ----------------------------------------------------------------------
  27 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 184
     |         |     characters
- 70 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
+ 68 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
     |         |     9
- 74 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
+ 72 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
     |         |     13
- 97 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
+ 95 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
     |         |     9
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
@@ -125,7 +125,7 @@ Time: 176ms; Memory: 5.25Mb
  26 | [33mWARNING[0m | Line exceeds 120 characters; contains 135 characters
 ----------------------------------------------------------------------
 
-Time: 176ms; Memory: 5.25Mb
+Time: 161ms; Memory: 5.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -143,7 +143,7 @@ Time: 176ms; Memory: 5.25Mb
 [1mPHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (13 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 176ms; Memory: 5.25Mb
+Time: 161ms; Memory: 5.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
@@ -162,5 +162,5 @@ Time: 176ms; Memory: 5.25Mb
 [1mPHPCBF CAN FIX 13 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 177ms; Memory: 5.25Mb
+Time: 161ms; Memory: 5.25Mb
 

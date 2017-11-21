@@ -195,13 +195,19 @@ The code is split up into the following classes :
     1. Library.php : The actual config library, useful for extending functionality.
         *  __construct
     2. Instance.php : Instance of the object class.
+        * static load
         * static __callStatic
-    3. Exception : Folder for any exceptions the object will throw.
+    3. Factory.php : Factory to create the object class.
+        * load
+        * __call
+    4. Exception : Folder for any exceptions the object will throw.
+        * ClassDoesNotExist.php
         * InstanceDoesNotExist.php
-    4. Mixin : Folder for any mix-ins (traits)
+    5. Mixin : Folder for any mix-ins (traits)
         * Library.php the trait to include to for easy implentation.
-    5. Contact : folder for any interfaces or abstract classes they implement
+    6. Contact : folder for any interfaces or abstract classes they implement
         * Instance.php
         * Library.php
+        * Factory.php
         
 The full API documentation can be found [here](https://hive.github.io/config/html/phpdox/index.xhtml) or all the documentation can be found [here](https://hive.github.io/config/)

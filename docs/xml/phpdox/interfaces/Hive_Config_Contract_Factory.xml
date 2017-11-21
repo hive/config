@@ -20,6 +20,6 @@
   </method>
   <implementors>
     <class full="Hive\Config\Factory" namespace="Hive\Config" name="Factory"/>
-  </implementors>
+  <class full="Hive\Config\Factory" namespace="Hive\Config" name="Factory"/><class full="Hive\Config\Factory" namespace="Hive\Config" name="Factory"/></implementors>
   <parent full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
 </interface>

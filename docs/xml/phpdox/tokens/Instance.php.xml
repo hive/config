@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2737" time="2017-11-08T14:09:21+11:00" unixtime="1510110561" sha1="1f94d49e7476ccd4bc6d6efc330be77d1046ec32" relative="Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2770" time="2017-11-21T17:26:29+11:00" unixtime="1511245589" sha1="81290f13d73cd5e68c2a7315a1f1011ac23ef600" relative="Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -228,13 +228,13 @@
   </line>
   <line no="59">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_PRIVATE">private</token>
+    <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">init</token>
+    <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
@@ -271,7 +271,12 @@
     <token name="T_WHITESPACE">            </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">true</token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$objects</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="65">
@@ -397,7 +402,12 @@
     <token name="T_WHITESPACE">                    </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">true</token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$objects</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="78">
@@ -497,7 +507,7 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">init</token>
+    <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
