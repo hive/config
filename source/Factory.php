@@ -1,7 +1,7 @@
 <?php namespace Hive\Config;
 
 /**
- * Config Instance.
+ * Config Factory.
  *
  * Allows access to a configuration class through a factory.
  *
