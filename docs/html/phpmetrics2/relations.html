@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content">
         <div class="report-details">
-            Created at 2017-11-08 13:36:32        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2017-11-21 17:17:42        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
 
@@ -226,6 +226,33 @@
 
     var relations = [
     {
+        "name": "\\Hive\\Config\\Factory",
+        "size": 3000,
+        "relations": [
+            "\\Hive\\Config\\Contract\\Factory",
+            "\\class",
+            "\\Hive\\Config\\Exception\\ClassDoesNotExist"
+        ]
+    },
+    {
+        "name": "\\Hive\\Config\\Contract\\Factory",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Hive\\Config\\Exception\\ClassDoesNotExist",
+        "size": 3000,
+        "relations": [
+            "\\Hive\\Config\\Exception",
+            "\\parent"
+        ]
+    },
+    {
         "name": "\\Hive\\Config\\Instance",
         "size": 3000,
         "relations": [
@@ -237,11 +264,6 @@
     },
     {
         "name": "\\Hive\\Config\\Contract\\Instance",
-        "size": 3000,
-        "relations": []
-    },
-    {
-        "name": "\\class",
         "size": 3000,
         "relations": []
     },

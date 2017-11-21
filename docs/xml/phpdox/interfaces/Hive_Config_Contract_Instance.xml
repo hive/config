@@ -11,5 +11,5 @@
   </docblock>
   <implementors>
     <class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/>
-  <class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/></implementors>
+  <class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/><class full="Hive\Config\Instance" namespace="Hive\Config" name="Instance"/></implementors>
 </interface>

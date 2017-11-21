@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Factory.php">
+    <totals>
+      <lines total="103" comments="65" code="38" executable="22" executed="0" percent="0.00%"/>
+      <methods count="3" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Factory" start="18" executable="22" executed="0" crap="56">
+      <package full="Hive.Config" name="Hive" sub="Config" category=""/>
+      <namespace name="Hive\Config"/>
+      <method name="__construct" signature="__construct(array $config = [])" start="48" end="56" crap="2" executable="3" executed="0" coverage="0"/>
+      <method name="load" signature="load($name)" start="67" end="81" crap="20" executable="11" executed="0" coverage="0"/>
+      <method name="__call" signature="__call($name, $args)" start="93" end="102" crap="6" executable="8" executed="0" coverage="0"/>
+    </class>
+  </file>
+</phpunit>

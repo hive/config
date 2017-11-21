@@ -29,20 +29,29 @@
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
       <totals>
-        <lines total="313" comments="184" code="129" executable="40" executed="40" percent="100.00%"/>
-        <methods count="7" tested="7" percent="100.00%"/>
+        <lines total="488" comments="298" code="190" executable="67" executed="40" percent="59.70%"/>
+        <methods count="11" tested="7" percent="63.64%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="4" tested="5" percent="125.00%"/>
+        <classes count="6" tested="5" percent="83.33%"/>
         <traits count="1" tested="0" percent="0.00%"/>
       </totals>
       <directory name="Contract">
         <totals>
-          <lines total="38" comments="26" code="12" executable="0" executed="0" percent=""/>
+          <lines total="66" comments="47" code="19" executable="0" executed="0" percent=""/>
           <methods count="0" tested="0" percent=""/>
           <functions count="0" tested="0" percent=""/>
           <classes count="0" tested="0" percent=""/>
           <traits count="0" tested="0" percent=""/>
         </totals>
+        <file name="Factory.php" href="Contract/Factory.php.xml">
+          <totals>
+            <lines total="28" comments="21" code="7" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
         <file name="Instance.php" href="Contract/Instance.php.xml">
           <totals>
             <lines total="19" comments="13" code="6" executable="0" executed="0" percent=""/>
@@ -62,6 +71,15 @@
           </totals>
         </file>
       </directory>
+      <file name="Factory.php" href="Contract/Factory.php.xml">
+        <totals>
+          <lines total="28" comments="21" code="7" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
       <file name="Instance.php" href="Contract/Instance.php.xml">
         <totals>
           <lines total="19" comments="13" code="6" executable="0" executed="0" percent=""/>
@@ -91,12 +109,21 @@
       </file>
       <directory name="Exception">
         <totals>
-          <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
-          <methods count="1" tested="1" percent="100.00%"/>
+          <lines total="84" comments="52" code="32" executable="9" executed="4" percent="44.44%"/>
+          <methods count="2" tested="1" percent="50.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="1" percent="100.00%"/>
+          <classes count="2" tested="1" percent="50.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
+        <file name="ClassDoesNotExist.php" href="Exception/ClassDoesNotExist.php.xml">
+          <totals>
+            <lines total="42" comments="26" code="16" executable="5" executed="0" percent="0.00%"/>
+            <methods count="1" tested="0" percent="0.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
         <file name="InstanceDoesNotExist.php" href="Exception/InstanceDoesNotExist.php.xml">
           <totals>
             <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
@@ -107,6 +134,15 @@
           </totals>
         </file>
       </directory>
+      <file name="ClassDoesNotExist.php" href="Exception/ClassDoesNotExist.php.xml">
+        <totals>
+          <lines total="42" comments="26" code="16" executable="5" executed="0" percent="0.00%"/>
+          <methods count="1" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
       <file name="InstanceDoesNotExist.php" href="Exception/InstanceDoesNotExist.php.xml">
         <totals>
           <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
@@ -116,9 +152,18 @@
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
+      <file name="Factory.php" href="Factory.php.xml">
+        <totals>
+          <lines total="103" comments="65" code="38" executable="22" executed="0" percent="0.00%"/>
+          <methods count="3" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="119" comments="60" code="59" executable="22" executed="22" percent="100.00%"/>
+          <lines total="121" comments="62" code="59" executable="22" executed="22" percent="100.00%"/>
           <methods count="3" tested="3" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>

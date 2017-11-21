@@ -2,18 +2,18 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Instance.php">
     <totals>
-      <lines total="119" comments="60" code="59" executable="22" executed="22" percent="100.00%"/>
+      <lines total="121" comments="62" code="59" executable="22" executed="22" percent="100.00%"/>
       <methods count="3" tested="3" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Instance" start="16" executable="22" executed="22" crap="8">
+    <class name="Instance" start="16" executable="22" executed="22" crap="9">
       <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config"/>
-      <method name="init" signature="init($name)" start="59" end="83" crap="4" executable="11" executed="11" coverage="100"/>
-      <method name="__callStatic" signature="__callStatic($name, $args)" start="93" end="108" crap="3" executable="9" executed="9" coverage="100"/>
-      <method name="destroy" signature="destroy()" start="115" end="118" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="init" signature="init($name)" start="59" end="84" crap="5" executable="11" executed="11" coverage="100"/>
+      <method name="__callStatic" signature="__callStatic($name, $args)" start="94" end="110" crap="3" executable="9" executed="9" coverage="100"/>
+      <method name="destroy" signature="destroy()" start="117" end="120" crap="1" executable="2" executed="2" coverage="100"/>
     </class>
     <coverage>
       <line nr="62">
@@ -74,25 +74,7 @@
         <covered by="testInstance::testNestedArguments"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="71">
-        <covered by="testDebug::testInheritNested"/>
-        <covered by="testInstance::testSimpleInstance"/>
-        <covered by="testInstance::testInheritInstance"/>
-        <covered by="testInstance::testConfigNamespaceInstance"/>
-        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
-        <covered by="testInstance::testDualConfigNamespaceInstance"/>
-        <covered by="testInstance::testExistingConfig"/>
-        <covered by="testInstance::testSimpleArguments"/>
-        <covered by="testInstance::testInheritArguments"/>
-        <covered by="testInstance::testInheritSameArguments"/>
-        <covered by="testInstance::testInheritChangedArguments"/>
-        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
-        <covered by="testInstance::testNested"/>
-        <covered by="testInstance::testInheritNested"/>
-        <covered by="testInstance::testNestedArguments"/>
-        <covered by="testInstance::testInstanceDoesNotExistException"/>
-      </line>
-      <line nr="73">
+      <line nr="72">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSimpleInstance"/>
         <covered by="testInstance::testInheritInstance"/>
@@ -140,9 +122,11 @@
         <covered by="testInstance::testInheritArguments"/>
         <covered by="testInstance::testInheritSameArguments"/>
         <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testNested"/>
         <covered by="testInstance::testInheritNested"/>
         <covered by="testInstance::testNestedArguments"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="76">
         <covered by="testDebug::testInheritNested"/>
@@ -160,18 +144,7 @@
         <covered by="testInstance::testInheritNested"/>
         <covered by="testInstance::testNestedArguments"/>
       </line>
-      <line nr="78">
-        <covered by="testInstance::testConfigNamespaceInstance"/>
-        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
-        <covered by="testInstance::testDualConfigNamespaceInstance"/>
-        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
-        <covered by="testInstance::testInstanceDoesNotExistException"/>
-      </line>
-      <line nr="82">
-        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
-        <covered by="testInstance::testInstanceDoesNotExistException"/>
-      </line>
-      <line nr="95">
+      <line nr="77">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSimpleInstance"/>
         <covered by="testInstance::testInheritInstance"/>
@@ -183,10 +156,19 @@
         <covered by="testInstance::testInheritArguments"/>
         <covered by="testInstance::testInheritSameArguments"/>
         <covered by="testInstance::testInheritChangedArguments"/>
-        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testNested"/>
         <covered by="testInstance::testInheritNested"/>
         <covered by="testInstance::testNestedArguments"/>
+      </line>
+      <line nr="79">
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
+      </line>
+      <line nr="83">
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="97">
@@ -207,7 +189,7 @@
         <covered by="testInstance::testNestedArguments"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="98">
+      <line nr="99">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSimpleInstance"/>
         <covered by="testInstance::testInheritInstance"/>
@@ -219,11 +201,13 @@
         <covered by="testInstance::testInheritArguments"/>
         <covered by="testInstance::testInheritSameArguments"/>
         <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
         <covered by="testInstance::testNested"/>
         <covered by="testInstance::testInheritNested"/>
         <covered by="testInstance::testNestedArguments"/>
+        <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="99">
+      <line nr="100">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSimpleInstance"/>
         <covered by="testInstance::testInheritInstance"/>
@@ -256,13 +240,6 @@
         <covered by="testInstance::testNestedArguments"/>
       </line>
       <line nr="103">
-        <covered by="testInstance::testSimpleArguments"/>
-        <covered by="testInstance::testInheritArguments"/>
-        <covered by="testInstance::testInheritSameArguments"/>
-        <covered by="testInstance::testInheritChangedArguments"/>
-        <covered by="testInstance::testNestedArguments"/>
-      </line>
-      <line nr="104">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSimpleInstance"/>
         <covered by="testInstance::testInheritInstance"/>
@@ -279,6 +256,13 @@
         <covered by="testInstance::testNestedArguments"/>
       </line>
       <line nr="105">
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testNestedArguments"/>
+      </line>
+      <line nr="106">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSimpleInstance"/>
         <covered by="testInstance::testInheritInstance"/>
@@ -310,7 +294,23 @@
         <covered by="testInstance::testInheritNested"/>
         <covered by="testInstance::testNestedArguments"/>
       </line>
-      <line nr="117">
+      <line nr="109">
+        <covered by="testDebug::testInheritNested"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testNested"/>
+        <covered by="testInstance::testInheritNested"/>
+        <covered by="testInstance::testNestedArguments"/>
+      </line>
+      <line nr="119">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSanity"/>
         <covered by="testInstance::testSimpleInstance"/>
@@ -329,7 +329,7 @@
         <covered by="testInstance::testNestedArguments"/>
         <covered by="testInstance::testInstanceDoesNotExistException"/>
       </line>
-      <line nr="118">
+      <line nr="120">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testInstance::testSanity"/>
         <covered by="testInstance::testSimpleInstance"/>

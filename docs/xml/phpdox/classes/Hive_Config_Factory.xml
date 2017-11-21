@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Factory" namespace="Hive\Config" name="Factory" abstract="false" final="false" start="18" end="103">
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="3039" time="2017-11-21T17:03:52+11:00" unixtime="1511244232" sha1="f3f7b460833048b37f7e0295371a44f015e6bcd8" relative="Factory.php"/>
+  <docblock>
+    <description compact="Config Instance.">Allows access to a configuration class through a factory.</description>
+    <todo value="1.1.0.0 add the ability to use config drivers, return as object||array."/>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Config"/>
+    <copyright value="(c) 2016 Jamie  Peake"/>
+  </docblock>
+  <implements full="Hive\Config\Contract\Factory" namespace="Hive\Config\Contract" name="Factory"/>
+  <member name="config" type="array" default="" visibility="protected" static="false" line="30">
+    <docblock>
+      <description compact="Default configuration settings.">The the config for the config, or if that is confusing, which options/settings to use with in the class.</description>
+      <var description="['namespaces'] : array : Which namespaces to search for a config, with in our factory" type="array"/>
+      <var description="['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace." type="array"/>
+      <var description="['group'] : string : The name of the config 'group' which to load." type="array"/>
+    </docblock>
+  </member>
+  <member name="options" visibility="protected" static="false" line="39">
+    <docblock>
+      <description/>
+      <placeholder/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="48" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Library constructor."/>
+      <param type="array" variable="$config"/>
+      <throws type="object">
+        <type full="Hive\Config\Exception\RequiresMemoryGetUsage" namespace="Hive\Config\Exception" name="RequiresMemoryGetUsage"/>
+      </throws>
+    </docblock>
+    <parameter name="config" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="Merge the received config with the defaults." line="51"/>
+    </inline>
+  </constructor>
+  <method name="load" start="67" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Loads a config class and returns its object."/>
+      <param description="the name of which config to load." type="string" variable="$name"/>
+      <return type="object">
+        <type full="\Iterator" namespace="" name="Iterator"/>
+      </return>
+      <throws type="object">
+        <type full="Hive\Config\Exception\ClassDoesNotExist" namespace="Hive\Config\Exception" name="ClassDoesNotExist"/>
+      </throws>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Loop through all of our namespaces looking for the config." line="69"/>
+      <comment value="We didn't find a matching class." line="79"/>
+    </inline>
+  </method>
+  <method name="__call" start="93" end="102" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Allow direct access to an item in the config, by using arguments">Will load the factory then filter to the result you want.</description>
+      <param description="which config class to load" type="string" variable="$name"/>
+      <param description="an array of parameters sent to the magic method, in which to filter the results by." type="array" variable="$args"/>
+      <return type="object">
+        <type full="\Traversable" namespace="" name="Traversable"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Hive\Config\Contract\Factory" namespace="Hive\Config\Contract" name="Factory">
+    <extends full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
+    <method name="load" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Load a config"/>
+        <param description="the config to get." type="string" variable="$name"/>
+        <return type="array"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

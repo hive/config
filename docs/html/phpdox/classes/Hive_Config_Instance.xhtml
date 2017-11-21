@@ -94,8 +94,8 @@
                     </li><li>protected static  <a href="#members">$options</a>;
                     </li><li>public static array <a href="#members">$namespaces</a> =
                         ;
-                    </li><li>public static string <a href="#members">$type</a> =
-                        'Config';
+                    </li><li>public static boolean <a href="#members">$type</a> =
+                        false;
                     </li><li>public static string <a href="#members">$environment</a> =
                         'default';
                     </li></ul><ul class="none"><li>// methods</li><li>private static bool <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/init.xhtml">init</a>()
@@ -136,10 +136,6 @@
           </thead>
           <tr>
             <td class="nummeric">+</td>
-            <td>This should be removed.</td>
-          </tr>
-          <tr>
-            <td class="nummeric">+</td>
             <td>rename to 'group', for a more generic use of it.</td>
           </tr>
         </table>
@@ -167,7 +163,7 @@
                 array</li>
             <li id="type"><strong>$type</strong>
                 —
-                string<br/><span class="indent">The name of the file type to load, defaults to config.</span></li>
+                string<br/><span class="indent">The name of the file type to load, defaults to empty.</span></li>
           </ul>
         </div>
         <h2 id="methods">Methods</h2>
