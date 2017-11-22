@@ -1,48 +1,48 @@
 
 PHP CODE SNIFFER INFORMATION REPORT
 ----------------------------------------------------------------------
-CamelCase class name: yes [9/9, 100%]
+CamelCase class name: yes [8/8, 100%]
 
-CamelCase method name: yes [4/4, 100%]
+CamelCase method name: yes [6/6, 100%]
 
-Class defined in namespace: yes [10/10, 100%]
+Class defined in namespace: yes [9/9, 100%]
 
-Class opening brace placement: new line [10/10, 100%]
+Class opening brace placement: new line [9/9, 100%]
 
-Constant name case: upper [6/6, 100%]
+Constant name case: upper [4/4, 100%]
 
-Control structure defined inline: no [11/11, 100%]
+Control structure defined inline: no [9/9, 100%]
 
-Declarations and side effects mixed: no [10/10, 100%]
+Declarations and side effects mixed: no [9/9, 100%]
 
-EOL char: \n [10/10, 100%]
+EOL char: \n [9/9, 100%]
 
-Function opening brace placement: new line [11/11, 100%]
+Function opening brace placement: new line [12/12, 100%]
 
-Line indent: spaces [264/264, 100%]
+Line indent: spaces [247/247, 100%]
 
-Line length: 80 or less [415/438, 94.75%]
-	81-120 => 19 (4.34%)
-	121-150 => 3 (0.68%)
-	151 or more => 1 (0.23%)
+Line length: 80 or less [383/404, 94.8%]
+	81-120 => 17 (4.21%)
+	151 or more => 2 (0.5%)
+	121-150 => 2 (0.5%)
 
-Multiple statements on same line: no [52/52, 100%]
+Multiple statements on same line: no [44/44, 100%]
 
-Number of newlines at EOF: 1 [10/10, 100%]
+Number of newlines at EOF: 1 [9/9, 100%]
 
-One class per file: yes [10/10, 100%]
+One class per file: yes [9/9, 100%]
 
-PHP closing tag at end of PHP-only file: no [10/10, 100%]
+PHP closing tag at end of PHP-only file: no [9/9, 100%]
 
 PHP constant case: lower [6/6, 100%]
 
-PHP keyword case: lower [105/105, 100%]
+PHP keyword case: lower [98/98, 100%]
 
-PHP short open tag used: no [10/10, 100%]
+PHP short open tag used: no [9/9, 100%]
 
-Spaces after control structure open parenthesis: 0 [10/10, 100%]
+Spaces after control structure open parenthesis: 0 [8/8, 100%]
 
-Spaces before control structure close parenthesis: 0 [10/10, 100%]
+Spaces before control structure close parenthesis: 0 [8/8, 100%]
 
 ----------------------------------------------------------------------
 

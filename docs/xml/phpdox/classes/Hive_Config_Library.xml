@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Library" namespace="Hive\Config" name="Library" abstract="false" final="false" start="17" end="31">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php" size="799" time="2017-10-27T18:12:42+11:00" unixtime="1509088362" sha1="df6a310b8170e18778d1c9278a5d55012373cbc7" relative="Library.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Library" namespace="Hive\Config" name="Library" abstract="false" final="false" start="17" end="34">
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php" size="865" time="2017-11-22T14:17:05+11:00" unixtime="1511320625" sha1="729fe561d300319b524f7ae62a263f4f9ad58cee" relative="Library.php"/>
   <docblock>
     <description compact="Config Library.">Will give access to its ArrayIterator, at which stage anything to do with the environment
 is ready to be discarded.</description>
@@ -12,7 +12,7 @@ is ready to be discarded.</description>
   </docblock>
   <extends full="ArrayIterator" namespace="" name="ArrayIterator"/>
   <implements full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
-  <constructor name="__construct" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="27" end="33" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Item constructor.">Takes a Config Contract that throws away the environment for use as an array iterator.</description>
       <param variable="$environment"/>
@@ -20,6 +20,9 @@ is ready to be discarded.</description>
     </docblock>
     <parameter name="environment" byreference="false" type="{unknown}"/>
     <parameter name="array" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="Discard the environment." line="29"/>
+    </inline>
   </constructor>
   <parent full="ArrayIterator" namespace="" name="ArrayIterator">
     <implements full="ArrayAccess" namespace="" name="ArrayAccess"/>

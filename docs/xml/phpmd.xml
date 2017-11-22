@@ -1,8 +1,3 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="@project.version@" timestamp="2017-11-21T18:12:58+11:00">
-  <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php">
-    <violation beginline="27" endline="27" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
-      Avoid unused parameters such as '$environment'.
-    </violation>
-  </file>
+<pmd version="@project.version@" timestamp="2017-11-22T14:17:22+11:00">
 </pmd>

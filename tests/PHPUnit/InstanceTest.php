@@ -50,14 +50,11 @@ class testInstance extends base
 
     public function testConfigNamespaceInstance ()
     {
-        $config = new \hive\Config\Instance();
-        $config::$namespaces = [
-            '',
-            '\\Config'
-        ];
 
-        $config = $config::MockNamespace();
 
+
+        \Hive\Config\Instance::config(['namespaces' => ['','\\Config']]);
+        $config = \Hive\Config\Instance::MockNamespace();
 
         $this->assertArrayHasKey('class', $config);
         $this->assertArrayHasKey('static', $config);
@@ -75,13 +72,9 @@ class testInstance extends base
     public function testSharedConfigNamespaceInstance ()
     {
 
-        $config = new \hive\Config\Instance();
-        $config::$namespaces = [
-            '',
-            '\\Shared\\Config'
-        ];
+        \Hive\Config\Instance::config(['namespaces' => ['','\\Shared\\Config']]);
 
-        $config = $config::MockNamespace();
+        $config = \Hive\Config\Instance::MockNamespace();
 
         $this->assertArrayHasKey('class', $config);
         $this->assertArrayHasKey('static', $config);
@@ -100,14 +93,8 @@ class testInstance extends base
     public function testDualConfigNamespaceInstance ()
     {
 
-        $config = new \hive\Config\Instance();
-        $config::$namespaces = [
-            '',
-            '\\Config',
-            '\\Shared\\Config'
-        ];
-
-        $config = $config::MockNamespace();
+        \Hive\Config\Instance::config(['namespaces' => ['', '\\Config', '\\Shared\\Config']]);
+        $config = \Hive\Config\Instance::MockNamespace();
 
         $this->assertArrayHasKey('class', $config);
         $this->assertArrayHasKey('static', $config);
@@ -124,9 +111,8 @@ class testInstance extends base
 
     public function testExistingConfig()
     {
-        $instance = new \hive\Config\Instance();
 
-        $config = $instance::MockSimple();
+        $config = \Hive\Config\Instance::MockSimple();
 
         $this->assertArrayHasKey('class', $config);
         $this->assertArrayHasKey('static', $config);
@@ -136,7 +122,7 @@ class testInstance extends base
         $this->assertEquals('default', $config['static']);
         $this->assertEquals('true', $config['simple']);
 
-        $config = $instance::MockSimple();
+        $config = \Hive\Config\Instance::MockSimple();
 
         $this->assertArrayHasKey('class', $config);
         $this->assertArrayHasKey('static', $config);
@@ -152,9 +138,8 @@ class testInstance extends base
 
     public function testSimpleArguments()
     {
-        $instance = new \hive\Config\Instance();
 
-        $class = $instance::MockSimple('class');
+        $class = \Hive\Config\Instance::MockSimple('class');
 
         $this->assertEquals('MockSimple', $class);
 
@@ -163,9 +148,7 @@ class testInstance extends base
 
     public function testInheritArguments()
     {
-        $instance = new \hive\Config\Instance();
-
-        $simple = $instance::MockInherit('simple');
+        $simple = \Hive\Config\Instance::MockInherit('simple');
 
         $this->assertEquals('true', $simple);
 
@@ -173,9 +156,7 @@ class testInstance extends base
 
     public function testInheritSameArguments()
     {
-        $instance = new \hive\Config\Instance();
-
-        $static = $instance::MockInherit('static');
+        $static = \Hive\Config\Instance::MockInherit('static');
 
         $this->assertEquals('default', $static);
 
@@ -185,9 +166,8 @@ class testInstance extends base
 
     public function testInheritChangedArguments()
     {
-        $instance = new \hive\Config\Instance();
 
-        $class = $instance::MockInherit('class');
+        $class = \Hive\Config\Instance::MockInherit('class');
 
         $this->assertEquals('MockInherit', $class);
 
@@ -196,11 +176,9 @@ class testInstance extends base
 
     public function testInstanceArgumentsDoesNotExistException()
     {
-        $this->setExpectedException('Hive\Config\Exception\InstanceDoesNotExist');
+        $this->setExpectedException('Hive\Config\Exception\ClassDoesNotExist');
 
-        $instance = new \hive\Config\Instance();
-
-        $instance::BABABABA('class');
+        \Hive\Config\Instance::BABABABA('class');
 
 
     }
@@ -224,9 +202,7 @@ class testInstance extends base
      */
     public function testNested()
     {
-        $instance = new \hive\Config\Instance();
-
-        $result = $instance::MockNested();
+        $result = \Hive\Config\Instance::MockNested();
 
         $this->assertArrayHasKey('class', $result);
         $this->assertArrayHasKey('static', $result);
@@ -269,9 +245,7 @@ class testInstance extends base
      */
     public function testInheritNested()
     {
-        $instance = new \hive\Config\Instance();
-
-        $result = $instance::MockInheritNested();
+        $result = \Hive\Config\Instance::MockInheritNested();
 
         $this->assertArrayHasKey('class', $result);
         $this->assertArrayHasKey('static', $result);
@@ -297,30 +271,29 @@ class testInstance extends base
 
     public function testNestedArguments()
     {
-        $instance = new \hive\Config\Instance();
 
-        $result = $instance::MockNested('class');
+        $result = \Hive\Config\Instance::MockNested('class');
         $this->assertEquals('MockNested', $result);
 
-        $result = $instance::MockNested('nest', 'name');
+        $result = \Hive\Config\Instance::MockNested('nest', 'name');
         $this->assertEquals('MockNested', $result);
 
-        $result = $instance::MockNested('nest', 'detail');
+        $result = \Hive\Config\Instance::MockNested('nest', 'detail');
         $this->assertArrayHasKey('type', $result);
         $this->assertArrayHasKey('parent', $result);
         $this->assertArrayHasKey('ignore', $result);
         $this->assertArrayHasKey('override', $result);
 
-        $result = $instance::MockNested('nest', 'detail', 'type');
+        $result = \Hive\Config\Instance::MockNested('nest', 'detail', 'type');
         $this->assertEquals('nested', $result);
 
-        $result = $instance::MockNested('nest', 'detail', 'parent');
+        $result = \Hive\Config\Instance::MockNested('nest', 'detail', 'parent');
         $this->assertEquals('none', $result);
 
-        $result = $instance::MockNested('nest', 'detail', 'ignore');
+        $result = \Hive\Config\Instance::MockNested('nest', 'detail', 'ignore');
         $this->assertEquals('true', $result);
 
-        $result = $instance::MockNested('nest', 'detail', 'override');
+        $result = \Hive\Config\Instance::MockNested('nest', 'detail', 'override');
         $this->assertEquals('false', $result);
 
     }
@@ -329,7 +302,7 @@ class testInstance extends base
 
     public function testInstanceDoesNotExistException ()
     {
-        $this->setExpectedException('Hive\Config\Exception\InstanceDoesNotExist');
+        $this->setExpectedException('Hive\Config\Exception\ClassDoesNotExist');
 
         $config = \Hive\Config\Instance::Environment();
 

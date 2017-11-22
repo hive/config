@@ -1,12 +1,1 @@
 
-FILE: ...r/apps/http/kamio.krowd.dev/vendor/hive/config/source/Contract/Factory.php
---------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 28 | ERROR | [x] The closing brace for the interface must go on the next line
-    |       |     after the body
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-

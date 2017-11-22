@@ -29,9 +29,7 @@ class testDebug extends base
      */
     public function testInheritNested()
     {
-        $instance = new \hive\Config\Instance();
-
-        $result = $instance::MockInheritNested();
+        $result = \hive\Config\Instance::MockInheritNested();
 
         $this->assertArrayHasKey('class', $result);
         $this->assertArrayHasKey('static', $result);

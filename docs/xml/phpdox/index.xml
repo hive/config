@@ -2,9 +2,9 @@
 <index xmlns="http://xml.phpdox.net/src" basedir="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
   <namespace name="Hive\Config">
     
-    <class name="Library" src="Library.php" description="Config Library." xml="classes/Hive_Config_Library.xml"/>
+    
     <class name="Exception" src="Exception.php" description="General Exception Handler." xml="classes/Hive_Config_Exception.xml"/>
-  <class name="Factory" src="Factory.php" description="Config Instance." xml="classes/Hive_Config_Factory.xml"/><class name="Instance" src="Instance.php" description="Config Instance." xml="classes/Hive_Config_Instance.xml"/></namespace>
+  <class name="Factory" src="Factory.php" description="Config Factory." xml="classes/Hive_Config_Factory.xml"/><class name="Instance" src="Instance.php" description="Config Instance." xml="classes/Hive_Config_Instance.xml"/><class name="Library" src="Library.php" description="Config Library." xml="classes/Hive_Config_Library.xml"/></namespace>
   <namespace name="Hive\Config\Contract">
     <interface name="Instance" src="Contract/Instance.php" description="Instance Interface." xml="interfaces/Hive_Config_Contract_Instance.xml"/>
     <interface name="Library" src="Contract/Library.php" description="Library Interface." xml="interfaces/Hive_Config_Contract_Library.xml"/>

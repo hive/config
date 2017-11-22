@@ -53,10 +53,10 @@
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
       <totals>
-        <lines total="486" comments="298" code="188" executable="58" executed="58" percent="100.00%"/>
-        <methods count="11" tested="11" percent="100.00%"/>
+        <lines total="447" comments="278" code="169" executable="51" executed="51" percent="100.00%"/>
+        <methods count="12" tested="12" percent="100.00%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="6" tested="7" percent="116.67%"/>
+        <classes count="5" tested="6" percent="120.00%"/>
         <traits count="1" tested="0" percent="0.00%"/>
       </totals>
       <directory name="Contract">
@@ -133,22 +133,13 @@
       </file>
       <directory name="Exception">
         <totals>
-          <lines total="84" comments="52" code="32" executable="8" executed="8" percent="100.00%"/>
-          <methods count="2" tested="2" percent="100.00%"/>
+          <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="2" tested="2" percent="100.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
         <file name="ClassDoesNotExist.php" href="Exception/ClassDoesNotExist.php.xml">
-          <totals>
-            <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
-            <methods count="1" tested="1" percent="100.00%"/>
-            <functions count="0" tested="0" percent=""/>
-            <classes count="1" tested="1" percent="100.00%"/>
-            <traits count="0" tested="0" percent=""/>
-          </totals>
-        </file>
-        <file name="InstanceDoesNotExist.php" href="Exception/InstanceDoesNotExist.php.xml">
           <totals>
             <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
             <methods count="1" tested="1" percent="100.00%"/>
@@ -167,19 +158,10 @@
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
-      <file name="InstanceDoesNotExist.php" href="Exception/InstanceDoesNotExist.php.xml">
-        <totals>
-          <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
-          <methods count="1" tested="1" percent="100.00%"/>
-          <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="1" percent="100.00%"/>
-          <traits count="0" tested="0" percent=""/>
-        </totals>
-      </file>
       <file name="Factory.php" href="Factory.php.xml">
         <totals>
-          <lines total="101" comments="65" code="36" executable="14" executed="14" percent="100.00%"/>
-          <methods count="3" tested="3" percent="100.00%"/>
+          <lines total="111" comments="68" code="43" executable="15" executed="15" percent="100.00%"/>
+          <methods count="4" tested="4" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
@@ -187,8 +169,8 @@
       </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="121" comments="62" code="59" executable="22" executed="22" percent="100.00%"/>
-          <methods count="3" tested="3" percent="100.00%"/>
+          <lines total="111" comments="63" code="48" executable="17" executed="17" percent="100.00%"/>
+          <methods count="4" tested="4" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
@@ -196,7 +178,7 @@
       </file>
       <file name="Library.php" href="Library.php.xml">
         <totals>
-          <lines total="31" comments="22" code="9" executable="2" executed="2" percent="100.00%"/>
+          <lines total="34" comments="24" code="10" executable="3" executed="3" percent="100.00%"/>
           <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>

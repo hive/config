@@ -2,19 +2,19 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Library.php">
     <totals>
-      <lines total="31" comments="22" code="9" executable="2" executed="2" percent="100.00%"/>
+      <lines total="34" comments="24" code="10" executable="3" executed="3" percent="100.00%"/>
       <methods count="1" tested="1" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Library" start="17" executable="2" executed="2" crap="1">
+    <class name="Library" start="17" executable="3" executed="3" crap="1">
       <package full="Hive.Config" name="Hive" sub="Config" category=""/>
       <namespace name="Hive\Config"/>
-      <method name="__construct" signature="__construct($environment, array $array = [])" start="27" end="30" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="__construct" signature="__construct($environment, array $array = [])" start="27" end="33" crap="1" executable="3" executed="3" coverage="100"/>
     </class>
     <coverage>
-      <line nr="29">
+      <line nr="30">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testCallFactory::testSimpleFactory"/>
         <covered by="testCallFactory::testInheritFactory"/>
@@ -58,7 +58,51 @@
         <covered by="testObject::testNested"/>
         <covered by="testObject::testInheritNested"/>
       </line>
-      <line nr="30">
+      <line nr="32">
+        <covered by="testDebug::testInheritNested"/>
+        <covered by="testCallFactory::testSimpleFactory"/>
+        <covered by="testCallFactory::testInheritFactory"/>
+        <covered by="testCallFactory::testConfigNamespaceFactory"/>
+        <covered by="testCallFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testCallFactory::testExistingConfig"/>
+        <covered by="testCallFactory::testSimpleArguments"/>
+        <covered by="testCallFactory::testInheritArguments"/>
+        <covered by="testCallFactory::testInheritSameArguments"/>
+        <covered by="testCallFactory::testInheritChangedArguments"/>
+        <covered by="testCallFactory::testNested"/>
+        <covered by="testCallFactory::testInheritNested"/>
+        <covered by="testCallFactory::testNestedArguments"/>
+        <covered by="testLoadFactory::testSimpleFactory"/>
+        <covered by="testLoadFactory::testInheritFactory"/>
+        <covered by="testLoadFactory::testConfigNamespaceFactory"/>
+        <covered by="testLoadFactory::testSharedConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testDualConfigNamespaceInstance"/>
+        <covered by="testLoadFactory::testExistingConfig"/>
+        <covered by="testLoadFactory::testNested"/>
+        <covered by="testLoadFactory::testInheritNested"/>
+        <covered by="testInstance::testSimpleInstance"/>
+        <covered by="testInstance::testInheritInstance"/>
+        <covered by="testInstance::testConfigNamespaceInstance"/>
+        <covered by="testInstance::testSharedConfigNamespaceInstance"/>
+        <covered by="testInstance::testDualConfigNamespaceInstance"/>
+        <covered by="testInstance::testExistingConfig"/>
+        <covered by="testInstance::testSimpleArguments"/>
+        <covered by="testInstance::testInheritArguments"/>
+        <covered by="testInstance::testInheritSameArguments"/>
+        <covered by="testInstance::testInheritChangedArguments"/>
+        <covered by="testInstance::testNested"/>
+        <covered by="testInstance::testInheritNested"/>
+        <covered by="testInstance::testNestedArguments"/>
+        <covered by="testObject::testSimple"/>
+        <covered by="testObject::testExistingConfig"/>
+        <covered by="testObject::testInherit"/>
+        <covered by="testObject::testNamespace"/>
+        <covered by="testObject::testDeepNamespace"/>
+        <covered by="testObject::testNested"/>
+        <covered by="testObject::testInheritNested"/>
+      </line>
+      <line nr="33">
         <covered by="testDebug::testInheritNested"/>
         <covered by="testCallFactory::testSimpleFactory"/>
         <covered by="testCallFactory::testInheritFactory"/>

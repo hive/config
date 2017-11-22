@@ -24,13 +24,13 @@ class Factory implements Contract\Factory
      * The the config for the config, or if that is confusing, which options/settings to use with in the class.
      *
      * @var array ['namespaces'] : array : Which namespaces to search for a config, with in our factory
-     * @var array ['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace.
      * @var array ['group'] : string : The name of the config 'group' which to load.
+     * @var array ['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace.
      */
     protected $config = [
         'namespaces'    => [''],  // Check Globally
-        'type'          => false,
-        'group'         => 'default'    // Great for environmental variables.
+        'group'         => 'default',    // Great for environmental variables.
+        'type'          => false
     ];
 
     /**
@@ -39,18 +39,13 @@ class Factory implements Contract\Factory
     protected $options;
 
     /**
-     * Library constructor.
+     * Factory constructor.
      *
      * @param array $config
-     *
-     * @throws Exception\RequiresMemoryGetUsage
      */
     public function __construct(array $config = [])
     {
-        /**
-         * Merge the received config with the defaults.
-         */
-        $this->config = array_merge($this->config, $config);
+        $this->config($config);
     }
 
     /**
@@ -74,10 +69,24 @@ class Factory implements Contract\Factory
                 return new $class($this->config['group']);
             }
         }
+
         // We didn't find a matching class.
         throw new Exception\ClassDoesNotExist($name);
     }
 
+
+    /**
+     * Allows for the getting and setting of the config.
+     *
+     * Merge the received config with the existing/defaults and return them.
+     *
+     * @param $config
+     * @return \Array the current internal config.
+     */
+    public function config(array $config = [])
+    {
+        return $this->config = array_merge($this->config, $config);
+    }
 
     /**
      * Allow direct access to an item in the config, by using arguments
@@ -96,6 +105,7 @@ class Factory implements Contract\Factory
         {
             $result = $result[$arg];
         }
+
         return $result;
     }
 }

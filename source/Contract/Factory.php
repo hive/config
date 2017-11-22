@@ -24,5 +24,4 @@ interface Factory extends Library
      * @return array
      */
     public function load($name);
-
 }

@@ -1,65 +1,65 @@
 
 [1mPHP CODE SNIFFER INFORMATION REPORT[0m
 ----------------------------------------------------------------------
-CamelCase class name: [4myes[0m [9/9, 100%]
+CamelCase class name: [4myes[0m [8/8, 100%]
 
-CamelCase method name: [4myes[0m [4/4, 100%]
+CamelCase method name: [4myes[0m [6/6, 100%]
 
-Class defined in namespace: [4myes[0m [10/10, 100%]
+Class defined in namespace: [4myes[0m [9/9, 100%]
 
-Class opening brace placement: [4mnew line[0m [10/10, 100%]
+Class opening brace placement: [4mnew line[0m [9/9, 100%]
 
-Constant name case: [4mupper[0m [6/6, 100%]
+Constant name case: [4mupper[0m [4/4, 100%]
 
-Control structure defined inline: [4mno[0m [11/11, 100%]
+Control structure defined inline: [4mno[0m [9/9, 100%]
 
-Declarations and side effects mixed: [4mno[0m [10/10, 100%]
+Declarations and side effects mixed: [4mno[0m [9/9, 100%]
 
-EOL char: [4m\n[0m [10/10, 100%]
+EOL char: [4m\n[0m [9/9, 100%]
 
-Function opening brace placement: [4mnew line[0m [11/11, 100%]
+Function opening brace placement: [4mnew line[0m [12/12, 100%]
 
-Line indent: [4mspaces[0m [264/264, 100%]
+Line indent: [4mspaces[0m [247/247, 100%]
 
-Line length: [4m80 or less[0m [415/438, 94.75%]
-	81-120 => 19 (4.34%)
-	121-150 => 3 (0.68%)
-	151 or more => 1 (0.23%)
+Line length: [4m80 or less[0m [383/404, 94.8%]
+	81-120 => 17 (4.21%)
+	151 or more => 2 (0.5%)
+	121-150 => 2 (0.5%)
 
-Multiple statements on same line: [4mno[0m [52/52, 100%]
+Multiple statements on same line: [4mno[0m [44/44, 100%]
 
-Number of newlines at EOF: [4m1[0m [10/10, 100%]
+Number of newlines at EOF: [4m1[0m [9/9, 100%]
 
-One class per file: [4myes[0m [10/10, 100%]
+One class per file: [4myes[0m [9/9, 100%]
 
-PHP closing tag at end of PHP-only file: [4mno[0m [10/10, 100%]
+PHP closing tag at end of PHP-only file: [4mno[0m [9/9, 100%]
 
 PHP constant case: [4mlower[0m [6/6, 100%]
 
-PHP keyword case: [4mlower[0m [105/105, 100%]
+PHP keyword case: [4mlower[0m [98/98, 100%]
 
-PHP short open tag used: [4mno[0m [10/10, 100%]
+PHP short open tag used: [4mno[0m [9/9, 100%]
 
-Spaces after control structure open parenthesis: [4m0[0m [10/10, 100%]
+Spaces after control structure open parenthesis: [4m0[0m [8/8, 100%]
 
-Spaces before control structure close parenthesis: [4m0[0m [10/10, 100%]
+Spaces before control structure close parenthesis: [4m0[0m [8/8, 100%]
 
 ----------------------------------------------------------------------
-Time: 160ms; Memory: 5.25Mb
+Time: 202ms; Memory: 5.25Mb
 
 
 [1mFILE: .../apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES[0m
 ----------------------------------------------------------------------
- 27 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 184
-    |         |     characters
- 68 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
-    |         |     9
- 72 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
-    |         |     13
- 95 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
-    |         |     9
+  28 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 184
+     |         |     characters
+  63 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+  67 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 104 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
@@ -67,34 +67,22 @@ Time: 160ms; Memory: 5.25Mb
 
 [1mFILE: ...apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php[0m
 ----------------------------------------------------------------------
-[1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
+[1mFOUND 5 ERRORS AND 1 WARNING AFFECTING 6 LINES[0m
 ----------------------------------------------------------------------
-  62 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     9
-  65 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
-     |       |     found
-  66 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
-  69 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     13
-  74 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     17
-  99 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     9
- 103 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     13
+ 32 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 184
+    |         |     characters
+ 51 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
+    |         |     9
+ 54 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+    |         |     found
+ 55 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+    |         |     found
+ 89 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
+    |         |     9
+ 93 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis; found
+    |         |     13
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
-----------------------------------------------------------------------
-
-
-[1mFILE: ...p/kamio.krowd.dev/vendor/hive/config/source/Contract/Factory.php[0m
-----------------------------------------------------------------------
-[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
-----------------------------------------------------------------------
- 28 | [31mERROR[0m | [x] The closing brace for the interface must go on the
-    |       |     next line after the body
-----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+[1mPHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
 
@@ -109,14 +97,6 @@ Time: 160ms; Memory: 5.25Mb
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...dev/vendor/hive/config/source/Exception/InstanceDoesNotExist.php[0m
-----------------------------------------------------------------------
-[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
-----------------------------------------------------------------------
- 26 | [33mWARNING[0m | Line exceeds 120 characters; contains 138 characters
-----------------------------------------------------------------------
-
-
 [1mFILE: ...wd.dev/vendor/hive/config/source/Exception/ClassDoesNotExist.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES[0m
@@ -125,25 +105,24 @@ Time: 160ms; Memory: 5.25Mb
  26 | [33mWARNING[0m | Line exceeds 120 characters; contains 135 characters
 ----------------------------------------------------------------------
 
-Time: 161ms; Memory: 5.25Mb
+Time: 203ms; Memory: 5.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
 ----------------------------------------------------------------------
 [1m    STANDARD  CATEGORY            SNIFF                          COUNT
 [0m----------------------------------------------------------------------
-[x] Squiz     Control structures  Control signature space after  10
+[x] Squiz     Control structures  Control signature space after  8
 [ ] Generic   Files               Line length too long           4
 [x] Squiz     Control structures  Control signature space after  1
 [x] Squiz     Control structures  Control signature space after  1
-[x] PSR2      Classes             Class declaration close brace  1
 ----------------------------------------------------------------------
-[1mA TOTAL OF 17 SNIFF VIOLATIONS WERE FOUND IN 5 SOURCES[0m
+[1mA TOTAL OF 14 SNIFF VIOLATIONS WERE FOUND IN 4 SOURCES[0m
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (13 VIOLATIONS IN TOTAL)[0m
+[1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (10 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 161ms; Memory: 5.25Mb
+Time: 203ms; Memory: 5.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
@@ -151,16 +130,14 @@ Time: 161ms; Memory: 5.25Mb
 [1mFILE                                                  ERRORS  WARNINGS[0m
 ----------------------------------------------------------------------
 ...o.krowd.dev/vendor/hive/config/source/Factory.php  [31m3[0m       [33m1[0m
-....krowd.dev/vendor/hive/config/source/Instance.php  [31m7[0m       0
-...ev/vendor/hive/config/source/Contract/Factory.php  [31m1[0m       0
+....krowd.dev/vendor/hive/config/source/Instance.php  [31m5[0m       [33m1[0m
 ...d.dev/vendor/hive/config/source/Mixin/Library.php  [31m2[0m       0
-.../config/source/Exception/InstanceDoesNotExist.php  0       [33m1[0m
 ...ive/config/source/Exception/ClassDoesNotExist.php  0       [33m2[0m
 ----------------------------------------------------------------------
-[1mA TOTAL OF 13 ERRORS AND 4 WARNINGS WERE FOUND IN 10 FILES[0m
+[1mA TOTAL OF 10 ERRORS AND 4 WARNINGS WERE FOUND IN 9 FILES[0m
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX 13 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
+[1mPHPCBF CAN FIX 10 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 161ms; Memory: 5.25Mb
+Time: 203ms; Memory: 5.25Mb
 

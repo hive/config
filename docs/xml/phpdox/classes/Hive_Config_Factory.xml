@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Factory" namespace="Hive\Config" name="Factory" abstract="false" final="false" start="18" end="101">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="3037" time="2017-11-21T17:21:50+11:00" unixtime="1511245310" sha1="99ec71f5b8b5582c7ba75e6dd7c3e9b6d6761620" relative="Factory.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Factory" namespace="Hive\Config" name="Factory" abstract="false" final="false" start="18" end="111">
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="3239" time="2017-11-22T13:56:18+11:00" unixtime="1511319378" sha1="c54cddee16024e3e0a5323b0bb260f978486f7d4" relative="Factory.php"/>
   <docblock>
-    <description compact="Config Instance.">Allows access to a configuration class through a factory.</description>
+    <description compact="Config Factory.">Allows access to a configuration class through a factory.</description>
     <todo value="1.1.0.0 add the ability to use config drivers, return as object||array."/>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
     <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
@@ -15,8 +15,8 @@
     <docblock>
       <description compact="Default configuration settings.">The the config for the config, or if that is confusing, which options/settings to use with in the class.</description>
       <var description="['namespaces'] : array : Which namespaces to search for a config, with in our factory" type="array"/>
-      <var description="['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace." type="array"/>
       <var description="['group'] : string : The name of the config 'group' which to load." type="array"/>
+      <var description="['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace." type="array"/>
     </docblock>
   </member>
   <member name="options" visibility="protected" static="false" line="39">
@@ -25,20 +25,14 @@
       <placeholder/>
     </docblock>
   </member>
-  <constructor name="__construct" start="48" end="54" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
     <docblock>
-      <description compact="Library constructor."/>
+      <description compact="Factory constructor."/>
       <param type="array" variable="$config"/>
-      <throws type="object">
-        <type full="Hive\Config\Exception\RequiresMemoryGetUsage" namespace="Hive\Config\Exception" name="RequiresMemoryGetUsage"/>
-      </throws>
     </docblock>
     <parameter name="config" byreference="false" type="array" default=""/>
-    <inline>
-      <comment value="Merge the received config with the defaults." line="50"/>
-    </inline>
   </constructor>
-  <method name="load" start="65" end="79" abstract="false" final="false" static="false" visibility="public">
+  <method name="load" start="60" end="75" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Loads a config class and returns its object."/>
       <param description="the name of which config to load." type="string" variable="$name"/>
@@ -51,11 +45,21 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Loop through all of our namespaces looking for the config." line="67"/>
-      <comment value="We didn't find a matching class." line="77"/>
+      <comment value="Loop through all of our namespaces looking for the config." line="62"/>
+      <comment value="We didn't find a matching class." line="73"/>
     </inline>
   </method>
-  <method name="__call" start="91" end="100" abstract="false" final="false" static="false" visibility="public">
+  <method name="config" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Allows for the getting and setting of the config.">Merge the received config with the existing/defaults and return them.</description>
+      <param variable="$config"/>
+      <return description="the current internal config." type="object">
+        <type full="\Array" namespace="" name="Array"/>
+      </return>
+    </docblock>
+    <parameter name="config" byreference="false" type="array" default=""/>
+  </method>
+  <method name="__call" start="100" end="110" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Allow direct access to an item in the config, by using arguments">Will load the factory then filter to the result you want.</description>
       <param description="which config class to load" type="string" variable="$name"/>

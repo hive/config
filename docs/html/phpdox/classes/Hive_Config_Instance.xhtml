@@ -62,9 +62,6 @@
             <a href="#coverage">Coverage</a>
           </li>
           <li>
-            <a href="#tasks">Tasks</a>
-          </li>
-          <li>
             <a href="#members">Members</a>
           </li>
           <li>
@@ -91,14 +88,10 @@
                 implements
                 <a title="Hive\Config\Contract\Instance" href="../interfaces/Hive_Config_Contract_Instance.xhtml">Instance</a>
             {<br/><ul class="none"><li>// members</li><li>private static  <a href="#members">$objects</a>;
-                    </li><li>protected static  <a href="#members">$options</a>;
-                    </li><li>public static array <a href="#members">$namespaces</a> =
+                    </li><li>protected static array <a href="#members">$config</a> =
                         ;
-                    </li><li>public static boolean <a href="#members">$type</a> =
-                        false;
-                    </li><li>public static string <a href="#members">$environment</a> =
-                        'default';
-                    </li></ul><ul class="none"><li>// methods</li><li>public static bool <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/load.xhtml">load</a>()
+                    </li></ul><ul class="none"><li>// methods</li><li>public static Iterator <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/load.xhtml">load</a>()
+                    </li><li>public static Array <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/config.xhtml">config</a>()
                     </li><li>public static array <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/__callStatic.xhtml">__callStatic</a>()
                     </li><li>public static void <a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/destroy.xhtml">destroy</a>()
                     </li></ul>
@@ -118,25 +111,12 @@
           <tr>
             <td>Methods</td>
             <td class="percent">0%</td>
-            <td class="nummeric">0 / 3</td>
+            <td class="nummeric">0 / 4</td>
           </tr>
           <tr>
             <td>Lines</td>
             <td class="percent">0%</td>
             <td class="nummeric"> / </td>
-          </tr>
-        </table>
-        <h2 id="tasks">Tasks</h2>
-        <table class="styled">
-          <thead>
-            <tr>
-              <th style="width:3em;">Line</th>
-              <th>Task</th>
-            </tr>
-          </thead>
-          <tr>
-            <td class="nummeric">+</td>
-            <td>rename to 'group', for a more generic use of it.</td>
           </tr>
         </table>
         <h2 id="members">Members</h2>
@@ -145,25 +125,13 @@
           <ul class="members">
             <li id="objects"><strong>$objects</strong>
                 —
-                </li>
+                array<br/><span class="indent">Holds our static config objects.</span></li>
           </ul>
           <h4>protected</h4>
           <ul class="members">
-            <li id="options"><strong>$options</strong>
+            <li id="config"><strong>$config</strong>
                 —
-                </li>
-          </ul>
-          <h4>public</h4>
-          <ul class="members">
-            <li id="environment"><strong>$environment</strong>
-                —
-                string</li>
-            <li id="namespaces"><strong>$namespaces</strong>
-                —
-                array</li>
-            <li id="type"><strong>$type</strong>
-                —
-                string<br/><span class="indent">The name of the file type to load, defaults to empty.</span></li>
+                array<br/><span class="indent">Default configuration settings.</span></li>
           </ul>
         </div>
         <h2 id="methods">Methods</h2>
@@ -171,7 +139,9 @@
           <h4>public</h4>
           <ul>
             <li id="__callStatic"><a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/__callStatic.xhtml">__callStatic()</a>
-                — Allow direct access to an item in the config, by using arguments cal</li>
+                — Allow direct access to an item in the config, by using arguments</li>
+            <li id="config"><a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/config.xhtml">config()</a>
+                — Allows for the getting and setting of the config.</li>
             <li id="destroy"><a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/destroy.xhtml">destroy()</a>
                 — Allows the destruction of the instance.</li>
             <li id="load"><a title="Hive\Config\Instance" href="../classes/Hive_Config_Instance/load.xhtml">load()</a>

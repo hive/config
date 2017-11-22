@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="false" final="false" start="16" end="121">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2770" time="2017-11-21T17:26:29+11:00" unixtime="1511245589" sha1="81290f13d73cd5e68c2a7315a1f1011ac23ef600" relative="Instance.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="true" final="false" start="16" end="111">
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2966" time="2017-11-22T14:11:04+11:00" unixtime="1511320264" sha1="a3551ab864a8e7fe0963a32c1bae925e6b2e1937" relative="Instance.php"/>
   <docblock>
     <description compact="Config Instance.">Allows access to the config object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -10,57 +10,46 @@
     <copyright value="(c) 2016 Jamie  Peake"/>
   </docblock>
   <implements full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
-  <member name="objects" visibility="private" static="true" line="22">
+  <member name="objects" visibility="private" static="true" line="23">
     <docblock>
-      <description/>
-      <var/>
-    </docblock>
-  </member>
-  <member name="options" visibility="protected" static="true" line="27">
-    <docblock>
-      <description/>
-      <var/>
-    </docblock>
-  </member>
-  <member name="namespaces" type="array" default="" visibility="public" static="true" line="32">
-    <docblock>
-      <description/>
+      <description compact="Holds our static config objects."/>
       <var type="array"/>
     </docblock>
   </member>
-  <member name="type" type="boolean" default="false" visibility="public" static="true" line="41">
+  <member name="config" type="array" default="" visibility="protected" static="true" line="34">
     <docblock>
-      <description compact="The name of the file type to load, defaults to empty.">allows for the automatic namespace, ie all configs are with in the Config namespace.</description>
-      <var type="string"/>
+      <description compact="Default configuration settings.">The the config for the config, or if that is confusing, which options/settings to use with in the class.</description>
+      <var description="['namespaces'] : array : Which namespaces to search for a config, with in our factory" type="array"/>
+      <var description="['group'] : string : The name of the config 'group' which to load." type="array"/>
+      <var description="['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace." type="array"/>
     </docblock>
   </member>
-  <member name="environment" type="string" default="'default'" visibility="public" static="true" line="47">
-    <docblock>
-      <description/>
-      <todo value="rename to 'group', for a more generic use of it."/>
-      <var type="string"/>
-    </docblock>
-  </member>
-  <method name="load" start="59" end="84" abstract="false" final="false" static="true" visibility="public">
+  <method name="load" start="48" end="63" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
       <param variable="$name"/>
-      <throws type="object">
-        <type full="Hive\Config\Exception\InstanceDoesNotExist" namespace="Hive\Config\Exception" name="InstanceDoesNotExist"/>
-      </throws>
       <return type="object">
-        <type full="Hive\Config\bool" namespace="Hive\Config" name="bool"/>
+        <type full="\Iterator" namespace="" name="Iterator"/>
       </return>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Does the object already exist" line="61"/>
-      <comment value="We didn't find a matching class." line="82"/>
+      <comment value="Does the object already exist" line="50"/>
     </inline>
   </method>
-  <method name="__callStatic" start="94" end="110" abstract="false" final="false" static="true" visibility="public">
+  <method name="config" start="73" end="76" abstract="false" final="false" static="true" visibility="public">
     <docblock>
-      <description compact="Allow direct access to an item in the config, by using arguments cal"/>
+      <description compact="Allows for the getting and setting of the config.">Merge the received config with the existing/defaults and return them.</description>
+      <param variable="$config"/>
+      <return description="the current internal config." type="object">
+        <type full="\Array" namespace="" name="Array"/>
+      </return>
+    </docblock>
+    <parameter name="config" byreference="false" type="array" default=""/>
+  </method>
+  <method name="__callStatic" start="85" end="100" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Allow direct access to an item in the config, by using arguments"/>
       <param variable="$name"/>
       <param type="array" variable="$args"/>
       <return type="array"/>
@@ -68,7 +57,7 @@
     <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="args" byreference="false" type="{unknown}"/>
   </method>
-  <method name="destroy" start="117" end="120" abstract="false" final="false" static="true" visibility="public">
+  <method name="destroy" start="107" end="110" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Allows the destruction of the instance.">This is used for Unit testing the instance.</description>
     </docblock>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source">
-    <file name="Factory.php" size="3037" time="2017-11-21T17:21:50+11:00" unixtime="1511245310" sha1="99ec71f5b8b5582c7ba75e6dd7c3e9b6d6761620" xml="tokens/Factory.php.xml"/>
-    <file name="Instance.php" size="2770" time="2017-11-21T17:26:29+11:00" unixtime="1511245589" sha1="81290f13d73cd5e68c2a7315a1f1011ac23ef600" xml="tokens/Instance.php.xml"/>
+    <file name="Factory.php" size="3239" time="2017-11-22T13:56:18+11:00" unixtime="1511319378" sha1="c54cddee16024e3e0a5323b0bb260f978486f7d4" xml="tokens/Factory.php.xml"/>
+    <file name="Instance.php" size="2966" time="2017-11-22T14:11:04+11:00" unixtime="1511320264" sha1="a3551ab864a8e7fe0963a32c1bae925e6b2e1937" xml="tokens/Instance.php.xml"/>
     <dir name="Contract">
       <file name="Factory.php" size="532" time="2017-11-21T16:53:53+11:00" unixtime="1511243633" sha1="2d4a4a6e8abba733a855b14b8ae17adcf177424c" xml="tokens/Contract/Factory.php.xml"/>
       <file name="Instance.php" size="362" time="2017-10-27T18:12:42+11:00" unixtime="1509088362" sha1="4b5f051ae534802a3c8eb2a7a1173bd423ff7e1a" xml="tokens/Contract/Instance.php.xml"/>
@@ -11,10 +11,9 @@
     <dir name="Mixin">
       <file name="Library.php" size="916" time="2017-11-06T18:19:34+11:00" unixtime="1509952774" sha1="1c0bef2a6eaee4150957f7ac0d609b74cf74da55" xml="tokens/Mixin/Library.php.xml"/>
     </dir>
-    <file name="Library.php" size="799" time="2017-11-06T18:22:39+11:00" unixtime="1509952959" sha1="df6a310b8170e18778d1c9278a5d55012373cbc7" xml="tokens/Library.php.xml"/>
+    <file name="Library.php" size="865" time="2017-11-22T14:17:05+11:00" unixtime="1511320625" sha1="729fe561d300319b524f7ae62a263f4f9ad58cee" xml="tokens/Library.php.xml"/>
     <file name="Exception.php" size="1233" time="2017-10-27T18:12:42+11:00" unixtime="1509088362" sha1="d2c3553c8a4489acb605520da4791b1533df27e8" xml="tokens/Exception.php.xml"/>
     <dir name="Exception">
-      <file name="InstanceDoesNotExist.php" size="1235" time="2017-11-21T16:05:58+11:00" unixtime="1511240758" sha1="885f1c08f2157a43e0ecab8c475cfb545c2d50c8" xml="tokens/Exception/InstanceDoesNotExist.php.xml"/>
       <file name="ClassDoesNotExist.php" size="1248" time="2017-11-21T16:05:58+11:00" unixtime="1511240758" sha1="6cdf67aa9ecc9cf20e996e7a4a5cee963866cf09" xml="tokens/Exception/ClassDoesNotExist.php.xml"/>
     </dir>
   </dir>
