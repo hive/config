@@ -17,11 +17,21 @@
 interface Factory extends Library
 {
     /**
-     * Load a config
+     * Load a config class
      *
      * @param string $name the config to get.
      *
      * @return array
      */
     public function load($name);
+
+
+    /**
+     * Get/Set the internal configuration.
+     *
+     * @param array $config any configuration changes required.
+     *
+     * @return \Array the current internal config.
+     */
+    public function config(array $config = []);
 }

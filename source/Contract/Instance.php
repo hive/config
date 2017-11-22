@@ -16,4 +16,21 @@
 interface Instance
 {
 
+    /**
+     * Load a config class
+     *
+     * @param string $name the config to get.
+     *
+     * @return array
+     */
+    public static function load($name);
+
+    /**
+     * Get/Set the internal configuration.
+     *
+     * @param array $config any configuration changes required.
+     *
+     * @return \Array the current internal config.
+     */
+    public static function config(array $config = []);
 }

@@ -80,7 +80,7 @@ class Factory implements Contract\Factory
      *
      * Merge the received config with the existing/defaults and return them.
      *
-     * @param $config
+     * @param array $config any configuration changes required.
      * @return \Array the current internal config.
      */
     public function config(array $config = [])
