@@ -18,14 +18,14 @@ trait Library
     /**
      * Library constructor.
      *
-     * @param       $environment
+     * @param       $group
      * @param array $values
      */
-    public function __construct($environment = 'default', array $values = [])
+    public function __construct($group = 'default', array $values = [])
     {
-        if (isset(self::$$environment))
+        if (isset(self::$$group))
         {
-            $values = array_replace_recursive(self::$$environment, $values);
+            $values = array_replace_recursive(self::$$group, $values);
         }
 
         if (isset(self::$default))

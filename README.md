@@ -140,9 +140,8 @@ The above example will output
      * As the group is being set on the instance, this will remain the 'group' for all
      * configuration instances, until changed.
      */
-    $config         = new Config\Instance();
-    $config::$group = 'development';
-    print_r( $config::Mail() );
+    Config\Instance::config(['group' => 'development']);
+    print_r( Config\Instance::Mail() );
 
 ```
 
@@ -175,7 +174,6 @@ The above example will output
     * Inheritance Groups
     * Deep array, and their use of an instance with the static arguments. 
   * Examples
-  * Rename internal environment variable to group    
   * Submit to packagist
   * Tag.  
  
@@ -196,15 +194,16 @@ The code is split up into the following classes :
         *  __construct
     2. Instance.php : Instance of the object class.
         * static load
+        * static config
         * static __callStatic
     3. Factory.php : Factory to create the object class.
         * load
+        * config
         * __call
     4. Exception : Folder for any exceptions the object will throw.
         * ClassDoesNotExist.php
-        * InstanceDoesNotExist.php
     5. Mixin : Folder for any mix-ins (traits)
-        * Library.php the trait to include to for easy implentation.
+        * Library.php the trait to include to for easy implementation.
     6. Contact : folder for any interfaces or abstract classes they implement
         * Instance.php
         * Library.php

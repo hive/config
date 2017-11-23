@@ -4,22 +4,22 @@ This folder contains a collection of examples of using [Hive\Config](https://git
 
 ## [Using the Config Package](1-UsingTheConfigPackage.php)
 
-An example of using the benchmark in its simplest form  with the mixin.
+An example of using the benchmark in its simplest form  with the mixin as a factory and as an instance.
 
-## [Using the Factory](2-UsingTheFactory.php)
-
-An example on using the config factory to load your config files and how to use arguments to reduce code clutter. 
-
-## [Using the Instance](3-UsingTheInstance.php)
-
-An example on using the config instance to load your config files and how to use arguments to reduce code clutter. 
-
-## [In Built Groups](4-Groups.php)
+## [In Built In Groups](2-Groups.php)
 
 What are groups, how to use them and ... why?
 
-## [Cascading Config Files](5-Cascading.php)
+## [Inheriting a config from another](3-Inheriting.php)
+
+Now we start looking at the more useful features of the config package, inheriting configs. 
+
+## [Cascading Config Files](4-Cascading.php)
 
 Shows inbuilt support for cascading configuration files, how to use them and what quirks they have. 
+
+## [Using Php 5.*](5-UsingWithPHP5.php)
+
+Due to a limitation of php5, we need to alias the trait for thie package to work, this is an example of that. 
 
 * * *

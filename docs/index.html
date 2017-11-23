@@ -156,9 +156,8 @@ Array
      * As the group is being set on the instance, this will remain the 'group' for all
      * configuration instances, until changed.
      */
-    $config         = new Config\Instance();
-    $config::$group = 'development';
-    print_r( $config::Mail() );
+    Config\Instance::config(['group' => 'development']);
+    print_r( Config\Instance::Mail() );
 
 </code></pre>
 
