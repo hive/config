@@ -33,7 +33,7 @@ trait Library
             $values = array_replace_recursive(self::$default, $values);
         }
 
-        parent::__construct($environment, $values);
+        parent::__construct($group, $values);
 
     }
 }

@@ -26,7 +26,7 @@ class Library extends \ArrayIterator implements Contract\Library
      */
     public function __construct($group, array $array = [])
     {
-        // Discard the environment.
+        // Discard the Group.
         unset($group);
 
         parent::__construct($array);
