@@ -12,6 +12,7 @@ Simple decoupled config, Version 1.0.*
 ## Documentation
 
 [https://hive.github.io/config/](https://hive.github.io/config/).
+[examples](https://github.com/hive/config/tree/master/examples)
 
 ## Overview 
 
@@ -110,6 +111,7 @@ The above example will output
  ```
 #### Grouping with Default Values
    
+Full examples can be found with in the [examples](https://github.com/hive/config/tree/master/examples) folder.    
    
 **Configuration Class**
 
