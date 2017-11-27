@@ -1,7 +1,7 @@
 # Hive Config
+[![License](https://poser.pugx.org/hive/config/license?format=flat-square)](https://packagist.org/packages/hive/config)
 [![Latest Stable Version](https://poser.pugx.org/hive/config/v/stable?format=flat-square)](https://packagist.org/packages/hive/config)
 [![Latest Unstable Version](https://poser.pugx.org/hive/config/v/unstable?format=flat-square)](https://packagist.org/packages/hive/config)
-[![License](https://poser.pugx.org/hive/config/license?format=flat-square)](https://packagist.org/packages/hive/config)
 [![composer.lock](https://poser.pugx.org/hive/config/composerlock?format=flat-square)](https://packagist.org/packages/hive/config)
 [![Build Status](https://img.shields.io/travis/hive/config/master.svg?style=flat-square)](https://travis-ci.org/hive/config)
 
@@ -31,7 +31,7 @@ Recommended installation [through composer](http://getcomposer.org).
 ```JSON
 {
     "require": {
-        "Hive/Config": "dev-master"
+        "Hive/Config": "1.0.*"
     }
 }
 ```
