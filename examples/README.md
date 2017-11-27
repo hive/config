@@ -10,9 +10,9 @@ An example of using the benchmark in its simplest form  with the mixin as a fact
 
 What are groups, how to use them and ... why?
 
-## [Inheriting a config from another](3-Inheriting.php)
+## [Inheriting a config from another](3-Extending.php)
 
-Now we start looking at the more useful features of the config package, inheriting configs. 
+Now we start looking at the more useful features of the config package, extending configs. 
 
 ## [Cascading Config Files](4-Cascading.php)
 
