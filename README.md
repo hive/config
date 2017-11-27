@@ -175,9 +175,6 @@ Full examples can be found with in the [examples](https://github.com/hive/config
     * Group Testing
     * Inheritance Groups
     * Deep array, and their use of an instance with the static arguments. 
-  * Examples
-  * Submit to packagist
-  * Tag.  
  
 ## Advance 
 
