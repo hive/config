@@ -1,6 +1,6 @@
 {
   "name": "hive/config",
-  "description": "Hive Config",
+  "description": "Hive Decoupled Config Package",
   "keywords": [
     "mvc", "config",  "hive", "wax", "library", "helper"
   ],
@@ -15,7 +15,8 @@
   "support": {
     "issues": "https://github.com/hive/config/issues",
     "wiki": "https://github.com/hive/config/wiki",
-    "source": "https://github.com/config/router"
+    "source": "https://github.com/config/router",
+    "examples": "https://github.com/hive/config/examples"
   },
   "type": "Library",
   "require": {
@@ -31,7 +32,7 @@
       "dev-master": "1.0.x-dev"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "suggest": {
   }
 }

@@ -6,7 +6,7 @@
 [![Build Status](https://img.shields.io/travis/hive/config/master.svg?style=flat-square)](https://travis-ci.org/hive/config)
 
 
-Simple decoupled config, In Development
+Simple decoupled config, Version 1.0.*
 
 
 ## Documentation
