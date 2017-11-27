@@ -9,10 +9,19 @@
 Simple decoupled config, Version 1.0.*
 
 
-## Documentation
+## [Documentation](https://hive.github.io/config/)
 
-[https://hive.github.io/config/](https://hive.github.io/config/).
-[examples](https://github.com/hive/config/tree/master/examples)
+ * [Getting Started](https://hive.github.io/config/).
+ * [API](https://hive.github.io/config/html/phpdox/index.xhtml).
+ * [Unit Tests](https://hive.github.io/config/html/phpunit/index.html).
+ * [Coverage Dashboard](https://hive.github.io/config/html/coverage/dashboard.html).
+ * [Coverage Details](https://hive.github.io/config/html/coverage/index.html).
+ * Metrics [Version 1.10](https://hive.github.io/config/html/phpmetrics1/index.html) [Version 2.3](https://hive.github.io/config/html/phpmetrics2/index.html).
+ * [Coding Standard](https://hive.github.io/config/html/codesniffer/index.html).
+ * [Copy/Paste Detector](https://hive.github.io/config/html/phpcpd/index.html).
+ * [Mess Detector](https://hive.github.io/config/html/phpmd/index.html).
+ * [Statistics](https://hive.github.io/config/html/phploc/index.html).
+ * [Examples](https://github.com/hive/config/tree/master/examples)
 
 ## Overview 
 
