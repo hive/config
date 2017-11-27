@@ -88,8 +88,7 @@ abstract class Instance implements Contract\Instance
 
         if (self::load($name))
         {
-            $result = iterator_to_array(self::$objects[$name]);
-
+            $result = self::$objects[$name];  // JP: iterator_to_array removed
             foreach ($args as $arg)
             {
                 $result = $result[$arg];
