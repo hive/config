@@ -99,7 +99,7 @@ class Factory implements Contract\Factory
      */
     public function __call($name, $args)
     {
-        $result = iterator_to_array($this->load($name));
+        $result = $this->load($name);
 
         foreach ($args as $arg)
         {
