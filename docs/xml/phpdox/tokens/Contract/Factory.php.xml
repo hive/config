@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source/Contract" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Contract/Factory.php" size="532" time="2017-11-21T16:53:53+11:00" unixtime="1511243633" sha1="2d4a4a6e8abba733a855b14b8ae17adcf177424c" relative="Contract/Factory.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source/Contract" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Contract/Factory.php" size="775" time="2017-11-22T14:24:43+11:00" unixtime="1511321083" sha1="1047a78c617f5a45784610e704a1e28e5a29b232" relative="Contract/Factory.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -72,7 +72,7 @@
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="20">
-    <token name="T_DOC_COMMENT">     * Load a config</token>
+    <token name="T_DOC_COMMENT">     * Load a config class</token>
   </line>
   <line no="21">
     <token name="T_DOC_COMMENT">     *</token>
@@ -102,8 +102,50 @@
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="27"/>
-  <line no="28">
+  <line no="28"/>
+  <line no="29">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     * Get/Set the internal configuration.</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     * @param array $config any configuration changes required.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     * @return \Array the current internal config.</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">config</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="37">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="29"/>
+  <line no="38"/>
 </source>

@@ -28,8 +28,8 @@ class Factory implements Contract\Factory
      * @var array ['type'] : boolean|string : The name of the file type to load, defaults to empty. allows for the automatic namespace, ie all configs are with in the Config namespace.
      */
     protected $config = [
-        'namespaces'    => [''],  // Check Globally
-        'group'         => 'default',    // Great for environmental variables.
+        'namespaces'    => [''],        // Check Globally
+        'group'         => 'default',   // Great for environmental variables.
         'type'          => false
     ];
 
@@ -45,6 +45,7 @@ class Factory implements Contract\Factory
      */
     public function __construct(array $config = [])
     {
+        // Set our config with values passed.
         $this->config($config);
     }
 
@@ -85,6 +86,7 @@ class Factory implements Contract\Factory
      */
     public function config(array $config = [])
     {
+        // Return our config, after we merge it with any changes.
         return $this->config = array_merge($this->config, $config);
     }
 
@@ -93,19 +95,48 @@ class Factory implements Contract\Factory
      *
      * Will load the factory then filter to the result you want.
      *
+     * @throws Exception\ArgumentDoesNotExist
+     *
      * @param string $name which config class to load
      * @param array $args an array of parameters sent to the magic method, in which to filter the results by.
      * @return \Traversable
      */
     public function __call($name, $args)
     {
+        // Assign the values which to filter
         $result = $this->load($name);
 
+        // Filter our results byt the args and return.
+        return $this->filter($result, $args);
+    }
+
+
+    /**
+     * @param $result
+     * @param $args
+     *
+     * @return mixed
+     * @throws Exception\ArgumentDoesNotExist
+     */
+    public function filter($result, $args = [])
+    {
+        // Loop through each of the argument each time nesting further in to the config
         foreach ($args as $arg)
         {
-            $result = $result[$arg];
+            // GIGO : check that the argument exists.
+            if (isset($result[$arg]))
+            {
+                // Assign the result if the argument exists in the config
+                $result = $result[$arg];
+            }
+            else
+            {
+                // We didn't find a matching argument.
+                throw new Exception\ArgumentDoesNotExist($arg);
+            }
         }
 
+        // Return our filtered results.
         return $result;
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Instance" namespace="Hive\Config" name="Instance" abstract="true" final="false" start="16" end="111">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="2966" time="2017-11-22T14:11:04+11:00" unixtime="1511320264" sha1="a3551ab864a8e7fe0963a32c1bae925e6b2e1937" relative="Instance.php"/>
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Instance.php" size="3096" time="2017-11-27T12:52:50+11:00" unixtime="1511747570" sha1="bc89de82db54ed5ed5879902bab1687174db92bf" relative="Instance.php"/>
   <docblock>
     <description compact="Config Instance.">Allows access to the config object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -27,7 +27,7 @@
   <method name="load" start="48" end="63" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
-      <param variable="$name"/>
+      <param type="string" variable="$name"/>
       <return type="object">
         <type full="\Iterator" namespace="" name="Iterator"/>
       </return>
@@ -37,7 +37,7 @@
       <comment value="Does the object already exist" line="50"/>
     </inline>
   </method>
-  <method name="config" start="73" end="76" abstract="false" final="false" static="true" visibility="public">
+  <method name="config" start="73" end="77" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Allows for the getting and setting of the config.">Merge the received config with the existing/defaults and return them.</description>
       <param variable="$config"/>
@@ -46,21 +46,58 @@
       </return>
     </docblock>
     <parameter name="config" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="Return our config, after we merge it with any changes." line="75"/>
+    </inline>
   </method>
-  <method name="__callStatic" start="85" end="100" abstract="false" final="false" static="true" visibility="public">
+  <method name="__callStatic" start="89" end="99" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Allow direct access to an item in the config, by using arguments"/>
+      <throws type="object">
+        <type full="Hive\Config\Exception\ArgumentDoesNotExist" namespace="Hive\Config\Exception" name="ArgumentDoesNotExist"/>
+      </throws>
       <param variable="$name"/>
-      <param type="array" variable="$args"/>
-      <return type="array"/>
+      <param type="object" variable="$args">
+        <type full="Hive\Config\array|bool" namespace="Hive\Config" name="array|bool"/>
+      </param>
+      <return type="object">
+        <type full="\Iterator" namespace="" name="Iterator"/>
+      </return>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
-    <parameter name="args" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="Get the full result" line="91"/>
+      <comment value="Load up the factory, with no config" line="94"/>
+      <comment value="Filter and return our results" line="97"/>
+    </inline>
   </method>
-  <method name="destroy" start="107" end="110" abstract="false" final="false" static="true" visibility="public">
+  <method name="destroy" start="106" end="110" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Allows the destruction of the instance.">This is used for Unit testing the instance.</description>
     </docblock>
+    <inline>
+      <comment value="Destroy our objects" line="108"/>
+    </inline>
   </method>
-  <interface full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance"/>
+  <interface full="Hive\Config\Contract\Instance" namespace="Hive\Config\Contract" name="Instance">
+    <method name="load" start="26" end="26" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Load a config class"/>
+        <param description="the config to get." type="string" variable="$name"/>
+        <return type="array"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="config" start="35" end="35" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Get/Set the internal configuration."/>
+        <param description="any configuration changes required." type="array" variable="$config"/>
+        <return description="the current internal config." type="object">
+          <type full="\Array" namespace="" name="Array"/>
+        </return>
+      </docblock>
+      <parameter name="config" byreference="false" type="array" default=""/>
+    </method>
+  </interface>
 </class>

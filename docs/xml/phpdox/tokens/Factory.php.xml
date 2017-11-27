@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="3239" time="2017-11-22T13:56:18+11:00" unixtime="1511319378" sha1="c54cddee16024e3e0a5323b0bb260f978486f7d4" relative="Factory.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Factory.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Factory.php" size="4257" time="2017-11-27T12:52:01+11:00" unixtime="1511747521" sha1="2d4dbb2a8bc45f896b949e4fed71392acb719631" relative="Factory.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -205,6 +205,10 @@
   </line>
   <line no="48">
     <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Set our config with values passed.</token>
+  </line>
+  <line no="49">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">config</token>
@@ -213,40 +217,40 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="49">
+  <line no="50">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="50"/>
-  <line no="51">
+  <line no="51"/>
+  <line no="52">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="52">
+  <line no="53">
     <token name="T_DOC_COMMENT">     * Loads a config class and returns its object.</token>
   </line>
-  <line no="53">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
   <line no="54">
-    <token name="T_DOC_COMMENT">     * @param string $name the name of which config to load.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="55">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT">     * @param string $name the name of which config to load.</token>
   </line>
   <line no="56">
-    <token name="T_DOC_COMMENT">     * @return \Iterator</token>
-  </line>
-  <line no="57">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">     * @return \Iterator</token>
+  </line>
   <line no="58">
-    <token name="T_DOC_COMMENT">     * @throws Exception\ClassDoesNotExist</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="59">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * @throws Exception\ClassDoesNotExist</token>
   </line>
   <line no="60">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="61">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -257,15 +261,15 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="61">
+  <line no="62">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="62">
+  <line no="63">
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// Loop through all of our namespaces looking for the config.</token>
   </line>
-  <line no="63">
+  <line no="64">
     <token name="T_WHITESPACE">        </token>
     <token name="T_FOREACH">foreach</token>
     <token name="T_WHITESPACE"> </token>
@@ -282,15 +286,15 @@
     <token name="T_VARIABLE">$namespace</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="64">
+  <line no="65">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="65">
+  <line no="66">
     <token name="T_WHITESPACE">            </token>
     <token name="T_COMMENT">// build the class from the namespaces, type and name.</token>
   </line>
-  <line no="66">
+  <line no="67">
     <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$class</token>
     <token name="T_WHITESPACE"> </token>
@@ -340,7 +344,7 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="67">
+  <line no="68">
     <token name="T_WHITESPACE">            </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -351,11 +355,11 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="68">
+  <line no="69">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="69">
+  <line no="70">
     <token name="T_WHITESPACE">                </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -372,20 +376,20 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="70">
+  <line no="71">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="71">
+  <line no="72">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="72"/>
-  <line no="73">
+  <line no="73"/>
+  <line no="74">
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// We didn't find a matching class.</token>
   </line>
-  <line no="74">
+  <line no="75">
     <token name="T_WHITESPACE">        </token>
     <token name="T_THROW">throw</token>
     <token name="T_WHITESPACE"> </token>
@@ -399,38 +403,38 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="75">
+  <line no="76">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="76"/>
   <line no="77"/>
-  <line no="78">
+  <line no="78"/>
+  <line no="79">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="79">
+  <line no="80">
     <token name="T_DOC_COMMENT">     * Allows for the getting and setting of the config.</token>
   </line>
-  <line no="80">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
   <line no="81">
-    <token name="T_DOC_COMMENT">     * Merge the received config with the existing/defaults and return them.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="82">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT">     * Merge the received config with the existing/defaults and return them.</token>
   </line>
   <line no="83">
-    <token name="T_DOC_COMMENT">     * @param $config</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="84">
-    <token name="T_DOC_COMMENT">     * @return \Array the current internal config.</token>
+    <token name="T_DOC_COMMENT">     * @param array $config any configuration changes required.</token>
   </line>
   <line no="85">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * @return \Array the current internal config.</token>
   </line>
   <line no="86">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="87">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -448,11 +452,15 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="87">
+  <line no="88">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="88">
+  <line no="89">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Return our config, after we merge it with any changes.</token>
+  </line>
+  <line no="90">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -473,40 +481,46 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="89">
+  <line no="91">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="90"/>
-  <line no="91">
+  <line no="92"/>
+  <line no="93">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="92">
-    <token name="T_DOC_COMMENT">     * Allow direct access to an item in the config, by using arguments</token>
-  </line>
-  <line no="93">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
   <line no="94">
-    <token name="T_DOC_COMMENT">     * Will load the factory then filter to the result you want.</token>
+    <token name="T_DOC_COMMENT">     * Allow direct access to an item in the config, by using arguments</token>
   </line>
   <line no="95">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="96">
-    <token name="T_DOC_COMMENT">     * @param string $name which config class to load</token>
+    <token name="T_DOC_COMMENT">     * Will load the factory then filter to the result you want.</token>
   </line>
   <line no="97">
-    <token name="T_DOC_COMMENT">     * @param array $args an array of parameters sent to the magic method, in which to filter the results by.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="98">
-    <token name="T_DOC_COMMENT">     * @return \Traversable</token>
+    <token name="T_DOC_COMMENT">     * @throws Exception\ArgumentDoesNotExist</token>
   </line>
   <line no="99">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="100">
+    <token name="T_DOC_COMMENT">     * @param string $name which config class to load</token>
+  </line>
+  <line no="101">
+    <token name="T_DOC_COMMENT">     * @param array $args an array of parameters sent to the magic method, in which to filter the results by.</token>
+  </line>
+  <line no="102">
+    <token name="T_DOC_COMMENT">     * @return \Traversable</token>
+  </line>
+  <line no="103">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="104">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -520,29 +534,104 @@
     <token name="T_VARIABLE">$args</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="101">
+  <line no="105">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="102">
+  <line no="106">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Assign the values which to filter</token>
+  </line>
+  <line no="107">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">iterator_to_array</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Filter our results byt the args and return.</token>
+  </line>
+  <line no="110">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">filter</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$args</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="103"/>
-  <line no="104">
+  <line no="111">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="112"/>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="115">
+    <token name="T_DOC_COMMENT">     * @param $result</token>
+  </line>
+  <line no="116">
+    <token name="T_DOC_COMMENT">     * @param $args</token>
+  </line>
+  <line no="117">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="118">
+    <token name="T_DOC_COMMENT">     * @return mixed</token>
+  </line>
+  <line no="119">
+    <token name="T_DOC_COMMENT">     * @throws Exception\ArgumentDoesNotExist</token>
+  </line>
+  <line no="120">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="121">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">filter</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$args</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="122">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="123">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Loop through each of the argument each time nesting further in to the config</token>
+  </line>
+  <line no="124">
     <token name="T_WHITESPACE">        </token>
     <token name="T_FOREACH">foreach</token>
     <token name="T_WHITESPACE"> </token>
@@ -554,12 +643,38 @@
     <token name="T_VARIABLE">$arg</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="105">
+  <line no="125">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="106">
+  <line no="126">
     <token name="T_WHITESPACE">            </token>
+    <token name="T_COMMENT">// GIGO : check that the argument exists.</token>
+  </line>
+  <line no="127">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ISSET">isset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$arg</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="128">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="129">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_COMMENT">// Assign the result if the argument exists in the config</token>
+  </line>
+  <line no="130">
+    <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -570,24 +685,62 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="107">
+  <line no="131">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="132">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_ELSE">else</token>
+  </line>
+  <line no="133">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_COMMENT">// We didn't find a matching argument.</token>
+  </line>
+  <line no="135">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Exception</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">ArgumentDoesNotExist</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$arg</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="136">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="137">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="108"/>
-  <line no="109">
+  <line no="138"/>
+  <line no="139">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Return our filtered results.</token>
+  </line>
+  <line no="140">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="110">
+  <line no="141">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="111">
+  <line no="142">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="112"/>
+  <line no="143"/>
 </source>

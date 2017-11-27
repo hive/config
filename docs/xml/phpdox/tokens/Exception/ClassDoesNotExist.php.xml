@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source/Exception" file="ClassDoesNotExist.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Exception/ClassDoesNotExist.php" size="1248" time="2017-11-21T16:05:58+11:00" unixtime="1511240758" sha1="6cdf67aa9ecc9cf20e996e7a4a5cee963866cf09" relative="Exception/ClassDoesNotExist.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source/Exception" file="ClassDoesNotExist.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Exception/ClassDoesNotExist.php" size="1246" time="2017-11-27T11:44:06+11:00" unixtime="1511743446" sha1="8c8ef9bf8710c98fbfcded1167eaad95b5421a4f" relative="Exception/ClassDoesNotExist.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -23,7 +23,7 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT"> * Called when the factory attempts to load a lass which does not exist, ie. it was unable to find the config class by that name.</token>
+    <token name="T_DOC_COMMENT"> * Called when the factory attempts to load a class which does not exist, ie. it was unable to find the config class by that name.</token>
   </line>
   <line no="7">
     <token name="T_DOC_COMMENT"> *</token>
@@ -32,7 +32,7 @@
     <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/config/blob/master/LICENSE (BSD-3-Clause)</token>
   </line>
   <line no="10">
     <token name="T_DOC_COMMENT"> *</token>

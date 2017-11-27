@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php" size="865" time="2017-11-22T14:17:05+11:00" unixtime="1511320625" sha1="729fe561d300319b524f7ae62a263f4f9ad58cee" relative="Library.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php" size="832" time="2017-11-23T17:06:18+11:00" unixtime="1511417178" sha1="e948ef616b1ed5122e051b9b214b3ca62646c0bc" relative="Library.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -21,7 +21,7 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT"> * Will give access to its ArrayIterator, at which stage anything to do with the environment</token>
+    <token name="T_DOC_COMMENT"> * Will give access to its ArrayIterator, at which stage anything to do with the group</token>
   </line>
   <line no="7">
     <token name="T_DOC_COMMENT"> * is ready to be discarded.</token>
@@ -83,13 +83,13 @@
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="22">
-    <token name="T_DOC_COMMENT">     * Takes a Config Contract that throws away the environment for use as an array iterator.</token>
+    <token name="T_DOC_COMMENT">     * Takes a Config Class that throws away the environment for use as an array iterator.</token>
   </line>
   <line no="23">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="24">
-    <token name="T_DOC_COMMENT">     * @param       $environment</token>
+    <token name="T_DOC_COMMENT">     * @param       $group</token>
   </line>
   <line no="25">
     <token name="T_DOC_COMMENT">     * @param array $array</token>
@@ -105,7 +105,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$environment</token>
+    <token name="T_VARIABLE">$group</token>
     <token name="T_PHPDOX_COMMA">,</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_ARRAY">array</token>
@@ -124,13 +124,13 @@
   </line>
   <line no="29">
     <token name="T_WHITESPACE">        </token>
-    <token name="T_COMMENT">// Discard the environment.</token>
+    <token name="T_COMMENT">// Discard the Group.</token>
   </line>
   <line no="30">
     <token name="T_WHITESPACE">        </token>
     <token name="T_UNSET">unset</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$environment</token>
+    <token name="T_VARIABLE">$group</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>

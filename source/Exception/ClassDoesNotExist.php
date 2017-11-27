@@ -3,10 +3,10 @@
 /**
  * Class does not Exist Exception.
  *
- * Called when the factory attempts to load a lass which does not exist, ie. it was unable to find the config class by that name.
+ * Called when the factory attempts to load a class which does not exist, ie. it was unable to find the config class by that name.
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
- * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
+ * @licence https://github.com/hive/config/blob/master/LICENSE (BSD-3-Clause)
  *
  * @package       Hive
  * @subpackage    Config

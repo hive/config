@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Config\Library" namespace="Hive\Config" name="Library" abstract="false" final="false" start="17" end="34">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php" size="865" time="2017-11-22T14:17:05+11:00" unixtime="1511320625" sha1="729fe561d300319b524f7ae62a263f4f9ad58cee" relative="Library.php"/>
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Library.php" size="832" time="2017-11-23T17:06:18+11:00" unixtime="1511417178" sha1="e948ef616b1ed5122e051b9b214b3ca62646c0bc" relative="Library.php"/>
   <docblock>
-    <description compact="Config Library.">Will give access to its ArrayIterator, at which stage anything to do with the environment
+    <description compact="Config Library.">Will give access to its ArrayIterator, at which stage anything to do with the group
 is ready to be discarded.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
     <licence value="https://github.com/hive/Config/blob/master/LICENSE (BSD-3-Clause)"/>
@@ -14,14 +14,14 @@ is ready to be discarded.</description>
   <implements full="Hive\Config\Contract\Library" namespace="Hive\Config\Contract" name="Library"/>
   <constructor name="__construct" start="27" end="33" abstract="false" final="false" static="false" visibility="public">
     <docblock>
-      <description compact="Item constructor.">Takes a Config Contract that throws away the environment for use as an array iterator.</description>
-      <param variable="$environment"/>
+      <description compact="Item constructor.">Takes a Config Class that throws away the environment for use as an array iterator.</description>
+      <param variable="$group"/>
       <param type="array" variable="$array"/>
     </docblock>
-    <parameter name="environment" byreference="false" type="{unknown}"/>
+    <parameter name="group" byreference="false" type="{unknown}"/>
     <parameter name="array" byreference="false" type="array" default=""/>
     <inline>
-      <comment value="Discard the environment." line="29"/>
+      <comment value="Discard the Group." line="29"/>
     </inline>
   </constructor>
   <parent full="ArrayIterator" namespace="" name="ArrayIterator">

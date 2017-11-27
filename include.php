@@ -20,4 +20,5 @@
     // Include the exceptions
     include 'source/Exception.php';
     include 'source/Exception/ClassDoesNotExist.php';
+    include 'source/Exception/ArgumentDoesNotExist.php';
 

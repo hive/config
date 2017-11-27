@@ -2,7 +2,7 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Factory.php">
     <totals>
-      <lines total="28" comments="21" code="7" executable="0" executed="0" percent=""/>
+      <lines total="37" comments="28" code="9" executable="0" executed="0" percent=""/>
       <methods count="0" tested="0" percent=""/>
       <functions count="0" tested="0" percent=""/>
       <classes count="0" tested="0" percent=""/>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source/Mixin" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Mixin/Library.php" size="916" time="2017-11-06T13:43:30+11:00" unixtime="1509936210" sha1="1c0bef2a6eaee4150957f7ac0d609b74cf74da55" relative="Mixin/Library.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/build/../source/Mixin" file="Library.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/config/source/Mixin/Library.php" size="886" time="2017-11-23T17:05:40+11:00" unixtime="1511417140" sha1="f618feda4cd7da6e43d61164e593ee4eef71d7dc" relative="Mixin/Library.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -71,7 +71,7 @@
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="21">
-    <token name="T_DOC_COMMENT">     * @param       $environment</token>
+    <token name="T_DOC_COMMENT">     * @param       $group</token>
   </line>
   <line no="22">
     <token name="T_DOC_COMMENT">     * @param array $values</token>
@@ -87,7 +87,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$environment</token>
+    <token name="T_VARIABLE">$group</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
@@ -118,7 +118,7 @@
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_PHPDOX_DOLLAR">$</token>
-    <token name="T_VARIABLE">$environment</token>
+    <token name="T_VARIABLE">$group</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
@@ -137,7 +137,7 @@
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_PHPDOX_DOLLAR">$</token>
-    <token name="T_VARIABLE">$environment</token>
+    <token name="T_VARIABLE">$group</token>
     <token name="T_PHPDOX_COMMA">,</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$values</token>
@@ -194,7 +194,7 @@
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$environment</token>
+    <token name="T_VARIABLE">$group</token>
     <token name="T_PHPDOX_COMMA">,</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$values</token>

@@ -42,23 +42,23 @@ abstract class Instance implements Contract\Instance
      *
      * Will create the object if it does not exist.
      *
-     * @param $name
+     * @param string $name
      * @return \Iterator
      */
     public static function load($name)
     {
         // Does the object already exist
-        if (isset(self::$objects[$name]))
+        if (isset(self::$objects[$name][self::$config['group']]))
         {
-            return self::$objects[$name];
+            return self::$objects[$name][self::$config['group']];
         }
         else
         {
             // Create the factory every time.
             $factory = new Factory(self::$config);
 
-            // Load the config and assign it to our static objects.
-            return self::$objects[$name] = $factory->load($name);
+            // Both load and return the config
+            return self::$objects[$name][self::$config['group']] = $factory->load($name);
         }
     }
 
@@ -72,30 +72,30 @@ abstract class Instance implements Contract\Instance
      */
     public static function config(array $config = [])
     {
+        // Return our config, after we merge it with any changes.
         return self::$config = array_merge(self::$config, $config);
     }
 
 
     /**
      * Allow direct access to an item in the config, by using arguments
+     *
+     * @throws Exception\ArgumentDoesNotExist
+     *
      * @param       $name
-     * @param array $args
-     * @return array
+     * @param array|bool $args
+     * @return \Iterator
      */
-    public static function __callStatic($name, $args)
+    public static function __callStatic($name, $args = false)
     {
-        $result = false;
+        // Get the full result
+        $result =  self::load($name);
 
-        if (self::load($name))
-        {
-            $result = self::$objects[$name];  // JP: iterator_to_array removed
-            foreach ($args as $arg)
-            {
-                $result = $result[$arg];
-            }
-        }
+        // Load up the factory, with no config
+        $factory = new Factory();
 
-        return $result;
+        // Filter and return our results
+        return $factory->filter($result, $args);
     }
 
     /**
@@ -105,6 +105,7 @@ abstract class Instance implements Contract\Instance
      */
     public static function destroy()
     {
+        // Destroy our objects
         self::$objects = null;
     }
 }

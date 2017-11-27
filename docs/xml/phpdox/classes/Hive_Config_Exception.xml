@@ -126,5 +126,5 @@ so that we have a unique exception code.</description>
   </parent>
   <extenders>
     <extender full="Hive\Config\Exception\InstanceDoesNotExist" namespace="Hive\Config\Exception" name="InstanceDoesNotExist"/>
-  <extender full="Hive\Config\Exception\ClassDoesNotExist" namespace="Hive\Config\Exception" name="ClassDoesNotExist"/></extenders>
+  <extender full="Hive\Config\Exception\ClassDoesNotExist" namespace="Hive\Config\Exception" name="ClassDoesNotExist"/><extender full="Hive\Config\Exception\ArgumentDoesNotExist" namespace="Hive\Config\Exception" name="ArgumentDoesNotExist"/></extenders>
 </class>

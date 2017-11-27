@@ -11,5 +11,5 @@
   </docblock>
   <implementors>
     <class full="Hive\Config\Library" namespace="Hive\Config" name="Library"/>
-  <class full="Hive\Config\Library" namespace="Hive\Config" name="Library"/><class full="Hive\Config\Library" namespace="Hive\Config" name="Library"/></implementors>
+  <class full="Hive\Config\Library" namespace="Hive\Config" name="Library"/><class full="Hive\Config\Library" namespace="Hive\Config" name="Library"/><class full="Hive\Config\Library" namespace="Hive\Config" name="Library"/></implementors>
 <extenders><extender full="Hive\Config\Contract\Factory" namespace="Hive\Config\Contract" name="Factory"/></extenders></interface>

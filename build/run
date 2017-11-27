@@ -12,7 +12,6 @@ phpmd ../source xml codesize,controversial,design,naming,unusedcode --reportfile
 # Run Copy/Paste Detection
 phpcpd ../source --log-pmd ../docs/xml/phpcpd.xml;
 
-
 # Run php metrics
 phpmetrics --report-cli --report-html=../docs/html/phpmetrics1/index.html --report-xml=../docs/xml/phpmetrics1.xml ../source
 

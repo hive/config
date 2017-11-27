@@ -18,15 +18,21 @@
         <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
         <covered by="testCallFactory::testClassDoesNotExistException"/>
         <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
-        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
-        <covered by="testInstance::testInstanceDoesNotExistException"/>
+        <covered by="testCallInstance::testInstanceClassDoesNotExistException"/>
+        <covered by="testCallInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testCallInstance::testClassDoesNotExistException"/>
+        <covered by="testCallInstance::testArgumentsDoesNotExistException"/>
+        <covered by="testLoadInstance::testInstanceDoesNotExistException"/>
       </line>
       <line nr="43">
         <covered by="testCallFactory::testArgumentsDoesNotExistException"/>
         <covered by="testCallFactory::testClassDoesNotExistException"/>
         <covered by="testLoadFactory::testInstanceDoesNotExistException"/>
-        <covered by="testInstance::testInstanceArgumentsDoesNotExistException"/>
-        <covered by="testInstance::testInstanceDoesNotExistException"/>
+        <covered by="testCallInstance::testInstanceClassDoesNotExistException"/>
+        <covered by="testCallInstance::testInstanceArgumentsDoesNotExistException"/>
+        <covered by="testCallInstance::testClassDoesNotExistException"/>
+        <covered by="testCallInstance::testArgumentsDoesNotExistException"/>
+        <covered by="testLoadInstance::testInstanceDoesNotExistException"/>
       </line>
     </coverage>
   </file>
