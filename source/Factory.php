@@ -67,7 +67,11 @@ class Factory implements Contract\Factory
             $class =  $namespace .  '\\' . (($this->config['type']) ?  ($this->config['type'] . '\\' ) : '') . $name;
             if (class_exists($class))
             {
-                return new $class($this->config['group']);
+                $result = new $class($this->config['group']);
+
+                // return an array if the config item is not set to be an iterator. 
+                return ($result::$iterator) ? $result : iterator_to_array($result);
+
             }
         }
 

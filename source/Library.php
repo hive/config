@@ -16,6 +16,14 @@
  */
 class Library extends \ArrayIterator implements Contract\Library
 {
+
+    /**
+     * Whether or not to return an iterator or an array.
+     * @var bool
+     */
+    public static $iterator = true;
+
+
     /**
      * Item constructor.
      *

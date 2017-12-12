@@ -34,7 +34,7 @@ abstract class Instance implements Contract\Instance
     protected static $config = [
         'namespaces'    => [''],        // Check Globally
         'group'         => 'default',   // Great for environmental variables.
-        'type'          => false
+        'type'          => false,
     ];
 
     /**
