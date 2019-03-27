@@ -45,8 +45,11 @@ abstract class Instance implements Contract\Instance
      * @param string $name
      * @return \Iterator
      */
-    public static function load($name)
+    public static function load($name, $config = [])
     {
+        // Allow the config to be updated upon load. 
+        self::config($config);
+        
         // Does the object already exist
         if (isset(self::$objects[$name][self::$config['group']]))
         {
