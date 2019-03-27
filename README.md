@@ -194,27 +194,27 @@ The config library has many more options and features, to view them please see o
 The code is split up into the following classes : 
 
 
-1. /tests : folder for any unit testing
-2. /examples : folder for any examples
-3. /docs : folder for any documentation  
-4. /source : folder for source code
-    1. Library.php : The actual config library, useful for extending functionality.
-        *  __construct
-    2. Instance.php : Instance of the object class.
+1. [tests](tests) : folder for any unit testing
+2. [examples](examples) : folder for any examples
+3. [docs](docs) : folder for any documentation
+4. [source](source) : folder for source code
+    1. [Library](source/Library.php) : The actual library, useful for extending functionality.
+        *  __construct( array $config )
+    2. [Instance](source/Instance.php) : Instance of the object class.
         * static load
         * static config
         * static __callStatic
-    3. Factory.php : Factory to create the object class.
+    2. [Factory](source/Factory.php) : Factory to create the object class.
         * load
         * config
         * __call
-    4. Exception : Folder for any exceptions the object will throw.
-        * ClassDoesNotExist.php
-    5. Mixin : Folder for any mix-ins (traits)
-        * Library.php the trait to include to for easy implementation.
-    6. Contact : folder for any interfaces or abstract classes they implement
-        * Instance.php
-        * Library.php
-        * Factory.php
+    4. [Exception](source/Exception) : Folder for any exceptions the object will throw.
+        * [ClassDoesNotExist](source/Exception/ClassDoesNotExist.php)
+    5. [Mixin](source/Exception) : older for any mix-ins (traits)
+        * [Library](source/Mixin/Library.php) the trait to include to for easy implementation.
+    6. [Contract](source/Contract) : folder for any interfaces or abstract classes they implement
+        * [Instance](source/Contract/Instance.php)
+        * [Library](source/Contract/Library.php)
+        * [Object](source/Contract/Object.php)
         
 The full API documentation can be found [here](https://hive.github.io/config/html/phpdox/index.xhtml) or all the documentation can be found [here](https://hive.github.io/config/)
