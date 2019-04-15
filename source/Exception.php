@@ -25,7 +25,7 @@ class Exception extends \Exception
     /**
      * Package exception code, sequential package numbers.
      */
-    const PACKAGE_NUMBER = 4;
+    const PACKAGE_NUMBER = 14;
 
     /**
      * Exception constructor, assigns the message and code and calls the exception handler.
